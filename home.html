@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+       .banner{
+           margin: auto;
+            width: 80%;
+            height: 380px;
+            margin-top: 20px;
+            /* background-color: rgb(95, 61, 20); */
+            background-image: url("	https://a.cdnsbn.com/images/English/banner_SkincareSpringEditsMar22_1170_1.jpg?v=3");
+            background-size: 100% 100%;
+            animation: slider 30s infinite linear;
+       }
+       @keyframes slider{
+            0%{
+                background-image: url("	https://a.cdnsbn.com/images/English/banner_RewardProgramBP_1140_1.jpg");
+                background-size: 100% 100%;
+            }
+            35%{
+                background-image: url("https://a.cdnsbn.com/images/English/banner_NaturalBeauty30Aug21_1170_1.jpg?v=3");
+                background-size: 100% 100%;
+            }
+            75%{
+                background-image: url("https://a.cdnsbn.com/images/English/banner_NBBundle170222_1170_1.jpg");
+            }
+
+        }
+
+    .promoline{
+        /* background-color: aqua; */
+        /* margin-right: 250px; */
+        margin: auto;
+    }
+
+    #promo {
+   width: 80%; 
+   /* margin: auto; */
+   text-align: center; 
+   border-bottom: 5px solid #000; 
+   line-height: 0.1em;
+   margin: 40px 160px 20px;
+    
+} 
+
+ #promo>span { 
+    background:#fff; 
+    padding:0 10px; 
+    font-family:  sans-serif;
+}
+#products{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    gap: 22px;
+}
+.product_img{
+    width: 70%;
+    height: 300px;
+}
+.name{
+    font-family: sans-serif;
+    font-size: 15px;
+    /* font-weight: bold; */
+    
+    text-align: start;
+    text-align: left;
+    color: #2c2c2c;
+    
+}
+.productind{
+    padding: 35px;
+    /* border:5px solid black; */
+    
+}
+.price{
+    text-align: left;
+    font-family: sans-serif;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+
+    </div>
+    <div class="banner">
+        <!-- <img src="https://a.cdnsbn.com/images/english/banner_SpringSale2Mar22_1170_1.jpg" alt=""> -->
+    </div>
+
+    <div class="content">
+        <div class="promoline">
+            
+                <h2 id="promo"><span>
+                    REFRESH YOUR SPRING SKIN ROUTINE</span></h2>
+        </div>
+
+        <div class="data">
+            <div id="products">
+               <!-- <div class="productind">
+                    <img class="product_img" src="https://cdn.shopify.com/s/files/1/1338/0845/collections/lippie-pencil_grande.jpg?v=1512588769" alt="">
+                    <div class="name">
+                             Aesop
+                    </div>
+                    <div class="desc">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+               </div>
+
+               <div class="productind">
+                <img class="product_img" src="https://cdn.shopify.com/s/files/1/1338/0845/collections/lippie-pencil_grande.jpg?v=1512588769" alt="">
+            </div>
+
+            <div class="productind">
+                <img class="product_img" src="https://cdn.shopify.com/s/files/1/1338/0845/collections/lippie-pencil_grande.jpg?v=1512588769" alt="">
+            </div>
+
+            <div class="productind">
+                <img class="product_img" src="https://cdn.shopify.com/s/files/1/1338/0845/collections/lippie-pencil_grande.jpg?v=1512588769" alt="">
+            </div> -->
+            
+            </div>
+
+           
+
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>
+<script>
+   var url="http://makeup-api.herokuapp.com/api/v1/products.json"
+   var products=document.getElementById("products")
+   
+   fetch(url).then((res)=>{
+       var abs=res.json()
+       return abs
+      
+   }).then((a)=>{
+  
+     
+      a.map((elem,i)=>{
+          
+          var product_ind=document.createElement("div")
+          product_ind.setAttribute("class","productind")
+          var image=document.createElement("img")
+          image.className="product_img"
+          image.src=elem.image_link;
+          var title=document.createElement("div")
+          title.className="name"
+          title.innerText=elem.name
+
+          var price=document.createElement("div")
+        //   price.innerText="Price"
+        price.innerText=`Rs ${Number(elem.price)*567}`
+        price.className="price"
+        
+        product_ind.append(image,title,price)
+        products.append(product_ind)
+
+       
+
+        
+      })
+   })
+
+
+   function line(){
+     return `   <div class="promoline">
+            
+            <h2 id="promo"><span>
+                REFRESH YOUR SPRING SKIN ROUTINE</span></h2>
+    </div>`
+
+   }
+</script>
