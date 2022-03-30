@@ -1,0 +1,60 @@
+function getdata(img,name,desc,price){
+    this.price=price,
+    this.name=name,
+    this.img=img,
+    this.desc=desc
+}
+var skincare_science=[]
+
+var data1=new getdata("https://a.cdnsbn.com/images/products/250/25930157001.jpg","colorescience","Sunforgettable Total Protection Face Shield SPF 50 - # Glow  55ml/1.8oz","Rs 2,888.50")
+var data2= new getdata("https://a.cdnsbn.com/images/products/250/17482140803.jpg","DERMAdoctor","KP Duty Dermatologist Formulated Body Scrub  473ml/16oz","Rs 3,513.00")
+var data3=new getdata("https://a.cdnsbn.com/images/products/250/24594570901.jpg","Filorga","Lift-Designer Ultra-Lifting Serum  30ml/1oz","Rs 2,849.50")
+var data4=new getdata("https://a.cdnsbn.com/images/products/250/19143259701.jpg","Iluminage","Youth Cell Night Cream  50ml/1.7oz","Rs 1,874.00")
+var data5=new getdata("https://b.cdnsbn.com/images/products/250/17513128601.jpg","Kiehl's","Hydro-Plumping Re-Texturizing Serum Concentrate  50ml/1.7oz","Rs 5,777.00")
+var data6=new getdata("https://b.cdnsbn.com/images/products/250/03973383301.jpg","La Prairie","Cellular Softening &amp; Balancing Lotion  250ml/8.4oz","Rs 12,803.00")
+var data7=new getdata("https://b.cdnsbn.com/images/products/250/23583681301.jpg","Oriane","Anagenese Essential Anti-Aging Serum  30ml/1oz","Rs 3,279.00")
+var data8=new getdata("https://b.cdnsbn.com/images/products/250/23720229301.jpg","StriVectin","StriVectin - S.T.A.R. Light Retinol Night Oil  30ml/1oz","Rs 5,777.00")
+
+skincare_science.push(data1,data2,data3,data4,data5,data6,data7,data8)
+
+localStorage.setItem("skincare_science",JSON.stringify(skincare_science))
+
+var blushdata=[]
+var data9=new getdata("https://a.cdnsbn.com/images/products/250/21999826502.jpg","Bobbi Brown","Highlighting Powder - # Bronze Glow  8g/0.28oz","Rs 4,216.00")
+var data10=new getdata(" https://a.cdnsbn.com/images/products/250/22353893402.jpg","Chantecaille","Cheek Shade - Laughter (Coral)  2.5g/0.08oz","Rs 3,279.00")
+var data11=new getdata("https://a.cdnsbn.com/images/products/250/21999826502.jpg","Clinique","Blushing Blush Powder Blush - # 120 Bashful Blush  6g/0.21oz","Rs 2,264.00")
+var data12=new getdata("https://a.cdnsbn.com/images/products/250/25790779102.jpg","Fenty Beauty by Rihanna","Killawatt Freestyle Highlighter Duo 2x3.5g/0.12oz","Rs 2,498.50")
+var data13=new getdata("https://b.cdnsbn.com/images/products/250/24290758802.jpg","HourGlass","HourGlass Vanish Flash Highlighting Stick - # Champagne Flash  6.1g/0.21oz","Rs 2,732.50")
+var data14=new getdata("https://a.cdnsbn.com/images/products/250/22353893402.jpg","Lancome","Lancome Bronze & Glow Palette - # 02 Your Pink Glow Shot  14g/0.49","Rs 1,717.50")
+var data15=new getdata("https://b.cdnsbn.com/images/products/250/22330924702.jpg","Laura Mercier","Candleglow Concealer And Highlighter - # 62.2ml/0.07oz","Rs 1,093.00")
+var data16=new getdata("https://b.cdnsbn.com/images/products/250/13085502602.jpg","NARS","NARS Blush - Deep Throat  4.8g/0.16oz","Rs 2,108.00")
+blushdata.push(data9,data10,data11,data12,data13,data14,data15,data16)
+localStorage.setItem("blush_data",JSON.stringify(blushdata))
+
+var scents=[]
+
+var data17=new getdata("https://a.cdnsbn.com/images/products/250/14514126106.jpg","Aqua Di Parma","Blu Mediterraneo Fico Di Amalfi Eau De Toilette Spray  75ml/2.5oz","Rs 6,089.50")
+var data18=new getdata("https://a.cdnsbn.com/images/products/250/25920468106.jpg","Anna Sui","Sky Eau De Toilette Spray  50ml/1.7oz","Rs 4,606.00")
+var data19=new getdata("https://a.cdnsbn.com/images/products/250/24265135005.jpg","Bvlgari","Man Wood Neroli Eau De Parfum Spray  100ml/3.4oz","Rs 7,729.00")
+var data20=new getdata("https://a.cdnsbn.com/images/products/250/16513380606.jpg","Estee Lauder","Modern Muse Eau De Parfum Spray  50ml/1.7oz","Rs 5,387.00")
+var data21=new getdata("https://b.cdnsbn.com/images/products/250/22341380705.jpg","Guerlain","L'Homme Ideal L'Intense Eau De Parfum Spray   50ml/1.6oz","Rs&nbsp;.5,074.50")
+var data22=new getdata("https://b.cdnsbn.com/images/products/250/12550740106.jpg","Hermes","Un Jardin Sur Le Toit Eau De Toilette Spray  100ml/3.3oz","Rs 8,978.00")
+var data23=new getdata("https://b.cdnsbn.com/images/products/250/26926889503.jpg","Jo Malone","English Pear & Freesia Exfoliating Shower Gel  200ml/6.7oz","Rs 4,059.50")
+var data24=new getdata("https://b.cdnsbn.com/images/products/250/22667689106.jpg","Serge Lutens","Fleurs D' Oranger Eau De Parfum Spray  100ml/3.3oz","Rs 10,070.50")
+
+scents.push(data17,data18,data19,data20,data21,data22,data23,data24)
+localStorage.setItem("scents",JSON.stringify(scents))
+
+var hair=[]
+
+var data25=new getdata("https://a.cdnsbn.com/images/products/250/16244574344.jpg","Aveda","Damage Remedy Intensive Restructuring Treatment  150ml/5oz","Rs 3,591.50")
+var data26=new getdata("https://a.cdnsbn.com/images/products/250/21853924944.jpg","DevaCurl","Deep Sea Repair (Seaweed Strengthening Mask)  236.6ml/8oz","Rs 2,810.50")
+var data27=new getdata("https://a.cdnsbn.com/images/products/250/23431000444.jpg","Kerastase","Elixir Ultime Le Masque Sublimating Oil Infused Masque (Dull Hair)  200ml/6.8oz","Rs 4,372.00")
+var data28=new getdata("https://a.cdnsbn.com/images/products/250/21047110144.jpg","KMS California","Moist Repair Revival Creme (Moisture &amp; Manageability)  125ml/4.2oz","Rs 1,561.50")
+var data29=new getdata("	https://b.cdnsbn.com/images/products/250/25828528444.jpg","Living Proof","No Frizz Intense Moisture Mask  200ml/6.7oz","Rs 2,654.50")
+var data30=new getdata("	https://b.cdnsbn.com/images/products/250/15338632644.jpg","Orofluido","Original Mask  250ml/8.4oz","Rs 937.00")
+var data31=new getdata("https://b.cdnsbn.com/images/products/250/26953990744.jpg","Phyto","Phyto Specific Nourishing Styling Butter  100ml/3.3oz","Rs 1,639.50")
+var data32=new getdata("	https://b.cdnsbn.com/images/products/250/12126793144.jpg","Tigi","Tigi Bed Head Urban Anti+dotes Resurrection Conditioner 200ml/6.76oz","Rs 859.00")
+
+hair.push(data25,data26,data27,data28,data29,data30,data31,data32)
+localStorage.setItem("hair_prod",JSON.stringify(hair))

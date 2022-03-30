@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #show{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="show"></div>
+</body>
+</html>
+<script src="homePageData.js"></script>
+<script >
+    let data = JSON.parse(localStorage.getItem("BundleOfJoy"))
+    let data1 = JSON.parse(localStorage.getItem("DaySepicalData"));
+    let data2 = JSON.parse(localStorage.getItem("BestSellerData"));
+    let data3 = JSON.parse(localStorage.getItem("BestDealsData"));
+    let data4 = JSON.parse(localStorage.getItem("top40SepicalsData"));
+    let data5 = JSON.parse(localStorage.getItem("newArrial"));
+
+
+
+    let showData = document.getElementById("show");
+function append(data){
+    data.forEach(element => {
+        let div = document.createElement("div")
+
+        let name = document.createElement("p");
+        name.innerHTML=element.title;
+
+        let img = document.createElement("img");
+        img.src= element.name
+
+        let des = document.createElement("h5")
+        des.innerHTML=element.des
+
+        let pri = document.createElement("p");
+        pri.innerHTML=element.price;
+
+        div.append(img,name,des,pri)
+
+        showData.append(div);
+    });
+}
+append(data);
+append(data1);
+append(data2);
+append(data3);
+append(data4);
+append(data5);
+</script>
