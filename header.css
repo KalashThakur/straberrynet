@@ -9,9 +9,6 @@
 }
 .header{
     position:sticky;
-    /* top: 0; */
-    /* z-index: 100; */
-    /* border: 2px solid red; */
 }
 #navbar{
     min-height: 107px;
@@ -112,24 +109,15 @@ cursor: pointer;
   background: url(https://a.cdnsbn.com/images/common/2016CommonSprite.png) -313px -315px no-repeat;
   border-radius: 0;
   border-radius: 0;
-  /* padding: 31px 0 0; */
   width: 34px;
   height: 33px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
   cursor: pointer;
-  /* position: absolute; */
+
 }
-/* .totalBag-item{
-    border: 1px solid black;
-    width: 20px;
-    border-radius: 50%;
-    position: relative;
-    bottom: 100;
-    top: 0;
-     left: -100; 
-} */
+
 
 #name-menu{
     background-color: #623381;
@@ -163,7 +151,6 @@ cursor: pointer;
 #home{
     width: 100%;
     height: 900px;
-    /* border: 2px solid blue; */
 }
 
                     /* footer */
@@ -171,22 +158,16 @@ cursor: pointer;
     width: 100%;
     margin-left: 200px;
     display: flex;
-    /* justify-content: space-around; */
-    /* align-items: center; */
 }
 #first-main-footer-bg{
     background: url(https://a.cdnsbn.com/images/common/2016footer.jpg) center top no-repeat #702f80;
     width: 100%;
     background-size: cover;
-    /* height: 300px; */
     display: flex;
     box-sizing: border-box;
 }    
 
 #socia-mediaAnd-search{
-    /* justify-content: center;
-    align-items: center; 
-    /* display: flex; */
     box-sizing: border-box;
 }
 #search-emailOffer{

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div id="mainmenu" class="header">
+    <!-- <div id="mainmenu" class="header">
         <div id="navbar">
             <div id="logo"></div>
             <div id="searchBar">
@@ -43,7 +43,7 @@
                     <div class="account" id="account3" >
                         <div class="bag-icon"></div>
                         <div id="account-Bag" class="account-Singin">Bag</div>
-                        <!-- <div id="total" class="totalBag-item">0</div> -->
+                        <div id="total" class="totalBag-item">0</div> 
                     </div>
                 </div>
             </div>
@@ -64,14 +64,14 @@
         <li>SPECIALS</li>
         <li>NEW</li>
     </ul>
-</div>
-
+</div> -->
+<div id="homebar"></div>
 <div id="home"></div>
 
 
 <!-- //footer -->
 <div id="footer">
-    <div id="first-main-footer-bg">
+    <!-- <div id="first-main-footer-bg">
 
         <div id="first-main-footer">
 
@@ -190,7 +190,18 @@
             <p class="terms"> Privacy & Security | Terms & Conditions | Point Rewards Program Terms & Conditions
                 1998 - 2022 © StrawberryNET.com All Rights Reserved. </p>
         </div>
-    </div>
+    </div> -->
 </div>
 </body>
 </html>
+<script  type="module">
+
+    import {navbar , footer} from '/components/header.js'
+    console.log(navbar);
+
+    let homebar = document.getElementById("homebar");
+    homebar.innerHTML=navbar();
+
+    let homeFooter = document.getElementById("footer");
+    homeFooter.innerHTML=footer();  
+</script>
