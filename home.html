@@ -63,6 +63,30 @@
     /* height: 580px; */
    
 }
+#extra{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    gap: 15px;
+}
+
+#scents{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    gap: 15px;
+}
+#hair{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    gap: 15px;
+}
+
+
 .product_img{
     width: 50%;
     height: 200px;
@@ -70,6 +94,8 @@
 .name{
     font-family: sans-serif;
     font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
     /* font-weight: bold; */
     
     text-align: start;
@@ -109,6 +135,16 @@
     color: white;
     width: 130px;
 }
+.desc{
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    /* * font-weight: bold; */ 
+    
+    text-align: start;
+    text-align: left;
+    color: #2c2c2c;
+}
     </style>
 </head>
 <body>
@@ -140,17 +176,34 @@
 
                <div class="productind">
                 <img class="product_img" src="https://cdn.shopify.com/s/files/1/1338/0845/collections/lippie-pencil_grande.jpg?v=1512588769" alt="">
-            </div>
+                    </div>
 
-            <div class="productind">
+                    <div class="productind">
                 <img class="product_img" src="https://cdn.shopify.com/s/files/1/1338/0845/collections/lippie-pencil_grande.jpg?v=1512588769" alt="">
-            </div>
+                     </div>
 
-            <div class="productind">
+                     <div class="productind">
                 <img class="product_img" src="https://cdn.shopify.com/s/files/1/1338/0845/collections/lippie-pencil_grande.jpg?v=1512588769" alt="">
-            </div> -->
+                    </div> -->
             
             </div>
+                    <div class="promoline">
+            
+                            <h2 id="promo"><span>
+                                YOUR  GUIDE  TO BLUSH  &  CONTOUR</span></h2>
+                    </div>
+            <div id="extra"></div>
+                        <div class="promoline">
+                                <h2 id="promo"><span>THE SCENT OF SPRING</span></h2>
+                        </div>
+            <div id="scents"></div>
+                <div class="promoline">
+                    <h2 id="promo"><span>SECRETS TO HEALTHY HAIR</span></h2>
+                </div>
+            <div id="hair"></div>
+
+        </div>
+            
 
            
 
@@ -160,53 +213,88 @@
 
     </div>
 </body>
+<script src="data.js"></script>
 </html>
 <script>
-   var url="http://makeup-api.herokuapp.com/api/v1/products.json"
-   var products=document.getElementById("products")
+//    var url="http://makeup-api.herokuapp.com/api/v1/products.json"
+//    var products=document.getElementById("products")
    
-   fetch(url).then((res)=>{
-       var abs=res.json()
-       return abs
+//    fetch(url).then((res)=>{
+//        var abs=res.json()
+//        return abs
       
-   }).then((a)=>{
+//    }).then((a)=>{
   
-     console.log(a)
-      a.map((elem,i)=>{
+//      console.log(a)
+//       a.map((elem,i)=>{
           
-          var product_ind=document.createElement("div")
-          product_ind.setAttribute("class","productind")
-          var image=document.createElement("img")
-          image.className="product_img"
-          image.src=elem.image_link;
-          var title=document.createElement("div")
-          title.className="name"
-          title.innerText=elem.name
+//           var product_ind=document.createElement("div")
+//           product_ind.setAttribute("class","productind")
+//           var image=document.createElement("img")
+//           image.className="product_img"
+//           image.src=elem.image_link;
+//           var title=document.createElement("div")
+//           title.className="name"
+//           title.innerText=elem.name
 
-          var price=document.createElement("div")
-        //   price.innerText="Price"
-        price.innerText=`Rs ${Number(elem.price)*567}`
-        price.className="price"
-        var button=document.createElement("button")
-        button.innerText="Add To Bag"
-        button.className="bag"
+//           var price=document.createElement("div")
+//         //   price.innerText="Price"
+//         price.innerText=`Rs ${Number(elem.price)*567}`
+//         price.className="price"
+//         var button=document.createElement("button")
+//         button.innerText="Add To Bag"
+//         button.className="bag"
         
-        product_ind.append(image,title,price,button)
-        products.append(product_ind)
+//         product_ind.append(image,title,price,button)
+//         products.append(product_ind)
 
        
 
         
-      })
-   })
+//       })
+//    })
 
 
-   function line(){
-     return `   <div class="promoline">
-            
-            <h2 id="promo"><span>
-                REFRESH YOUR SPRING SKIN ROUTINE</span></h2>
-    </div>`
+   
 
+   function showdata(idname,arr){
+       var idname=document.getElementById(idname)
+       arr.map(function(elem){
+
+        var product_ind=document.createElement("div")
+    product_ind.setAttribute("class","productind")
+    var image=document.createElement("img")
+          image.className="product_img"
+          image.src=elem.img;
+
+    var title=document.createElement("div")
+    title.className="name"
+    title.innerText=elem.name
+
+    var desc=document.createElement("div")
+    desc.className="desc"
+    desc.innerText=elem.desc
+    var price=document.createElement("div")
+        price.innerText=elem.price
+        price.className="price"
+
+        var button=document.createElement("button")
+        button.innerText="Add To Bag"
+        button.className="bag"
+        product_ind.append(image,title,desc,price,button)
+        idname.append(product_ind)
+
+       })
+    
    }
+
+   var data1=JSON.parse(localStorage.getItem("skincare_science"))
+   var data2=JSON.parse(localStorage.getItem("blush_data"))
+   var data3=JSON.parse(localStorage.getItem("scents"))
+   var data4=JSON.parse(localStorage.getItem("hair_prod"))
+   showdata("products",data1)
+   showdata("extra",data2)
+   showdata("scents",data3)
+   showdata("hair",data4)
+
 </script>
