@@ -59,11 +59,13 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     text-align: center;
-    gap: 22px;
+    gap: 15px;
+    /* height: 580px; */
+   
 }
 .product_img{
-    width: 70%;
-    height: 300px;
+    width: 50%;
+    height: 200px;
 }
 .name{
     font-family: sans-serif;
@@ -77,8 +79,17 @@
 }
 .productind{
     padding: 35px;
+   /* width: 80%; */
+    transition: 0.5s;
     /* border:5px solid black; */
+    /* border: 1px solid black; */
+   
     
+}
+.productind:hover{
+     box-shadow: 0 0 20px 2px  rgba(0, 0, 0, .1);
+    /* transform: scale(1.1); */
+    z-index: 2;
 }
 .price{
     text-align: left;
@@ -87,6 +98,16 @@
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
+}
+.bag{
+   margin-top: 20px;
+   border-radius: 5px;
+    height: 40px;
+    background-color: #00a69c;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    width: 130px;
 }
     </style>
 </head>
@@ -150,7 +171,7 @@
       
    }).then((a)=>{
   
-     
+     console.log(a)
       a.map((elem,i)=>{
           
           var product_ind=document.createElement("div")
@@ -166,8 +187,11 @@
         //   price.innerText="Price"
         price.innerText=`Rs ${Number(elem.price)*567}`
         price.className="price"
+        var button=document.createElement("button")
+        button.innerText="Add To Bag"
+        button.className="bag"
         
-        product_ind.append(image,title,price)
+        product_ind.append(image,title,price,button)
         products.append(product_ind)
 
        
