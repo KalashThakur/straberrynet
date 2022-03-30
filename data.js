@@ -58,3 +58,38 @@ var data32=new getdata("	https://b.cdnsbn.com/images/products/250/12126793144.jp
 
 hair.push(data25,data26,data27,data28,data29,data30,data31,data32)
 localStorage.setItem("hair_prod",JSON.stringify(hair))
+
+var bundle_joy=[]
+
+let data33 = new getdata('https://a.cdnsbn.com/images/products/250/27342293753.jpg','BareMinerals','Smoothness Hydrating Cleansing Oil (Free: Natural Beauty r-PGA Dee... 180ml+6x20ml','Rs .2,576.50');
+
+let data34 = new getdata('https://a.cdnsbn.com/images/products/250/27343276753.jpg','Biotherm','Aquasource Everplump Plumping Smoothing Moisturizing Treatment 125ml (Fre... 2pcs','Rs .6,089.50')
+
+let data35 = new getdata('https://a.cdnsbn.com/images/products/250/27342026553.jpg','Bobbi Brown','Soothing Cleansing Oil (Free: Natural Beauty BIO UP Treatment Essence 200ml) 2pcs','Rs .4,606.00');
+
+let data36 = new getdata('https://a.cdnsbn.com/images/products/250/27003380414.jpg','Clinique','Dramatically Different Moisturizing Lotion+ - Very Dry to Dry Combination ... 2pcs','Rs .4,294.00');
+
+let data37 = new getdata('https://b.cdnsbn.com/images/products/250/27338282553.jpg','Darphin','Intral Daily Rescue Serum 50ml (Free: Natural Beauty Aromatic Cleaning Bal... 2pcs','Rs .7,104.00');
+
+let data38 = new getdata('https://b.cdnsbn.com/images/products/250/27342100053.jpg','Elemis','Pro-Collagen Super Serum (Free: Natural Beauty BIO UP Treatment Essence 20... 2pcs','Rs .4,918.50');
+
+let data39 = new getdata('https://b.cdnsbn.com/images/products/250/27338380553.jpg','Elizabeth Arden','Ceramide Vitamin C Capsules - Radiance Renewal Serum 60caps (Free: Natural... 2pcs,','Rs .5,777.00');
+
+let data40 = new getdata('https://b.cdnsbn.com/images/products/250/27338180953.jpg','Lancome','Confort Tonique 400ml (Free: Natural Beauty r-PGA Deep Hydration ... 400ml+6x 20ml','Rs .4,059.50');
+bundle_joy.push(data33,data34,data35,data36,data37,data38,data39,data40)
+localStorage.setItem("bundle_joy",JSON.stringify(bundle_joy))
+
+
+let DaySepicalDataArr = []
+
+let data41 = new getdata('https://a.cdnsbn.com/images/products/250/25862214639.jpg','Avene','Men Anti-Aging Hydrating Care (For Sensitive Skin) 50ml/1.69oz','Rs .1,952.00') 
+let data42 = new getdata('https://a.cdnsbn.com/images/products/250/26398093739.jpg','BareMinerals','Dew Mist Setting Spray 100ml/3.4oz','Rs .1,639.50') 
+let data43 = new getdata('https://a.cdnsbn.com/images/products/250/26296273037.jpg','D.S. & Durga','Cowboy Grass Eau De Parfum Spray 50ml/1.7oz','Rs .8,353.50')                      
+let data44 = new getdata('https://a.cdnsbn.com/images/products/250/26290647239.jpg','Dermaheal',`Stem C,'Rum HL Anti-Hair Loss Solution 5x5ml/0.17oz`,'Rs .15,535.50') 
+let data45 = new getdata('https://b.cdnsbn.com/images/products/250/22391239537.jpg','Dolce & Gabbana','Dolce Eau De Parfum Spray 150ml/5oz','Rs .6,011.50') 
+let data46 = new getdata('https://b.cdnsbn.com/images/products/250/25857233839.jpg','Gucci','Silk Priming Serum 30ml/1oz','Rs .3,552.00') 
+let data47 = new getdata('https://b.cdnsbn.com/images/products/250/23567090939.jpg','Nioxin','Density System 3 Scalp Therapy Conditioner (Colored Hair, Light T... 1000ml/33.8oz','Rs .3,045.00') 
+let data48 = new getdata('https://b.cdnsbn.com/images/products/250/24493901139.jpg','Sebastian','Seb Man The Protector Shaving Cream 135g/4.7oz','Rs .976.00') 
+
+DaySepicalDataArr.push(data41,data42,data43,data44,data45,data46,data47,data48);
+localStorage.setItem("DaySpecialData",JSON.stringify(DaySepicalDataArr));
