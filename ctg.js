@@ -2,7 +2,9 @@ let arr = [
   ["Skincare"],
   [
     {
-      img: "https://a.cdnsbn.com/images/products/250/23141000007.jpg",
+      image1: "https://a.cdnsbn.com/images/products/250/23141000007.jpg",
+      img2: "https://a.cdnsbn.com/images/products/msn/23141000007-1.jpg",
+      img3: "https://a.cdnsbn.com/images/products/msn/23141000007-2.jpg",
       title: "Marvis",
       desc: "Whitening Mint Toothpaste With Xylitol",
       size: "Size: 85ml/4.2oz",
@@ -13,76 +15,132 @@ let arr = [
       rating: "★★★★☆",
     },
     {
-      img: "https://a.cdnsbn.com/images/products/250/24714281301.jpg",
+      image1: "https://a.cdnsbn.com/images/products/250/24714281301.jpg",
+      img2: "https://a.cdnsbn.com/images/products/msn/24714281301-1.jpg",
+      img3: "https://a.cdnsbn.com/images/products/msn/24714281301-2.jpg",
       title: "Timeless Skin Care",
-      desc: "Whitening Mint Toothpaste With Xylitol",
-      size: "Size: 85ml/4.2oz",
+      desc: "20% Vitamin C Serum + Vitamin E + Ferulic Acid",
+      size: "Size: 30ml/1oz",
       save: "SAVE 19%",
-      price: 859.0,
-      strikedprice: "1,054.00",
+      price: 2034.0,
+      strikedprice: "2,112.00",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
     },
     {
-      img: "https://a.cdnsbn.com/images/products/250/20079465901.jpg",
+      image1: "https://a.cdnsbn.com/images/products/250/20079465901.jpg",
+      image2: "https://a.cdnsbn.com/images/products/msn/20079465901-1.jpg",
+      image3: "https://a.cdnsbn.com/images/products/msn/20079465901-1.jpg",
       title: "EltaMD",
-      desc: "Whitening Mint Toothpaste With Xylitol",
-      size: "Size: 85ml/4.2oz",
+      desc: "UV Clear Facial Sunscreen SPF 46 - For Skin Types Prone To Acne, Rosacea & Hyperpigmentation",
+      size: "Size: 48g/1.7oz ",
       save: "SAVE 19%",
-      price: 859.0,
-      strikedprice: "1,054.00",
+      price: 3364.0,
+      strikedprice: "3864.0",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★★",
     },
     {
-      img: "https://a.cdnsbn.com/images/products/250/16305336601.jpg",
+      image1: "https://a.cdnsbn.com/images/products/250/16305336601.jpg",
+      image2: "https://a.cdnsbn.com/images/products/msn/16305336601-1.jpg",
+      image3: "https://a.cdnsbn.com/images/products/msn/16305336601-2.jpg",
       title: "Embryolisse",
-      desc: "Whitening Mint Toothpaste With Xylitol",
-      size: "Size: 85ml/4.2oz",
+      desc: "Lait Creme Concentrate (24-Hour Miracle Cream)",
+      size: "Size: 75ml/2.6oz ",
       save: "SAVE 19%",
-      price: 859.0,
-      strikedprice: "1,054.00",
+      price: 1995.0,
+      strikedprice: "2,190.50",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
     },
     {
-      img: "https://b.cdnsbn.com/images/products/250/26990380301.jpg",
+      image1: "https://b.cdnsbn.com/images/products/250/26990380301.jpg",
+      image2: "https://a.cdnsbn.com/images/products/msn/26990380301-1.jpg",
+      image3: "https://a.cdnsbn.com/images/products/msn/26990380301-2.jpg",
       title: "Clarins",
-      desc: "Whitening Mint Toothpaste With Xylitol",
-      size: "Size: 85ml/4.2oz",
+      desc: "Double Serum Eye (Hydrolipidic System) Global Age Control Concentrate",
+      size: "Size: 20ml/0.6oz ",
       save: "SAVE 19%",
-      price: 859.0,
-      strikedprice: "1,054.00",
+      price: 5867.0,
+      strikedprice: "6,023.50",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
     },
 
     {
-      img: "https://b.cdnsbn.com/images/products/250/21495880501.jpg",
+      image1: "https://b.cdnsbn.com/images/products/250/21495880501.jpg",
+      image2: "https://a.cdnsbn.com/images/products/msn/21495880501-1.jpg",
+      image3: "https://a.cdnsbn.com/images/products/msn/21495880501-2.jpg",
       title: "Elizabeth Arden",
-      desc: "Whitening Mint Toothpaste With Xylitol",
-      size: "Size: 85ml/4.2oz",
-      save: "SAVE 19%",
-      price: 859.0,
-      strikedprice: "1,054.00",
+      desc: "Advanced Ceramide Capsules Daily Youth Restoring Eye Serum",
+      size: "Size: 60caps",
+      save: "SAVE 10%",
+      price: 4420.0,
+      strikedprice: "4,928.00",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
     },
     {
-      img: "https://c.cdnsbn.com/images/products/250/15246380501.jpg",
+      image1: "https://a.cdnsbn.com/images/products/msn/17975043503.jpg",
+      image2: "https://a.cdnsbn.com/images/products/msn/17975043503-1.jpg",
+      image3: "https://a.cdnsbn.com/images/products/msn/17975043503-2.jpg",
       title: "3W Clinic",
-      desc: "Whitening Mint Toothpaste With Xylitol",
-      size: "Size: 85ml/4.2oz",
-      save: "SAVE 19%",
-      price: 859.0,
-      strikedprice: "1,054.00",
+      desc: "Hand Cream - Snail",
+      size: "Size: 100ml/3.38oz",
+      save: "Save: 38%",
+      price: 313.0,
+      strikedprice: "508.50.00",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★☆☆",
     },
   ],
 ];
+
+function getdata(
+  image1,
+  image2,
+  image3,
+  title,
+  desc,
+  size,
+  save,
+  price,
+  strikedprice,
+  extraof,
+  rating
+) {
+  this.image1 = image1;
+  this.image2 = image2;
+  this.image3 = image3;
+  this.title = title;
+  this.desc = desc;
+  this.size = size;
+  this.save = save;
+  this.price = price;
+  this.strikedprice = strikedprice;
+  this.extraof = extraof;
+  this.rating = rating;
+}
+
+let d1 = new getdata(
+  "https://a.cdnsbn.com/images/products/msn/23802077203.jpg",
+  "https://a.cdnsbn.com/images/products/msn/23802077203-1.jpg",
+  "https://a.cdnsbn.com/images/products/msn/23802077203-2.jpg",
+  "KISS ME",
+  "Medicated Hand Cream",
+  "Size: 75g/2.6oz",
+  "Save: 25%",
+  469.0,
+  "626.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+console.log(d1);
+arr[1].push(d1);
+
 let aradata = arr[1];
-console.log(arr[0]);
+console.log("arr[1]", arr[1]);
+console.log("arr", arr);
 document.querySelector("#crt_count_of_prod").innerText = arr[1].length;
 document.querySelector("#cat_catshow").innerText = arr[0];
 document.querySelector("#cat_redcatname").innerText = arr[0];
@@ -141,13 +199,13 @@ let shodata = (aradata) => {
 
     let pricep = document.createElement("p");
 
-    let calprice = elem.pricce;
-    calprice = calprice.toFixed(2);
+    let calprice = elem.price;
+    // calprice = calprice.toFixed(2);
 
     // let calprice = elem.price;
     // calprice = calprice.toFixed(2);
 
-    pricep.innerText = `Rs .${pricce}`;
+    pricep.innerText = `Rs .${calprice}`;
     pricep.id = "crt_p_price";
     pricep.addEventListener("click", () => {
       tempsavetodesc(elem);
@@ -174,7 +232,7 @@ let shodata = (aradata) => {
     ratingp.id = "crt_p_ratingstar";
 
     let proimg = document.createElement("img");
-    proimg.src = elem.img;
+    proimg.src = elem.image1;
     proimg.id = "crt_productimage";
     proimg.addEventListener("click", () => {
       tempsavetodesc(elem);
