@@ -127,6 +127,9 @@ body {
   /* margin-left: auto; */
   /* margin-right: auto; */
 }
+#crt_topbranchildren{
+ /* margin-right: 100px; */
+}
 
 #crt_tabulardata {
   padding-top: 16px;
@@ -141,12 +144,14 @@ body {
 }
 
 #crt_tabulardata > div {
-  width: 100%;
+  /* width: 100%; */
   /* text-align: left; */
   margin-left: 10%;
-  margin-right: 10%;
+  /* margin-right: 90px; */
+
   color: white;
   font-size: 14px;
+  /* padding-right: 100px; */
 }
 
 #crt_topbranchildren button {
@@ -158,6 +163,10 @@ body {
   border-radius: 5px;
   height: 28px;
   font-weight: 600;
+  margin-bottom: -30px;
+}
+#crt_topbranchildren button:hover{
+  background-color: rgb(231, 231, 231);
 }
 
 #crt_countandcat {
@@ -379,3 +388,6 @@ label{
   box-sizing: border-box;
 } */
 
+#crt_topbranchildren:hover{
+color: #ef1275;
+}
