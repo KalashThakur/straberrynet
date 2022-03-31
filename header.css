@@ -96,6 +96,7 @@ cursor: pointer;
   }
   .account-Singin{
       margin-bottom: 4px;
+      cursor: pointer;
   }
  .whitelist-icon{background: url(https://a.cdnsbn.com/images/common/2016CommonSprite.png) -349px -315px no-repeat;
   border-radius: 0;
