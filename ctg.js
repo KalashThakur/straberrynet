@@ -7,7 +7,7 @@ let arr = [
       desc: "Whitening Mint Toothpaste With Xylitol",
       size: "Size: 85ml/4.2oz",
       save: "SAVE 19%",
-      pricce: 859.0,
+      price: 859.0,
       strikedprice: "1,054.00",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
@@ -18,7 +18,7 @@ let arr = [
       desc: "Whitening Mint Toothpaste With Xylitol",
       size: "Size: 85ml/4.2oz",
       save: "SAVE 19%",
-      pricce: 859.0,
+      price: 859.0,
       strikedprice: "1,054.00",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
@@ -29,7 +29,7 @@ let arr = [
       desc: "Whitening Mint Toothpaste With Xylitol",
       size: "Size: 85ml/4.2oz",
       save: "SAVE 19%",
-      pricce: 859.0,
+      price: 859.0,
       strikedprice: "1,054.00",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★★",
@@ -40,7 +40,7 @@ let arr = [
       desc: "Whitening Mint Toothpaste With Xylitol",
       size: "Size: 85ml/4.2oz",
       save: "SAVE 19%",
-      pricce: 859.0,
+      price: 859.0,
       strikedprice: "1,054.00",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
@@ -51,7 +51,7 @@ let arr = [
       desc: "Whitening Mint Toothpaste With Xylitol",
       size: "Size: 85ml/4.2oz",
       save: "SAVE 19%",
-      pricce: 859.0,
+      price: 859.0,
       strikedprice: "1,054.00",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
@@ -63,7 +63,7 @@ let arr = [
       desc: "Whitening Mint Toothpaste With Xylitol",
       size: "Size: 85ml/4.2oz",
       save: "SAVE 19%",
-      pricce: 859.0,
+      price: 859.0,
       strikedprice: "1,054.00",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
@@ -74,7 +74,7 @@ let arr = [
       desc: "Whitening Mint Toothpaste With Xylitol",
       size: "Size: 85ml/4.2oz",
       save: "SAVE 19%",
-      pricce: 859.0,
+      price: 859.0,
       strikedprice: "1,054.00",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★☆☆",
@@ -140,9 +140,14 @@ let shodata = (aradata) => {
     unit.innerText = "Rs";
 
     let pricep = document.createElement("p");
+
     let calprice = elem.pricce;
     calprice = calprice.toFixed(2);
-    pricep.innerText = `Rs .${calprice}`;
+
+    // let calprice = elem.price;
+    // calprice = calprice.toFixed(2);
+
+    pricep.innerText = `Rs .${pricce}`;
     pricep.id = "crt_p_price";
     pricep.addEventListener("click", () => {
       tempsavetodesc(elem);
