@@ -1,4 +1,4 @@
-function getdata(url,url1,url2,name,description,price,extraof,rating,size,strikedprice)
+function getdata(url,name,description,price,extraof,rating,size,strikedprice,url1,url2)
 {
     this.img = url;   
     this.title = name;
@@ -12,7 +12,9 @@ function getdata(url,url1,url2,name,description,price,extraof,rating,size,strike
 
     this.img1 = url1;
     this.img2 = url2;
+    
 }
+
 
 let menSkincare_data = [];
 
