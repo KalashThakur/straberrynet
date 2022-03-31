@@ -93,3 +93,35 @@ let data48 = new getdata('https://b.cdnsbn.com/images/products/250/24493901139.j
 
 DaySepicalDataArr.push(data41,data42,data43,data44,data45,data46,data47,data48);
 localStorage.setItem("DaySpecialData",JSON.stringify(DaySepicalDataArr));
+
+
+
+let  BestSellersArr1 = [];
+let  BestSellersArr2 = [];
+
+let b1 = new getdata('https://a.cdnsbn.com/images/products/250/20079465901.jpg','EltaMD','UV Clear Facial Sunscreen SPF 46 - For Skin Types Prone Acne','Rs .2,732.50')
+let b2 = new getdata('https://a.cdnsbn.com/images/products/16305336601.jpg','Embryolisse','Lait Creme Concentrate (24-Hour Miracle Cream)','Rs .1,991.00')
+let b3 = new getdata('https://a.cdnsbn.com/images/products/17059239101.jpg','Frownies','Facial Patches (For Forehead & Between Eyes) ','Rs .2,030.00')
+let b4 = new getdata('https://a.cdnsbn.com/images/products/10147781401.jpg','Shiseido','Future Solution LX Extra Rich Cleansing Foam ','Rs .4,606.00')
+
+
+let b5 = new getdata('https://a.cdnsbn.com/images/products/23615480102.jpg','Christian Dior','Dior Addict Lip Maximizer (Hyaluronic Lip Plumper) ','Rs .3,513.00')
+let b6 = new getdata('https://a.cdnsbn.com/images/products/22665196301.jpg','Skin Ceuticals','C E Ferulic High Potency Triple Antioxidant Treatment ','Rs .14,403.50')
+let b7 = new getdata('https://a.cdnsbn.com/images/products/22568881401.jpg','Shiseido','Anessa Perfect UV Sunscreen Skincare Milk SPF50+ PA++++ ','Rs .3,825.50')
+let b8 = new getdata('https://a.cdnsbn.com/images/products/10837781401.jpg','Shiseido','Urban Environment UV Protection Cream Plus SPF 50 (For Face & Body) ','Rs .2,498.50');
+
+BestSellersArr1.push(b1,b2,b3,b4);
+BestSellersArr2.push(b5,b6,b7,b8)
+
+localStorage.setItem("BestSellerData1",JSON.stringify(BestSellersArr1));
+localStorage.setItem("BestSellerData2",JSON.stringify(BestSellersArr2));
+
+// best deals
+let BestDealsArr = [];
+let bd1 = new getdata('https://a.cdnsbn.com/images/products/250/22027414601.jpg','Avene','Hydrance Rich Hydrating Cream - For Dry to Very Dry Sensitive Skin 40ml/1.3oz','Rs .2,615.50')
+let bd2 = new getdata('https://a.cdnsbn.com/images/products/250/05072793401.jpg','Chantecaille','Stress Repair Concentrate Eye Cream 15ml/0.5oz','Rs .17,135.50')
+let bd3 = new getdata('https://a.cdnsbn.com/images/products/250/07745580602.jpg','Estee Lauder','Double Wear Zero Smudge Lengthening Mascara - # 01 Black 6ml/0.24oz','Rs .2,537.50')
+let bd4 = new getdata('https://a.cdnsbn.com/images/products/250/23345796301.jpg','Skin Ceuticals','Hydrating B5 - Moisture Enhancing Fluid 30ml/1oz','Rs .6,870.00');
+
+BestDealsArr.push(bd1,bd2,bd3,bd4);
+localStorage.setItem("BestDealsData",JSON.stringify(BestDealsArr));

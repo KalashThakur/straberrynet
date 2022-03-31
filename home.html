@@ -102,7 +102,28 @@
     text-align: center;
     gap: 15px;
 }
-
+#bestdeal{
+    margin-top: 80px;
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    gap: 15px;
+   
+  
+}
+#bestdeal>.productind{
+    margin-top: 20px;
+    border: 5px solid red;
+    background-color: white;
+    
+}
+#trial{
+    background-color: #dcd5e0;
+    width: 100%;
+    padding-bottom: 70px;
+}
 #dayspecial{
     margin-top: 80px;
     width: 75%;
@@ -174,6 +195,7 @@
 }
 
     </style>
+    <link rel="stylesheet" href="slider.css">
 </head>
 <body>
     <div class="navbar">
@@ -237,13 +259,68 @@
                 <h2 id="promo"><span>DAILY SPECIALS</span></h2>
             </div>
             <div id="dayspecial"></div>
+            <div class="promoline">
+                <h2 id="promo"><span>BEST SELLERS</span></h2>
+            </div>
 
-        </div>
+
+            <div class="slider-container">
+                <div class="slider">
+                  <div class="slides">
+                    <div id="slides__1" class="slide">
+                      <span class="slide__text" id="one"></span>
+                      <a class="slide__prev" href="#slides__4" title="Next"></a>
+                      <a class="slide__next" href="#slides__2" title="Next"></a>
+                    </div>
+                    <div id="slides__2" class="slide">
+                      <span class="slide__text" id="two"></span>
+                      <a class="slide__prev" href="#slides__1" title="Prev"></a>
+                      <a class="slide__next" href="#slides__3" title="Next"></a>
+                    </div>
+                    <!-- <div id="slides__3" class="slide">
+                      <span class="slide__text">3</span>
+                      <a class="slide__prev" href="#slides__2" title="Prev"></a>
+                      <a class="slide__next" href="#slides__4" title="Next"></a>
+                    </div>
+                    <div id="slides__4" class="slide">
+                      <span class="slide__text">4</span>
+                      <a class="slide__prev" href="#slides__3" title="Prev"></a>
+                      <a class="slide__next" href="#slides__1" title="Prev"></a>
+                    </div> -->
+                  </div>
+                  <div class="slider__nav">
+                    <a class="slider__navlink" href="#slides__1"></a>
+                    <a class="slider__navlink" href="#slides__2"></a>
+                    <!-- <a class="slider__navlink" href="#slides__3"></a>
+                    <a class="slider__navlink" href="#slides__4"></a> -->
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+            <div id="trial">
+            <div class="promoline" style="color: #65318f ;padding-top: 0.5px;">
+                <h2 id="promo" style="border-bottom: 5px solid #65318f;"><span style="background-color: #dcd5e0;">BEST DEALS</span></h2></div>
+                
+                    <div id="bestdeal"></div>
+            </div>
+
+        
             
 
            
 
         </div>
+
+
+        <!-- Slider------------------ -->
+    
+          
+          <!-- <a href="https://alvarotrigo.com/blog/create-a-slider-with-pure-CSS/" target="_blank" class="read-article">
+            Read the article 👉
+          </a> -->
+        <!-- ------------------------------------------------ -->
     </div>
     <div class="footer">
 
@@ -330,11 +407,17 @@
    var data4=JSON.parse(localStorage.getItem("hair_prod"))
    var data5=JSON.parse(localStorage.getItem("bundle_joy"))
    var data6=JSON.parse(localStorage.getItem("DaySpecialData"))
+   var data7=JSON.parse(localStorage.getItem("BestSellerData1"))
+   var data8=JSON.parse(localStorage.getItem("BestSellerData2"))
+   var data9=JSON.parse(localStorage.getItem("BestDealsData"))
    showdata("products",data1)
    showdata("extra",data2)
    showdata("scents",data3)
    showdata("hair",data4)
    showdata("bundlejoy",data5)
    showdata("dayspecial",data6)
+   showdata("one",data7)
+   showdata("two",data8)
+   showdata("bestdeal",data9)
 
 </script>
