@@ -123,7 +123,7 @@ function getdata(
 }
 
 let d1 = new getdata(
-  "https://a.cdnsbn.com/images/products/msn/23802077203.jpg",
+  "https://d.cdnsbn.com/images/products/250/23802077203.jpg",
   "https://a.cdnsbn.com/images/products/msn/23802077203-1.jpg",
   "https://a.cdnsbn.com/images/products/msn/23802077203-2.jpg",
   "KISS ME",
@@ -135,8 +135,290 @@ let d1 = new getdata(
   "Extra 8% Off The Entire Site",
   "★★★★☆"
 );
-console.log(d1);
-arr[1].push(d1);
+let d2 = new getdata(
+  "https://b.cdnsbn.com/images/products/250/25682680401.jpg",
+  "https://a.cdnsbn.com/images/products/msn/25682680401-1.jpg",
+  "https://a.cdnsbn.com/images/products/msn/25682680401-2.jpg",
+  "CLINIQUE",
+  "Moisture Surge 72-Hour Auto-Replenishing Hydrator (Limited Edition)",
+  "Size: 75ml/2.5oz",
+  "Save: 21%",
+  3324.0,
+  "4,224.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let d3 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/23802177203.jpg",
+  "https://a.cdnsbn.com/images/products/msn/23802177203-1.jpg",
+  "",
+  "KISS ME",
+  "Medicated Hand Cream",
+  "Size: 65g/2.2oz",
+  "Save: 14%",
+  469.0,
+  "548.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let d4 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/21495580301.jpg",
+  "https://a.cdnsbn.com/images/products/msn/21495580301-1.jpg",
+  "https://a.cdnsbn.com/images/products/msn/21495580301-2.jpg",
+  "CLARINS",
+  "Double Serum (Hydric + Lipidic System) Complete Age Control Concentrate",
+  "Size: 30ml/1oz ",
+  "Save: 14%",
+  7588.0,
+  "8,588.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let d5 = new getdata(
+  "https://d.cdnsbn.com/images/products/250/04873792001.jpg",
+  "https://a.cdnsbn.com/images/products/msn/04873792001-1.jpg",
+  "https://a.cdnsbn.com/images/products/msn/04873792001-1.jpg",
+  "DR. HAUSCHKA",
+  "Lip Care Stick",
+  "Size: 4.9g/0.16oz ",
+  "Save: 17%",
+  978.0,
+  "1,173.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let d6 = new getdata(
+  "https://d.cdnsbn.com/images/products/250/20457342003.jpg",
+  "https://a.cdnsbn.com/images/products/msn/20457342003-1.jpg",
+  "https://a.cdnsbn.com/images/products/msn/20457342003-2.jpg",
+  "MARIO BADESCU",
+  "A.H.A. Botanical Body Soap - For All Skin Types",
+  "Size: 236ml/8oz ",
+  "Save: 10%",
+  900.0,
+  "1200.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let d7 = new getdata(
+  "https://a.cdnsbn.com/images/products/msn/11930580303.jpg",
+  "https://a.cdnsbn.com/images/products/msn/11930580303-1.jpg",
+  "https://a.cdnsbn.com/images/products/msn/11930580303-1.jpg",
+  "CLARINS",
+  "Gentle Care Roll On Deodorant",
+  "Size: 50ml/1.7oz",
+  "Save: 10%",
+  1995.0,
+  "2,200.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let d8 = new getdata(
+  "https://a.cdnsbn.com/images/products/250/08070680901.jpg",
+  "https://a.cdnsbn.com/images/products/msn/08070680901-1.jpg",
+  "https://a.cdnsbn.com/images/products/msn/08070680901-2.jpg",
+  "LANCOME",
+  "Mousse Eclat Express Clarifying Self-Foaming Cleanser",
+  "Size: 200ml/6.7oz",
+  "",
+  2699.0,
+  "2,999.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let d9 = new getdata(
+  "https://b.cdnsbn.com/images/products/250/22665196301.jpg",
+  "https://a.cdnsbn.com/images/products/msn/22665196301-1.jpg",
+  "https://a.cdnsbn.com/images/products/msn/22665196301-2.jpg",
+  "Skin Ceuticals",
+  "C E Ferulic High Potency Triple Antioxidant Treatment",
+  "Size: 30ml/1oz",
+  "",
+  14432.0,
+  "16,432.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let d10 = new getdata(
+  "https://b.cdnsbn.com/images/products/250/18677708101.jpg",
+  "https://a.cdnsbn.com/images/products/msn/18677708101-1.jpg",
+  "https://a.cdnsbn.com/images/products/msn/18677708101-2.jpg",
+  "LA ROCHE POSAY",
+  "Cicaplast Baume B5 Soothing Repairing Balm",
+  "Size: 100ml/3.3oz ",
+  "Save: 15%",
+  1995.0,
+  "2,347.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let d11 = new getdata(
+  "https://b.cdnsbn.com/images/products/250/01348880501.jpg",
+  "https://a.cdnsbn.com/images/products/msn/01348880501-1.jpg",
+  "https://a.cdnsbn.com/images/products/msn/01348880501-2.jpg",
+  "ELIZABETH ARDEN",
+  "Eight Hour Lipcare Stick",
+  "Size: 3.7g/0.13oz ",
+  "Save: 40%",
+  1134.0,
+  "1,877.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+
+let d12 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/18677808101.jpg",
+  "https://a.cdnsbn.com/images/products/msn/18677808101-1.jpg",
+  "https://a.cdnsbn.com/images/products/msn/18677808101-2.jpg",
+  "La Roche Posay",
+  "Cicaplast Baume B5 Soothing Repairing Balm ",
+  "40ml/1.35oz",
+  "",
+  1730.0,
+  "",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let d13 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/20621976701.jpg",
+  "https://a.cdnsbn.com/images/products/msn/20621976701-1.jpg",
+  "https://a.cdnsbn.com/images/products/msn/20621976701-2.jpg",
+  "Biotherm",
+  "Biosource 24H Hydrating & Tonifying Toner - For Normal/Combinatio",
+  "400ml/13.52oz",
+  "SAVE 14%",
+  2347.0,
+  "2,738.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let d14 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/23954980501.jpg",
+  "https://a.cdnsbn.com/images/products/msn/23954980501-1.jpg",
+  "https://a.cdnsbn.com/images/products/msn/23954980501-2.jpg",
+  "Elizabeth Arden",
+  "Ceramide Retinol Capsules - Line Erasing Night Serum ",
+  " 60 Caps",
+  "SAVE 15%",
+  5554.0,
+  "6,805.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let d15 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/17974943503.jpg",
+  "https://a.cdnsbn.com/images/products/msn/23954980501-1.jpg",
+  "https://a.cdnsbn.com/images/products/msn/17974943503-2.jpg",
+  "3W Clinic",
+  "Hand Cream - Collagen ",
+  "100ml/3.38oz",
+  "SAVE 38%",
+  313.0,
+  "508.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let d16 = new getdata(
+  "https://d.cdnsbn.com/images/products/250/03191321601.jpg",
+  "https://a.cdnsbn.com/images/products/msn/17974943503-2.jpg",
+  "https://a.cdnsbn.com/images/products/msn/17974943503-2.jpg",
+  "Dermalogica",
+  "UltraCalming Cleanser",
+  "500ml/16.9oz",
+  "SAVE 10%",
+  4498.0,
+  "5,006.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let d17 = new getdata(
+  "https://d.cdnsbn.com/images/products/250/01347880501.jpg",
+  "https://a.cdnsbn.com/images/products/msn/20789765901-1.jpg",
+  "https://a.cdnsbn.com/images/products/msn/20789765901-2.jpg",
+  "EltaMD",
+  "UV Clear Facial Sunscreen SPF 46 - For Skin Types Prone To Acne, Rosa",
+  "48g/1.7oz",
+  "SAVE 35%",
+  2777.0,
+  "4,302.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let d18 = new getdata(
+  "https://d.cdnsbn.com/images/products/250/01312680303.jpg",
+  "",
+  "",
+  "Elizabeth Arden",
+  "Visible Difference Refining Moisture Cream Complex",
+  "75ml/2.5oz",
+  "",
+  4302.0,
+  "5,241.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let d22 = new getdata(
+  "https://d.cdnsbn.com/images/products/250/17087308201.jpg",
+  "https://a.cdnsbn.com/images/products/msn/20789765901-2.jpg",
+  "https://a.cdnsbn.com/images/products/msn/01347880501-2.jpg",
+  "Clarins",
+  "Body Treatment Oil-Tonic ",
+  "100ml/3.3oz",
+  "SAVE 18%",
+  4654.0,
+  "5,397.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let d19 = new getdata(
+  "https://a.cdnsbn.com/images/products/250/20789765901.jpg",
+  "https://a.cdnsbn.com/images/products/msn/01347880501-2.jpg",
+  "",
+  "Clinique",
+  "Re-Boost Comforting Hydrating Cream - For Dry & Sensitiv",
+  "50ml/1.7oz",
+  "SAVE 14%",
+  3637.0,
+  "4,200.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let d20 = new getdata(
+  "https://a.cdnsbn.com/images/products/250/17727242001.jpg",
+  "https://a.cdnsbn.com/images/products/msn/25353480401-2.jpg",
+  "",
+  "Obagi",
+  "BAGI360 Retinol ",
+  "0.5 30ml/1oz",
+  "",
+  1799.0,
+  "",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+
+// console.log(d1);
+arr[1].push(
+  d1,
+  d2,
+  d3,
+  d4,
+  d5,
+  d6,
+  d8,
+  d9,
+  d10,
+  d11,
+  d12,
+  d13,
+  d14,
+  d15,
+  d16,
+  d17,
+  d18,
+  d19,
+  d20
+);
 
 let aradata = arr[1];
 console.log("arr[1]", arr[1]);
@@ -297,3 +579,28 @@ let tempsavetodesc = (elem) => {
 // crt_parrentforappendingdata>div
 // document.querySelector("#crt_navbar").innerHTML = navbar();
 // document.querySelector("#crt_fotter").innerHTML = footer();
+// let cd = new getdata();
+// let c1 = new getdata();
+// let c2 = new getdata();
+// let c3 = new getdata();
+// let c4 = new getdata();
+// let c5 = new getdata();
+// let c6 = new getdata();
+// let c7 = new getdata();
+// let c8 = new getdata();
+// let c9 = new getdata();
+// let c10 = new getdata();
+// let c11 = new getdata();
+// let c12 = new getdata();
+// let c13 = new getdata();
+// let c14 = new getdata();
+// let c15 = new getdata();
+// let c16 = new getdata();
+// let c17 = new getdata();
+// let c18 = new getdata();
+// let c19 = new getdata();
+// let c20 = new getdata();
+// let c21 = new getdata();
+// let c22 = new getdata();
+// let c23 = new getdata();
+// let c24 = new getdata();
