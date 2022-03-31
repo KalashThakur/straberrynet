@@ -222,6 +222,9 @@
     var desc=document.createElement("div")
     desc.className="desc"
     desc.innerText=elem.desc
+    var discount=document.createElement("div")
+    discount.className="discounts"
+    discount.innerText="save "+(Math.random()*30).toFixed(0)+"%"
     var price=document.createElement("div")
         price.innerText=elem.price
         price.className="price"
@@ -229,7 +232,7 @@
         var button=document.createElement("button")
         button.innerText="Add To Bag"
         button.className="bag"
-        product_ind.append(image,title,desc,price,button)
+        product_ind.append(image,title,desc,discount,price,button)
         idname.append(product_ind)
 
        })
@@ -309,5 +312,8 @@ var x = setInterval(function() {
    showdata("bestdeal",data9)
    showdata("topspecial",data10)
    showdata("newArrival",data11)
+
+
+  
 
 </script>

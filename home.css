@@ -28,6 +28,14 @@
  /* margin-right: 250px; */
  margin: auto;
 }
+.discounts{
+    color: red;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: start;
+    font-family: sans-serif;
+    /* font-weight: bold; */
+}
 
 #promo {
 width: 80%; 
@@ -35,6 +43,10 @@ width: 80%;
 text-align: center; 
 border-bottom: 5px solid #000; 
 line-height: 0.1em;
+letter-spacing: 3px;
+font-family: Lato, sans-serif;
+font-size: 19px;
+word-spacing: 6px;
 margin: 40px 160px 20px;
 
 } 
@@ -105,7 +117,8 @@ gap: 15px;
 }
 #bestdeal>.productind{
 margin-top: 20px;
-border: 5px solid red;
+border: 5px solid linear-gradient(#662d91, #e2195c), linear-gradient(#662d91, #e2195c);
+
 background-color: white;
 
 }
