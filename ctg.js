@@ -83,14 +83,14 @@ let arr = [
 ];
 let aradata = arr[1];
 console.log(arr[0]);
-document.querySelector("#crt_count_of_prod").innerText = arr.length;
+document.querySelector("#crt_count_of_prod").innerText = arr[1].length;
 document.querySelector("#cat_catshow").innerText = arr[0];
 document.querySelector("#cat_redcatname").innerText = arr[0];
 document.querySelector("#cat_cath1").innerText = arr[0];
 document.querySelector("#cat_subcat_title").innerText = arr[0];
 document.querySelector("#crt_main_vat_header").innerText = arr[0];
 document.querySelector("#crt_topbranchildrenmain").innerText =
-  " Top" + " " + arr[0] + " " + "brands";
+  " Top" + " " + arr[0] + " " + "Brands";
 let shodata = (aradata) => {
   let parofappend = document.querySelector("#crt_parrentforappendingdata");
 
@@ -100,9 +100,7 @@ let shodata = (aradata) => {
     // console.log(element.title)
     let div = document.createElement("div");
     div.id = "crt_subcontain";
-    div.addEventListener("click", () => {
-      tempsavetodesc(elem);
-    });
+
     let wishdiv = document.createElement("div");
     wishdiv.id = "crt_addtowish";
 
@@ -115,30 +113,51 @@ let shodata = (aradata) => {
     let pname = document.createElement("p");
     pname.innerText = elem.title;
     pname.id = "crt_p_titile";
+    pname.addEventListener("click", () => {
+      tempsavetodesc(elem);
+    });
 
     let descc = document.createElement("p");
     descc.innerText = elem.desc;
     descc.id = "crt_p_decriptin";
-
+    descc.addEventListener("click", () => {
+      tempsavetodesc(elem);
+    });
     let sizep = document.createElement("p");
     sizep.innerText = elem.size;
     sizep.id = "crt_p_size";
-
+    sizep.addEventListener("click", () => {
+      tempsavetodesc(elem);
+    });
     let savep = document.createElement("p");
     savep.innerText = elem.save;
     savep.id = "crt_p_save";
+    savep.addEventListener("click", () => {
+      tempsavetodesc(elem);
+    });
 
     let unit = document.createElement("span");
     unit.innerText = "Rs";
 
     let pricep = document.createElement("p");
-    let calprice = elem.price;
+
+    let calprice = elem.pricce;
+    calprice = calprice.toFixed(2);
+
+    // let calprice = elem.price;
     // calprice = calprice.toFixed(2);
-    pricep.innerText = `Rs .${calprice}`;
+
+    pricep.innerText = `Rs .${pricce}`;
     pricep.id = "crt_p_price";
+    pricep.addEventListener("click", () => {
+      tempsavetodesc(elem);
+    });
 
     let striked = document.createElement("div");
     striked.id = "crt_p_strikeddiv";
+    striked.addEventListener("click", () => {
+      tempsavetodesc(elem);
+    });
     let spanforrp = document.createElement("p");
     spanforrp.innerText = `RRP`;
     spanforrp.id = "crt_p_rrpinitilize";
@@ -157,6 +176,9 @@ let shodata = (aradata) => {
     let proimg = document.createElement("img");
     proimg.src = elem.img;
     proimg.id = "crt_productimage";
+    proimg.addEventListener("click", () => {
+      tempsavetodesc(elem);
+    });
 
     let extp = document.createElement("p");
     extp.innerText = elem.extraof;
@@ -184,6 +206,8 @@ let shodata = (aradata) => {
     );
     parofappend.append(div);
   });
+  let arr = JSON.parse(localStorage.getItem("cart_iteam")) || [];
+  document.querySelector("#crt_counter").innerText = arr.length;
 };
 shodata(aradata);
 import { navbar, footer } from "../components/header.js";
@@ -191,13 +215,20 @@ import { navbar, footer } from "../components/header.js";
 
 let adtocartfunc = (elem) => {
   let arr = JSON.parse(localStorage.getItem("cart_iteam")) || [];
-  arr.push(elem);
-
+  let flag = true;
   console.log(arr);
-  localStorage.setItem("cart_iteam", JSON.stringify(arr));
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].title === elem.title) {
+      flag = false;
+    }
+  }
+  if (flag === true) {
+    arr.push(elem);
+    localStorage.setItem("cart_iteam", JSON.stringify(arr));
+    document.querySelector("#crt_counter").innerText = arr.length;
+  }
 };
 let tempsavetodesc = (elem) => {
-  // console.log("gggggggggggggg")
   let arr = [];
   arr.push(elem);
 
