@@ -3,8 +3,8 @@ let arr = [
   [
     {
       image1: "https://a.cdnsbn.com/images/products/250/23141000007.jpg",
-      img2: "https://a.cdnsbn.com/images/products/msn/23141000007-1.jpg",
-      img3: "https://a.cdnsbn.com/images/products/msn/23141000007-2.jpg",
+      image2: "https://a.cdnsbn.com/images/products/msn/23141000007-1.jpg",
+      image3: "https://a.cdnsbn.com/images/products/msn/23141000007-2.jpg",
       title: "Marvis",
       desc: "Whitening Mint Toothpaste With Xylitol",
       size: "Size: 85ml/4.2oz",
@@ -16,8 +16,8 @@ let arr = [
     },
     {
       image1: "https://a.cdnsbn.com/images/products/250/24714281301.jpg",
-      img2: "https://a.cdnsbn.com/images/products/msn/24714281301-1.jpg",
-      img3: "https://a.cdnsbn.com/images/products/msn/24714281301-2.jpg",
+      image2: "https://a.cdnsbn.com/images/products/msn/24714281301-1.jpg",
+      image3: "https://a.cdnsbn.com/images/products/msn/24714281301-2.jpg",
       title: "Timeless Skin Care",
       desc: "20% Vitamin C Serum + Vitamin E + Ferulic Acid",
       size: "Size: 30ml/1oz",
