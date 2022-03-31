@@ -1,15 +1,17 @@
-function getdata(url,name,description,price)
+function getdata(url,url1,url2,url3,name,description,price,extraof,rating,save,size,strikedprice)
 {
-    this.image = url;
-    this.name = name;
-    this.description = description;
+    this.image = url;   
+    this.title = name;
+    this.desc = description;
     this.price = price;
+
+    
 }
 
 let haircare_data = [];
 
-let d1 = new getdata("https://a.cdnsbn.com/images/products/250/21116099444.jpg","Moroccanoil","Moroccanoil Treatment - Original (For All Hair Types) 200ml/6.8oz","Rs .6,180.00");
-let d2 = new getdata("https://a.cdnsbn.com/images/products/250/25402085944.jpg","Olaplex","No. 4 Bond Maintenance Shampoo 250ml/8.5oz","Rs. 2,660.00");
+let d1 = new getdata("https://a.cdnsbn.com/images/products/250/21116099444.jpg","Moroccanoil","Moroccanoil Treatment - Original (For All Hair Types) 200ml/6.8oz","6,180.00");
+let d2 = new getdata("https://a.cdnsbn.com/images/products/250/25402085944.jpg","Olaplex","No. 4 Bond Maintenance Shampoo 250ml/8.5oz",2,660.00);
 let d3 = new getdata("https://a.cdnsbn.com/images/products/250/25402185944.jpg","Olaplex","No. 4 Bond Maintenance Conditioner 250ml/8.5oz","Rs .2,660.00");
 let d4 = new getdata("https://a.cdnsbn.com/images/products/250/19168260044.jpg","Regenepure","Dr Hair & Scalp Treatment 224ml/8oz","Rs .2,347.00");
 let d5 = new getdata("https://b.cdnsbn.com/images/products/250/25401885944.jpg","Olaplex","No. 3 Hair Perfector 100ml/3.3oz","Rs .2,660.00");
