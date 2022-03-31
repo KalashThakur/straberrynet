@@ -30,4 +30,6 @@ let d10 = new getdata("https://c.cdnsbn.com/images/products/250/25647675116.jpg"
 let d11 = new getdata("https://a.cdnsbn.com/images/products/25643275116.jpg","Voluspa","Small Jar Candle - French Cade Lavender",1838,"Extra 8% Off The Entire Site","★★★★☆","Size: 156g/5.5oz","1,054.00","https://a.cdnsbn.com/images/products/25643275116-1.jpg","https://a.cdnsbn.com/images/products/25643275116-2.jpg")
 let d12 = new getdata("https://c.cdnsbn.com/images/products/250/25634475116.jpg","Voluspa","Small Jar Candle - French Cade Lavender",1838,"Extra 8% Off The Entire Site","★★★★☆","Size: 156g/5.5oz","1,054.00","https://a.cdnsbn.com/images/products/25643275116-1.jpg","https://a.cdnsbn.com/images/products/25643275116-2.jpg")
 
+homeScents_data.push(d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12);
 
+localStorage.setItem("homeScents_data",JSON.stringify(homeScents_data));
