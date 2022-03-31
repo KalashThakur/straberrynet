@@ -144,3 +144,26 @@ let thumbnails = document.getElementsByClassName("thumbnail");
 
     })
 
+
+    let arr2 = JSON.parse(localStorage.getItem("tempiteam")) || [];
+    console.log('arr2:', arr2)
+
+    let a = document.getElementById("heading").innerText = arr2[0].title;
+    // console.log('a:', a)
+    let b = document.getElementById("featured").src = arr2[0].img;
+    console.log('b:', b)
+
+    let c = document.getElementById("product_size").innerText = arr2[0].size;
+    console.log('c:', c)
+
+    let d = document.getElementById("product_name").innerText = arr2[0].desc;
+    console.log('d:', d)
+
+    let e = document.querySelector(".intPrice").innerText = arr2[0].price;
+    console.log('e:', e)
+
+    let f = document.querySelector(".strikedoff_price").innerText = arr2[0].strikedprice;
+    console.log('f:', f)
+
+    let g = document.querySelector(".offer").innerText = arr2[0].extraof;
+    console.log('g:', g)
