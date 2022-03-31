@@ -37,7 +37,7 @@ var data17=new getdata("https://a.cdnsbn.com/images/products/250/14514126106.jpg
 var data18=new getdata("https://a.cdnsbn.com/images/products/250/25920468106.jpg","Anna Sui","Sky Eau De Toilette Spray  50ml/1.7oz","Rs 4,606.00")
 var data19=new getdata("https://a.cdnsbn.com/images/products/250/24265135005.jpg","Bvlgari","Man Wood Neroli Eau De Parfum Spray  100ml/3.4oz","Rs 7,729.00")
 var data20=new getdata("https://a.cdnsbn.com/images/products/250/16513380606.jpg","Estee Lauder","Modern Muse Eau De Parfum Spray  50ml/1.7oz","Rs 5,387.00")
-var data21=new getdata("https://b.cdnsbn.com/images/products/250/22341380705.jpg","Guerlain","L'Homme Ideal L'Intense Eau De Parfum Spray   50ml/1.6oz","Rs&nbsp;.5,074.50")
+var data21=new getdata("https://b.cdnsbn.com/images/products/250/22341380705.jpg","Guerlain","L'Homme Ideal L'Intense Eau De Parfum Spray   50ml/1.6oz","Rs 5,074.50")
 var data22=new getdata("https://b.cdnsbn.com/images/products/250/12550740106.jpg","Hermes","Un Jardin Sur Le Toit Eau De Toilette Spray  100ml/3.3oz","Rs 8,978.00")
 var data23=new getdata("https://b.cdnsbn.com/images/products/250/26926889503.jpg","Jo Malone","English Pear & Freesia Exfoliating Shower Gel  200ml/6.7oz","Rs 4,059.50")
 var data24=new getdata("https://b.cdnsbn.com/images/products/250/22667689106.jpg","Serge Lutens","Fleurs D' Oranger Eau De Parfum Spray  100ml/3.3oz","Rs 10,070.50")
@@ -58,3 +58,119 @@ var data32=new getdata("	https://b.cdnsbn.com/images/products/250/12126793144.jp
 
 hair.push(data25,data26,data27,data28,data29,data30,data31,data32)
 localStorage.setItem("hair_prod",JSON.stringify(hair))
+
+var bundle_joy=[]
+
+let data33 = new getdata('https://a.cdnsbn.com/images/products/250/27342293753.jpg','BareMinerals','Smoothness Hydrating Cleansing Oil (Free: Natural Beauty r-PGA Dee... 180ml+6x20ml','Rs .2,576.50');
+
+let data34 = new getdata('https://a.cdnsbn.com/images/products/250/27343276753.jpg','Biotherm','Aquasource Everplump Plumping Smoothing Moisturizing Treatment 125ml (Fre... 2pcs','Rs .6,089.50')
+
+let data35 = new getdata('https://a.cdnsbn.com/images/products/250/27342026553.jpg','Bobbi Brown','Soothing Cleansing Oil (Free: Natural Beauty BIO UP Treatment Essence 200ml) 2pcs','Rs .4,606.00');
+
+let data36 = new getdata('https://a.cdnsbn.com/images/products/250/27003380414.jpg','Clinique','Dramatically Different Moisturizing Lotion+ - Very Dry to Dry Combination ... 2pcs','Rs .4,294.00');
+
+let data37 = new getdata('https://b.cdnsbn.com/images/products/250/27338282553.jpg','Darphin','Intral Daily Rescue Serum 50ml (Free: Natural Beauty Aromatic Cleaning Bal... 2pcs','Rs .7,104.00');
+
+let data38 = new getdata('https://b.cdnsbn.com/images/products/250/27342100053.jpg','Elemis','Pro-Collagen Super Serum (Free: Natural Beauty BIO UP Treatment Essence 20... 2pcs','Rs .4,918.50');
+
+let data39 = new getdata('https://b.cdnsbn.com/images/products/250/27338380553.jpg','Elizabeth Arden','Ceramide Vitamin C Capsules - Radiance Renewal Serum 60caps (Free: Natural... 2pcs,','Rs .5,777.00');
+
+let data40 = new getdata('https://b.cdnsbn.com/images/products/250/27338180953.jpg','Lancome','Confort Tonique 400ml (Free: Natural Beauty r-PGA Deep Hydration ... 400ml+6x 20ml','Rs .4,059.50');
+bundle_joy.push(data33,data34,data35,data36,data37,data38,data39,data40)
+localStorage.setItem("bundle_joy",JSON.stringify(bundle_joy))
+
+
+let DaySepicalDataArr = []
+
+let data41 = new getdata('https://a.cdnsbn.com/images/products/250/25862214639.jpg','Avene','Men Anti-Aging Hydrating Care (For Sensitive Skin) 50ml/1.69oz','Rs .1,952.00') 
+let data42 = new getdata('https://a.cdnsbn.com/images/products/250/26398093739.jpg','BareMinerals','Dew Mist Setting Spray 100ml/3.4oz','Rs .1,639.50') 
+let data43 = new getdata('https://a.cdnsbn.com/images/products/250/26296273037.jpg','D.S. & Durga','Cowboy Grass Eau De Parfum Spray 50ml/1.7oz','Rs .8,353.50')                      
+let data44 = new getdata('https://a.cdnsbn.com/images/products/250/26290647239.jpg','Dermaheal',`Stem C,'Rum HL Anti-Hair Loss Solution 5x5ml/0.17oz`,'Rs .15,535.50') 
+let data45 = new getdata('https://b.cdnsbn.com/images/products/250/22391239537.jpg','Dolce & Gabbana','Dolce Eau De Parfum Spray 150ml/5oz','Rs .6,011.50') 
+let data46 = new getdata('https://b.cdnsbn.com/images/products/250/25857233839.jpg','Gucci','Silk Priming Serum 30ml/1oz','Rs .3,552.00') 
+let data47 = new getdata('https://b.cdnsbn.com/images/products/250/23567090939.jpg','Nioxin','Density System 3 Scalp Therapy Conditioner (Colored Hair, Light T... 1000ml/33.8oz','Rs .3,045.00') 
+let data48 = new getdata('https://b.cdnsbn.com/images/products/250/24493901139.jpg','Sebastian','Seb Man The Protector Shaving Cream 135g/4.7oz','Rs .976.00') 
+
+DaySepicalDataArr.push(data41,data42,data43,data44,data45,data46,data47,data48);
+localStorage.setItem("DaySpecialData",JSON.stringify(DaySepicalDataArr));
+
+
+
+let  BestSellersArr1 = [];
+let  BestSellersArr2 = [];
+
+let b1 = new getdata('https://a.cdnsbn.com/images/products/250/20079465901.jpg','EltaMD','UV Clear Facial Sunscreen SPF 46 - For Skin Types Prone Acne','Rs .2,732.50')
+let b2 = new getdata('https://a.cdnsbn.com/images/products/16305336601.jpg','Embryolisse','Lait Creme Concentrate (24-Hour Miracle Cream)','Rs .1,991.00')
+let b3 = new getdata('https://a.cdnsbn.com/images/products/17059239101.jpg','Frownies','Facial Patches (For Forehead & Between Eyes) ','Rs .2,030.00')
+let b4 = new getdata('https://a.cdnsbn.com/images/products/10147781401.jpg','Shiseido','Future Solution LX Extra Rich Cleansing Foam ','Rs .4,606.00')
+
+
+let b5 = new getdata('https://a.cdnsbn.com/images/products/23615480102.jpg','Christian Dior','Dior Addict Lip Maximizer (Hyaluronic Lip Plumper) ','Rs .3,513.00')
+let b6 = new getdata('https://a.cdnsbn.com/images/products/22665196301.jpg','Skin Ceuticals','C E Ferulic High Potency Triple Antioxidant Treatment ','Rs .14,403.50')
+let b7 = new getdata('https://a.cdnsbn.com/images/products/22568881401.jpg','Shiseido','Anessa Perfect UV Sunscreen Skincare Milk SPF50+ PA++++ ','Rs .3,825.50')
+let b8 = new getdata('https://a.cdnsbn.com/images/products/10837781401.jpg','Shiseido','Urban Environment UV Protection Cream Plus SPF 50 (For Face & Body) ','Rs .2,498.50');
+
+BestSellersArr1.push(b1,b2,b3,b4);
+BestSellersArr2.push(b5,b6,b7,b8)
+
+localStorage.setItem("BestSellerData1",JSON.stringify(BestSellersArr1));
+localStorage.setItem("BestSellerData2",JSON.stringify(BestSellersArr2));
+
+// best deals
+let BestDealsArr = [];
+let bd1 = new getdata('https://a.cdnsbn.com/images/products/250/22027414601.jpg','Avene','Hydrance Rich Hydrating Cream - For Dry to Very Dry Sensitive Skin 40ml/1.3oz','Rs .2,615.50')
+let bd2 = new getdata('https://a.cdnsbn.com/images/products/250/05072793401.jpg','Chantecaille','Stress Repair Concentrate Eye Cream 15ml/0.5oz','Rs .17,135.50')
+let bd3 = new getdata('https://a.cdnsbn.com/images/products/250/07745580602.jpg','Estee Lauder','Double Wear Zero Smudge Lengthening Mascara - # 01 Black 6ml/0.24oz','Rs .2,537.50')
+let bd4 = new getdata('https://a.cdnsbn.com/images/products/250/23345796301.jpg','Skin Ceuticals','Hydrating B5 - Moisture Enhancing Fluid 30ml/1oz','Rs .6,870.00');
+
+BestDealsArr.push(bd1,bd2,bd3,bd4);
+localStorage.setItem("BestDealsData",JSON.stringify(BestDealsArr));
+
+
+// top brands
+var top_brands=[]
+
+function top_data(name,url_link){
+    this.name=name,
+    this.url_link=url_link
+
+}
+var img1=new top_data("img1","https://demo2020.strawberrynet.com/images/common/logo_YSL.png")
+var img2=new top_data("img2","https://demo2020.strawberrynet.com/images/common/logo_ChristianDior.png")
+var img3=new top_data("img3","https://demo2020.strawberrynet.com/images/common/logo_Lancome.png")
+var img4=new top_data("img4","https://demo2020.strawberrynet.com/images/common/logo_Clarins.png")
+var img5=new top_data("img5","https://demo2020.strawberrynet.com/images/common/logo_LaRochePosay.png")
+var img6=new top_data("img6","https://demo2020.strawberrynet.com/images/common/logo_EsteeLauder.png")
+var img7=new top_data("img7","https://demo2020.strawberrynet.com/images/common/logo_Moroccanoil.png")
+var img8=new top_data("img8","https://demo2020.strawberrynet.com/images/common/logo_Shiseido.png")
+var img9=new top_data("img9","https://demo2020.strawberrynet.com/images/common/logo_NARS.png")
+var img10=new top_data("img10","https://demo2020.strawberrynet.com/images/common/logo_Clinique.png")
+var img11=new top_data("img11","https://demo2020.strawberrynet.com/images/common/logo_bareMinerals.png")
+
+var img12=new top_data("img12","https://demo2020.strawberrynet.com/images/common/logo_LauraMercier.png")
+var img13=new top_data("img13","https://demo2020.strawberrynet.com/images/common/logo_Kerastase.png")
+var img14=new top_data("img14","https://demo2020.strawberrynet.com/images/common/logo_JMO.png")
+var img15=new top_data("img15","https://demo2020.strawberrynet.com/images/common/logo_Guerlain.png")
+top_brands.push(img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15)
+localStorage.setItem("top_brand",JSON.stringify(top_brands))
+
+// top 40 special
+let top40SpecialsArr = [];
+ let top1 = new getdata('https://a.cdnsbn.com/images/products/250/24288385903.jpg','Decleor','Bourrache Cica-Botanic Oil 100ml/3.38oz','Rs .1,522.50');
+ let top2 = new getdata('https://a.cdnsbn.com/images/products/250/24774580501.jpg','Elizabeth Arden','Ceramide Vitamin C Capsules - Radiance Renewal Serum 30caps','Rs .2,615.50');
+ let top3 = new getdata('https://a.cdnsbn.com/images/products/250/22933563101.jpg','Ella Bache','Nutridermologie Lab Magistral Cream-Mask Rejuvenium 27% Rescue Crea... 50ml/1.69oz','Rs .3,513.00');
+ let top4 = new getdata('https://a.cdnsbn.com/images/products/250/24467824702.jpg','Laura Mercier','Caviar Chrome Veil Lightweight Liquid Eye Colour 6ml/0.2oz','Rs .1,249.50');
+
+ top40SpecialsArr.push(top1,top2,top3,top4);
+ localStorage.setItem("top40SepicalsData",JSON.stringify(top40SpecialsArr));
+
+
+  // New Arrivalse
+  let newArrialsArr = [];
+  let na1 = new getdata('https://a.cdnsbn.com/images/products/250/26307826344.jpg','Bosley','Scalp Relief Anti-Dandruff Shampoo with Pyrithione Zinc 740ml/25oz','Rs .4,528.00')
+  let na2 = new getdata('https://a.cdnsbn.com/images/products/250/26164883301.jpg','La Prairie','Platinum Rare Haute-Rejuvenation Eye Elixir 15ml/0.5oz','Rs .77,675.50')
+  let na3 = new getdata('https://a.cdnsbn.com/images/products/250/26307404144.jpg','Philip Kingsley','Pure Blonde Booster Colour- Correcting Weekly Shampoo 500ml/16.9oz','Rs .3,864.50')
+  let na4 = new getdata('https://a.cdnsbn.com/images/products/250/25344264344.jpg','Redken','Nature + Science Color Extend Vibrancy Shampoo (For Color-Treated ... 300ml/10.1oz','Rs .2,069.00')
+  
+  newArrialsArr.push(na1,na2,na3,na4);
+  localStorage.setItem("newArrival", JSON.stringify(newArrialsArr));
