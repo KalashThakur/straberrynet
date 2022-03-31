@@ -171,12 +171,14 @@ let thumbnails = document.getElementsByClassName("thumbnail");
     let k = document.getElementById("main-img-1").src = arr2[0].image2;
     let j = document.getElementById("main-img-2").src = arr2[0].image3;
 
-    let p = document.getElementById("size").innerText = arr2[0].size;
+    document.getElementById("size").innerText = arr2[0].size;
 
-    // let t =  document.querySelector(".discount").innerText = arr2[0].save;
+    document.querySelector(".discount").innerText = arr2[0].save;
     // let h = document.querySelector(".offer").innerText = arr2[0].extraof;
-    // discount
     
+    document.querySelector(".flat-off").innerText = arr2[0].save;
+
+
     let arr3 = JSON.parse(localStorage.getItem("haircare_data")) || [];
     console.log('arr3:', arr3)
 

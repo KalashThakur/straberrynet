@@ -9,6 +9,7 @@ function getdata(url,name,description,price,extraof,rating,size,strikedprice,url
     this.rating = rating; 
     this.size = size;
     this.strikedprice = strikedprice;
+    // this.save = save;
 
     this.img1 = url1;
     this.img2 = url2;
