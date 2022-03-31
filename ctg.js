@@ -1,4 +1,4 @@
-arr = [
+let arr = [
   ["Skincare"],
   [
     {
@@ -82,24 +82,27 @@ arr = [
   ],
 ];
 let aradata = arr[1];
-console.log(arr[0])
+console.log(arr[0]);
 document.querySelector("#crt_count_of_prod").innerText = arr.length;
 document.querySelector("#cat_catshow").innerText = arr[0];
 document.querySelector("#cat_redcatname").innerText = arr[0];
 document.querySelector("#cat_cath1").innerText = arr[0];
 document.querySelector("#cat_subcat_title").innerText = arr[0];
 document.querySelector("#crt_main_vat_header").innerText = arr[0];
-document.querySelector("#crt_topbranchildrenmain").innerText = " Top"+" " + arr[0]+" "+"brands";
+document.querySelector("#crt_topbranchildrenmain").innerText =
+  " Top" + " " + arr[0] + " " + "brands";
 let shodata = (aradata) => {
   let parofappend = document.querySelector("#crt_parrentforappendingdata");
 
   // console.log(aradata.length);
 
-
   aradata.forEach((elem) => {
     // console.log(element.title)
     let div = document.createElement("div");
     div.id = "crt_subcontain";
+    div.addEventListener("click", () => {
+      tempsavetodesc(elem);
+    });
     let wishdiv = document.createElement("div");
     wishdiv.id = "crt_addtowish";
 
@@ -162,6 +165,10 @@ let shodata = (aradata) => {
     let addtocartbutn = document.createElement("button");
     addtocartbutn.innerText = "Add to Bag";
     addtocartbutn.id = "crt_addbtn";
+    addtocartbutn.addEventListener("click", () => {
+      adtocartfunc(elem);
+    });
+
     // let pricep = document.createElement("p");
     btnrtndiv.append(addtocartbutn, ratingp, extp);
     div.append(
@@ -179,5 +186,25 @@ let shodata = (aradata) => {
   });
 };
 shodata(aradata);
+import { navbar, footer } from "../components/header.js";
+// console.log(navbar);
 
-// console.log("★★☆☆");
+let adtocartfunc = (elem) => {
+  let arr = JSON.parse(localStorage.getItem("cart_iteam")) || [];
+  arr.push(elem);
+
+  console.log(arr);
+  localStorage.setItem("cart_iteam", JSON.stringify(arr));
+};
+let tempsavetodesc = (elem) => {
+  // console.log("gggggggggggggg")
+  let arr = [];
+  arr.push(elem);
+
+  console.log(arr);
+  localStorage.setItem("tempiteam", JSON.stringify(arr));
+  window.location.href = "./PRODUCT DESCRIPTION/1marvis.html";
+};
+// crt_parrentforappendingdata>div
+// document.querySelector("#crt_navbar").innerHTML = navbar();
+// document.querySelector("#crt_fotter").innerHTML = footer();
