@@ -1,6 +1,6 @@
-function getdata(img,name,description,price)
+function getdata(url,name,description,price)
 {
-    this.image = img;
+    this.image = url;
     this.name = name;
     this.description = description;
     this.price = price;
@@ -28,8 +28,19 @@ let d17 = new getdata("https://a.cdnsbn.com/images/products/250/23709517944.jpg"
 let d18 = new getdata("https://a.cdnsbn.com/images/products/250/18490600444.jpg","Kerastase","Discipline Fluidissime Complete Anti-Frizz Care (For All Unruly Hair) 150ml/5.1oz","Rs .3,012.00");
 let d19 = new getdata("https://a.cdnsbn.com/images/products/250/24359280309.jpg","Wet Brush","Pro Epic Quick Dry Detangler - # Rose Gold 1pc","Rs .1,017.00");
 let d20 = new getdata("https://a.cdnsbn.com/images/products/250/23337300044.jpg","Rene Furterer","Triphasic Progressive Anti-Hair Loss Ritual Anti-Hair Loss Treatment (Progressive Hair Loss)... 8x5.5ml/0.18oz","Rs .6,297.00");
+let d21 = new getdata("https://b.cdnsbn.com/images/products/250/16354900444.jpg","Kerastase","Nutritive Lait Vital Incredibly Light - Exceptional Nutrition Care (For Normal to Slightly Dry Hair) 1000ml/34oz","Rs .7,040.00");
+let d22 = new getdata("https://b.cdnsbn.com/images/products/250/18415600344.jpg","BioSilk","Silk Therapy Original 167ml/5.64oz","Rs .1,995.00");
+let d23 = new getdata("https://b.cdnsbn.com/images/products/250/23370300444.jpg","Kerastase","Elixir Ultime L'Huile Originale Versatile Beautifying Oil (Dull Hair) 100ml/3.4oz","Rs .4,263.50");
+let d24 = new getdata("https://b.cdnsbn.com/images/products/250/25468588744.jpg","Pelo Baum","Hair Revitalizing Shampoo 150ml/5oz","Rs .1,995.00");
+let d25 = new getdata("https://c.cdnsbn.com/images/products/250/24075999444.jpg","Moroccanoil","Moroccanoil Treatment - Original (For All Hair Types) 50ml/1.7oz ","Rs .2,425.00");
+let d26 = new getdata("https://c.cdnsbn.com/images/products/250/10672701144.jpg","Sebastian","Penetraitt Strengthening and Repair-Shampoo 1000ml/33.8oz","Rs .3,051.00");
+let d27 = new getdata("https://c.cdnsbn.com/images/products/250/23260800044.jpg","Rene Furterer","Forticea Leave-In Energizing Lotion (All Hair Types) 100ml/3.3oz","Rs .2,151.50");
+let d28 = new getdata("https://c.cdnsbn.com/images/products/250/26403985944.jpg","Olaplex","No. 0 Intensive Bond Building Treatment 155ml/5.2oz","Rs .2,660.00");
 
-haircare_data.push(d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20);
+
+
+
+haircare_data.push(d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d21,d22,d23,d24,d25,d26,d27,d28);
 console.log('haircare_data:', haircare_data)
 
 localStorage.setItem("haircare_data",JSON.stringify(haircare_data));
