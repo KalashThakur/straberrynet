@@ -125,3 +125,52 @@ let bd4 = new getdata('https://a.cdnsbn.com/images/products/250/23345796301.jpg'
 
 BestDealsArr.push(bd1,bd2,bd3,bd4);
 localStorage.setItem("BestDealsData",JSON.stringify(BestDealsArr));
+
+
+// top brands
+var top_brands=[]
+
+function top_data(name,url_link){
+    this.name=name,
+    this.url_link=url_link
+
+}
+var img1=new top_data("img1","https://demo2020.strawberrynet.com/images/common/logo_YSL.png")
+var img2=new top_data("img2","https://demo2020.strawberrynet.com/images/common/logo_ChristianDior.png")
+var img3=new top_data("img3","https://demo2020.strawberrynet.com/images/common/logo_Lancome.png")
+var img4=new top_data("img4","https://demo2020.strawberrynet.com/images/common/logo_Clarins.png")
+var img5=new top_data("img5","https://demo2020.strawberrynet.com/images/common/logo_LaRochePosay.png")
+var img6=new top_data("img6","https://demo2020.strawberrynet.com/images/common/logo_EsteeLauder.png")
+var img7=new top_data("img7","https://demo2020.strawberrynet.com/images/common/logo_Moroccanoil.png")
+var img8=new top_data("img8","https://demo2020.strawberrynet.com/images/common/logo_Shiseido.png")
+var img9=new top_data("img9","https://demo2020.strawberrynet.com/images/common/logo_NARS.png")
+var img10=new top_data("img10","https://demo2020.strawberrynet.com/images/common/logo_Clinique.png")
+var img11=new top_data("img11","https://demo2020.strawberrynet.com/images/common/logo_bareMinerals.png")
+
+var img12=new top_data("img12","https://demo2020.strawberrynet.com/images/common/logo_LauraMercier.png")
+var img13=new top_data("img13","https://demo2020.strawberrynet.com/images/common/logo_Kerastase.png")
+var img14=new top_data("img14","https://demo2020.strawberrynet.com/images/common/logo_JMO.png")
+var img15=new top_data("img15","https://demo2020.strawberrynet.com/images/common/logo_Guerlain.png")
+top_brands.push(img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15)
+localStorage.setItem("top_brand",JSON.stringify(top_brands))
+
+// top 40 special
+let top40SpecialsArr = [];
+ let top1 = new getdata('https://a.cdnsbn.com/images/products/250/24288385903.jpg','Decleor','Bourrache Cica-Botanic Oil 100ml/3.38oz','Rs .1,522.50');
+ let top2 = new getdata('https://a.cdnsbn.com/images/products/250/24774580501.jpg','Elizabeth Arden','Ceramide Vitamin C Capsules - Radiance Renewal Serum 30caps','Rs .2,615.50');
+ let top3 = new getdata('https://a.cdnsbn.com/images/products/250/22933563101.jpg','Ella Bache','Nutridermologie Lab Magistral Cream-Mask Rejuvenium 27% Rescue Crea... 50ml/1.69oz','Rs .3,513.00');
+ let top4 = new getdata('https://a.cdnsbn.com/images/products/250/24467824702.jpg','Laura Mercier','Caviar Chrome Veil Lightweight Liquid Eye Colour 6ml/0.2oz','Rs .1,249.50');
+
+ top40SpecialsArr.push(top1,top2,top3,top4);
+ localStorage.setItem("top40SepicalsData",JSON.stringify(top40SpecialsArr));
+
+
+  // New Arrivalse
+  let newArrialsArr = [];
+  let na1 = new getdata('https://a.cdnsbn.com/images/products/250/26307826344.jpg','Bosley','Scalp Relief Anti-Dandruff Shampoo with Pyrithione Zinc 740ml/25oz','Rs .4,528.00')
+  let na2 = new getdata('https://a.cdnsbn.com/images/products/250/26164883301.jpg','La Prairie','Platinum Rare Haute-Rejuvenation Eye Elixir 15ml/0.5oz','Rs .77,675.50')
+  let na3 = new getdata('https://a.cdnsbn.com/images/products/250/26307404144.jpg','Philip Kingsley','Pure Blonde Booster Colour- Correcting Weekly Shampoo 500ml/16.9oz','Rs .3,864.50')
+  let na4 = new getdata('https://a.cdnsbn.com/images/products/250/25344264344.jpg','Redken','Nature + Science Color Extend Vibrancy Shampoo (For Color-Treated ... 300ml/10.1oz','Rs .2,069.00')
+  
+  newArrialsArr.push(na1,na2,na3,na4);
+  localStorage.setItem("newArrival", JSON.stringify(newArrialsArr));
