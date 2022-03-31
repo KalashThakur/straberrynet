@@ -150,20 +150,34 @@ let thumbnails = document.getElementsByClassName("thumbnail");
 
     let a = document.getElementById("heading").innerText = arr2[0].title;
     // console.log('a:', a)
-    let b = document.getElementById("featured").src = arr2[0].img;
-    console.log('b:', b)
+    let b = document.getElementById("featured").src = arr2[0].image1;
+    // console.log('b:', b)
 
     let c = document.getElementById("product_size").innerText = arr2[0].size;
-    console.log('c:', c)
+    // console.log('c:', c)
 
     let d = document.getElementById("product_name").innerText = arr2[0].desc;
-    console.log('d:', d)
+    // console.log('d:', d)
 
     let e = document.querySelector(".intPrice").innerText = arr2[0].price;
-    console.log('e:', e)
+    // console.log('e:', e)
 
     let f = document.querySelector(".strikedoff_price").innerText = arr2[0].strikedprice;
-    console.log('f:', f)
+    // console.log('f:', f)
 
     let g = document.querySelector(".offer").innerText = arr2[0].extraof;
-    console.log('g:', g)
+    // console.log('g:', g)
+    let h = document.getElementById("main-img").src = arr2[0].image1;
+    let k = document.getElementById("main-img-1").src = arr2[0].image2;
+    let j = document.getElementById("main-img-2").src = arr2[0].image3;
+
+    let p = document.getElementById("size").innerText = arr2[0].size;
+
+    // let t =  document.querySelector(".discount").innerText = arr2[0].save;
+    // let h = document.querySelector(".offer").innerText = arr2[0].extraof;
+    // discount
+    
+    let arr3 = JSON.parse(localStorage.getItem("haircare_data")) || [];
+    console.log('arr3:', arr3)
+
+    
