@@ -132,7 +132,7 @@ let thumbnails = document.getElementsByClassName("thumbnail");
 
         let cart = [
             {"image": image, 
-             "title": name,
+             "name": name,
              "quant": Number(quant),
              "price": price*quant
             }
