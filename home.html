@@ -7,145 +7,8 @@
     <title>Document</title>
 
 
-    <style>
-       .banner{
-           margin: auto;
-            width: 80%;
-            height: 380px;
-            margin-top: 20px;
-            /* background-color: rgb(95, 61, 20); */
-            background-image: url("	https://a.cdnsbn.com/images/English/banner_SkincareSpringEditsMar22_1170_1.jpg?v=3");
-            background-size: 100% 100%;
-            animation: slider 30s infinite linear;
-       }
-       @keyframes slider{
-            0%{
-                background-image: url("	https://a.cdnsbn.com/images/English/banner_RewardProgramBP_1140_1.jpg");
-                background-size: 100% 100%;
-            }
-            35%{
-                background-image: url("https://a.cdnsbn.com/images/English/banner_NaturalBeauty30Aug21_1170_1.jpg?v=3");
-                background-size: 100% 100%;
-            }
-            75%{
-                background-image: url("https://a.cdnsbn.com/images/English/banner_NBBundle170222_1170_1.jpg");
-            }
-
-        }
-
-    .promoline{
-        /* background-color: aqua; */
-        /* margin-right: 250px; */
-        margin: auto;
-    }
-
-    #promo {
-   width: 80%; 
-   /* margin: auto; */
-   text-align: center; 
-   border-bottom: 5px solid #000; 
-   line-height: 0.1em;
-   margin: 40px 160px 20px;
-    
-} 
-
- #promo>span { 
-    background:#fff; 
-    padding:0 10px; 
-    font-family:  sans-serif;
-}
-#products{
-    margin-top: 80px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    text-align: center;
-    gap: 15px;
-    /* height: 580px; */
-   
-}
-#extra{
-    margin-top: 80px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    text-align: center;
-    gap: 15px;
-}
-
-#scents{
-    margin-top: 80px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    text-align: center;
-    gap: 15px;
-}
-#hair{
-    margin-top: 80px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    text-align: center;
-    gap: 15px;
-}
-
-
-.product_img{
-    width: 50%;
-    height: 200px;
-}
-.name{
-    font-family: sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 10px;
-    /* font-weight: bold; */
-    
-    text-align: start;
-    text-align: left;
-    color: #2c2c2c;
-    
-}
-.productind{
-    padding: 35px;
-   /* width: 80%; */
-    transition: 0.5s;
-    /* border:5px solid black; */
-    /* border: 1px solid black; */
-   
-    
-}
-.productind:hover{
-     box-shadow: 0 0 20px 2px  rgba(0, 0, 0, .1);
-    /* transform: scale(1.1); */
-    z-index: 2;
-}
-.price{
-    text-align: left;
-    font-family: sans-serif;
-    color:black;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-.bag{
-   margin-top: 20px;
-   border-radius: 5px;
-    height: 40px;
-    background-color: #00a69c;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: white;
-    width: 130px;
-}
-.desc{
-    font-family: sans-serif;
-    font-size: 15px;
-    line-height: 30px;
-    /* * font-weight: bold; */ 
-    
-    text-align: start;
-    text-align: left;
-    color: #2c2c2c;
-}
-    </style>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="slider.css">
 </head>
 <body>
     <div class="navbar">
@@ -201,13 +64,98 @@
                     <h2 id="promo"><span>SECRETS TO HEALTHY HAIR</span></h2>
                 </div>
             <div id="hair"></div>
+            <div class="promoline">
+                <h2 id="promo"><span>BUNDLE OF JOY</span></h2>
+            </div>
+            <div id="bundlejoy"></div>
+            <div class="promoline">
+                <h2 id="promo"><span>DAILY SPECIALS</span></h2>
+                <h2  style="text-align: center;">Ends In <span id="timer"></span></h2>
+            </div>
+            <div id="dayspecial"></div>
+            <div class="promoline">
+                <h2 id="promo"><span>BEST SELLERS</span></h2>
+            </div>
 
-        </div>
+
+            <div class="slider-container">
+                <div class="slider">
+                  <div class="slides">
+                    <div id="slides__1" class="slide">
+                      <span class="slide__text" id="one"></span>
+                      <a class="slide__prev" href="#slides__4" title="Next"></a>
+                      <a class="slide__next" href="#slides__2" title="Next"></a>
+                    </div>
+                    <div id="slides__2" class="slide">
+                      <span class="slide__text" id="two"></span>
+                      <a class="slide__prev" href="#slides__1" title="Prev"></a>
+                      <a class="slide__next" href="#slides__3" title="Next"></a>
+                    </div>
+                    <!-- <div id="slides__3" class="slide">
+                      <span class="slide__text">3</span>
+                      <a class="slide__prev" href="#slides__2" title="Prev"></a>
+                      <a class="slide__next" href="#slides__4" title="Next"></a>
+                    </div>
+                    <div id="slides__4" class="slide">
+                      <span class="slide__text">4</span>
+                      <a class="slide__prev" href="#slides__3" title="Prev"></a>
+                      <a class="slide__next" href="#slides__1" title="Prev"></a>
+                    </div> -->
+                  </div>
+                  <div class="slider__nav">
+                    <a class="slider__navlink" href="#slides__1"></a>
+                    <a class="slider__navlink" href="#slides__2"></a>
+                    <!-- <a class="slider__navlink" href="#slides__3"></a>
+                    <a class="slider__navlink" href="#slides__4"></a> -->
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+            <div id="trial">
+            <div class="promoline" style="color: #65318f ;padding-top: 0.5px;">
+                <h2 id="promo" style="border-bottom: 5px solid #65318f;"><span style="background-color: #dcd5e0;">BEST DEALS</span></h2></div>
+                
+                    <div id="bestdeal"></div>
+            </div>
+
+
+            <div class="promoline">
+                <h2 id="promo"><span>TOP BRANDS</span></h2>
+            </div>
+
+            <div id="topbrands">
+                <!-- <div class="img1">
+                    <img src="https://demo2020.strawberrynet.com/images/common/logo_YSL.png" alt="" srcset="">
+                </div>
+                <div class="img2">
+                    
+                </div> -->
+            </div>
+
+            <div class="promoline">
+                <h2 id="promo"><span>TOP 40 SPECIALS</span></h2>
+            </div>
             
+            <div id="topspecial"></div>
 
-           
+            <div class="promoline">
+                <h2 id="promo"><span>New Arrivals</span></h2>
+            </div>
+
+            <div id="newArrival"></div>
 
         </div>
+
+
+        <!-- Slider------------------ -->
+    
+          
+          <!-- <a href="https://alvarotrigo.com/blog/create-a-slider-with-pure-CSS/" target="_blank" class="read-article">
+            Read the article 👉
+          </a> -->
+        <!-- ------------------------------------------------ -->
     </div>
     <div class="footer">
 
@@ -274,6 +222,9 @@
     var desc=document.createElement("div")
     desc.className="desc"
     desc.innerText=elem.desc
+    var discount=document.createElement("div")
+    discount.className="discounts"
+    discount.innerText="save "+(Math.random()*30).toFixed(0)+"%"
     var price=document.createElement("div")
         price.innerText=elem.price
         price.className="price"
@@ -281,20 +232,88 @@
         var button=document.createElement("button")
         button.innerText="Add To Bag"
         button.className="bag"
-        product_ind.append(image,title,desc,price,button)
+        product_ind.append(image,title,desc,discount,price,button)
         idname.append(product_ind)
 
        })
     
    }
 
+var topbrands=document.getElementById("topbrands")
+var tops=JSON.parse(localStorage.getItem("top_brand"))
+function topbrand(arr){
+    
+    arr.map(function(elem){
+        var div_base=document.createElement("div")
+        var image=document.createElement("img")
+        image.src=elem.url_link
+        div_base.append(image)
+        topbrands.append(div_base)
+    })
+}
+topbrand(tops)
+
+// timerrrrrrrrrrrr
+
+var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+ // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("timer").innerHTML = hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+
+// timer
+
+
+
+
+
    var data1=JSON.parse(localStorage.getItem("skincare_science"))
    var data2=JSON.parse(localStorage.getItem("blush_data"))
    var data3=JSON.parse(localStorage.getItem("scents"))
    var data4=JSON.parse(localStorage.getItem("hair_prod"))
+   var data5=JSON.parse(localStorage.getItem("bundle_joy"))
+   var data6=JSON.parse(localStorage.getItem("DaySpecialData"))
+   var data7=JSON.parse(localStorage.getItem("BestSellerData1"))
+   var data8=JSON.parse(localStorage.getItem("BestSellerData2"))
+   var data9=JSON.parse(localStorage.getItem("BestDealsData"))
+   var data10=JSON.parse(localStorage.getItem("top40SepicalsData"))
+   var data11=JSON.parse(localStorage.getItem("newArrival"))
    showdata("products",data1)
    showdata("extra",data2)
    showdata("scents",data3)
    showdata("hair",data4)
+   showdata("bundlejoy",data5)
+   showdata("dayspecial",data6)
+   showdata("one",data7)
+   showdata("two",data8)
+   showdata("bestdeal",data9)
+   showdata("topspecial",data10)
+   showdata("newArrival",data11)
+
+
+  
 
 </script>
