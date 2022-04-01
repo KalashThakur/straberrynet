@@ -24,12 +24,17 @@
 
             <p id="cat_redcatname">Skincare</p>
             <h1 id="cat_cath1">SKINCARE</h1>
-            <button id="cat_clearfilterbtn"> Clear Filters</button>
+            <!-- <button id="cat_clearfilterbtn" onClick="refresh"> Clear Filters</button> -->
+            <input type="button" id="cat_clearfilterbtn" onclick="window.location.reload();" value="Clear Filters">
             <p>Refine by Brands</p>
             <div id="cat_RefinebyBrands">
 
                 <input type="checkbox" name="Algenist" id="cat_shopby_brand_option">
                 <label for="Algenist">Algenist</label>
+                
+                <br>
+                <input type="checkbox" class="skin11" name="111Skin" id="cat_shopby_brand_option">
+                <label for="111Skin">111Skin</label>
                 <br>
 
                 <input type="checkbox" name="3W Clinic" id="cat_shopby_brand_option">
