@@ -14,7 +14,6 @@ function getdata(url,name,description,price,extraof,rating,size,strikedprice,url
     this.img2 = url2;
 
     this.save = save;
-
     this.quant = quant;
 }
 
