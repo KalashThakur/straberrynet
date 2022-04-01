@@ -13,6 +13,7 @@ let arr = [
       strikedprice: "1,054.00",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
+      quant: 1,
     },
     {
       image1: "https://a.cdnsbn.com/images/products/250/24714281301.jpg",
@@ -26,6 +27,8 @@ let arr = [
       strikedprice: "2,112.00",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
+      quant: 1,
+
     },
     {
       image1: "https://a.cdnsbn.com/images/products/250/20079465901.jpg",
@@ -39,6 +42,8 @@ let arr = [
       strikedprice: "3864.0",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★★",
+      quant: 1,
+
     },
     {
       image1: "https://a.cdnsbn.com/images/products/250/16305336601.jpg",
@@ -52,6 +57,8 @@ let arr = [
       strikedprice: "2,190.50",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
+      quant: 1,
+
     },
     {
       image1: "https://b.cdnsbn.com/images/products/250/26990380301.jpg",
@@ -65,6 +72,8 @@ let arr = [
       strikedprice: "6,023.50",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
+      quant: 1,
+
     },
 
     {
@@ -79,6 +88,8 @@ let arr = [
       strikedprice: "4,928.00",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
+      quant: 1,
+
     },
     {
       image1: "https://a.cdnsbn.com/images/products/msn/17975043503.jpg",
@@ -92,6 +103,8 @@ let arr = [
       strikedprice: "508.50.00",
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★☆☆",
+      quant: 1,
+
     },
   ],
 ];
@@ -107,7 +120,8 @@ function getdata(
   price,
   strikedprice,
   extraof,
-  rating
+  rating,
+  quant
 ) {
   this.image1 = image1;
   this.image2 = image2;
@@ -120,6 +134,7 @@ function getdata(
   this.strikedprice = strikedprice;
   this.extraof = extraof;
   this.rating = rating;
+  this.quant = quant;
 }
 
 let d1 = new getdata(
@@ -133,7 +148,8 @@ let d1 = new getdata(
   469.0,
   "626.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 console.log(d1);
 arr[1].push(d1);
