@@ -380,7 +380,7 @@ let d19 = new getdata(
   "SAVE 14%",
   3637.0,
   "4,200.00",
-  "Extra 8% Off The Entire Site",
+  "Extra 8% Off The Entire Site",     
   "★★★★☆"
 );
 let d20 = new getdata(
