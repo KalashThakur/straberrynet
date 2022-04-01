@@ -568,9 +568,9 @@ shodata(aradata);
 
 // });
 
-import { navbar, footer } from "../components/header.js";
-// console.log(navbar);
-
+import { navbar, footer } from "./components/header.js";
+console.log(navbar);
+document.querySelector("#crt_navbar").innerHTML = navbar();
 let adtocartfunc = (elem) => {
   let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
   let flag = true;
