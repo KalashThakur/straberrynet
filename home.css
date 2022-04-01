@@ -1,0 +1,237 @@
+.banner{
+    margin: auto;
+     width: 80%;
+     height: 380px;
+     margin-top: 20px;
+     /* background-color: rgb(95, 61, 20); */
+     background-image: url("	https://a.cdnsbn.com/images/English/banner_SkincareSpringEditsMar22_1170_1.jpg?v=3");
+     background-size: 100% 100%;
+     animation: slider 30s infinite linear;
+}
+@keyframes slider{
+     0%{
+         background-image: url("	https://a.cdnsbn.com/images/English/banner_RewardProgramBP_1140_1.jpg");
+         background-size: 100% 100%;
+     }
+     35%{
+         background-image: url("https://a.cdnsbn.com/images/English/banner_NaturalBeauty30Aug21_1170_1.jpg?v=3");
+         background-size: 100% 100%;
+     }
+     75%{
+         background-image: url("https://a.cdnsbn.com/images/English/banner_NBBundle170222_1170_1.jpg");
+     }
+
+ }
+
+.promoline{
+ /* background-color: aqua; */
+ /* margin-right: 250px; */
+ margin: auto;
+}
+.discounts{
+    color: red;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: start;
+    font-family:  'Lato', sans-serif;;
+    /* font-weight: bold; */
+}
+
+#promo {
+width: 80%; 
+/* margin: auto; */
+text-align: center; 
+border-bottom: 5px solid #000; 
+line-height: 0.1em;
+letter-spacing: 3px;
+font-family:  'Lato', sans-serif;
+font-size: 19px;
+word-spacing: 6px;
+margin: 40px 160px 20px;
+
+} 
+.offer{
+    color: red;
+    font-size: 14px;
+}
+
+#promo>span { 
+background:#fff; 
+padding:0 10px; 
+font-family:   'Lato', sans-serif;;
+}
+#products{
+margin-top: 80px;
+width: 75%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+text-align: center;
+gap: 15px;
+/* height: 580px; */
+
+}
+#extra{
+margin-top: 80px;
+display: grid;
+width: 75%;
+margin: auto;
+grid-template-columns: repeat(4,1fr);
+text-align: center;
+gap: 15px;
+}
+
+#scents{
+margin-top: 80px;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+text-align: center;
+gap: 15px;
+width: 75%;
+margin: auto;
+}
+#hair{
+margin-top: 80px;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+text-align: center;
+gap: 15px;
+width: 75%;
+margin: auto;
+}
+#bundlejoy{
+margin-top: 80px;
+width: 75%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+text-align: center;
+gap: 15px;
+}
+#bestdeal{
+margin-top: 80px;
+width: 75%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+text-align: center;
+gap: 15px;
+
+
+}
+#bestdeal>.productind{
+margin-top: 20px;
+border-width: 10px;
+border-style: solid;
+border-image: linear-gradient( darkblue, darkorchid) 1;
+
+background-color: white;
+
+}
+#trial{
+background-color: #dcd5e0;
+width: 100%;
+padding-bottom: 70px;
+}
+#dayspecial{
+margin-top: 80px;
+width: 75%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+text-align: center;
+gap: 15px;
+}
+#topbrands{
+
+margin-top: 80px;
+width: 75%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(5,1fr);
+text-align: center;
+gap: 15px;
+line-height: 75px;
+}
+
+#topspecial{
+margin-top: 80px;
+width: 75%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+text-align: center;
+gap: 15px;
+}
+#newArrival{
+margin-top: 80px;
+width: 75%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+text-align: center;
+gap: 15px;
+}
+/* } */
+.product_img{
+width: 50%;
+height: 200px;
+}
+.name{
+font-family:  'Lato', sans-serif;;
+font-size: 15px;
+font-weight: bold;
+margin-top: 10px;
+/* font-weight: bold; */
+
+text-align: start;
+text-align: left;
+color: #2c2c2c;
+
+}
+.productind{
+padding: 35px;
+/* width: 80%; */
+transition: 0.5s;
+/* border:5px solid black; */
+/* border: 1px solid black; */
+
+
+}
+.productind:hover{
+box-shadow: 0 0 20px 2px  rgba(0, 0, 0, .1);
+/* transform: scale(1.1); */
+z-index: 2;
+}
+.price{
+text-align: left;
+font-family:  'Lato', sans-serif;;
+color:black;
+font-size: 20px;
+font-weight: bold;
+margin-top: 10px;
+}
+.bag{
+margin-top: 30px;
+border-radius: 5px;
+height: 40px;
+background-color: #00a69c;
+font-family: sans-serif;
+font-weight: bold;
+color: white;
+width: 130px;
+}
+.desc{
+font-family:  'Lato', sans-serif;;
+font-size: 15px;
+line-height: 30px;
+/* * font-weight: bold; */ 
+
+text-align: start;
+text-align: left;
+color: #2c2c2c;
+}
+#timer{
+color: red;
+font-size: 25px;
+}
