@@ -119,30 +119,48 @@ let thumbnails = document.getElementsByClassName("thumbnail");
             })
     })
 
+    let cart = JSON.parse(localStorage.getItem("cart_item")) || []
 
-    document.getElementById("cart_btn").addEventListener("click", function()
+    document.querySelector("#cart_btn").addEventListener("click", function()
     {
+        // addToCart(elem);
+
+     
+let title = document.getElementById("heading").innerText;
+
+
         let quant = document.getElementById("select-tag").value;
         // console.log('quant:', quant)
-        let name = document.querySelector("#product_name").innerText;
-
+        let desc = document.querySelector("#product_name").innerText;
+        // addToCart(elem);
         let image = document.querySelector("#main-img").src;
 
         let price = document.querySelector(".intPrice").innerText;
 
-        let cart = [
-            {"image": image, 
-             "name": name,
-             "quant": Number(quant),
-             "price": price*quant
+        let obj = 
+            {image: image, 
+             title: title,   
+             desc: desc,
+             quant: Number(quant),
+             price: price*quant
             }
-        ]
+        cart.push(obj)
 
-        // console.log('cart:', cart)
+        console.log('cart:', cart)
 
         localStorage.setItem("cart_item", JSON.stringify(cart))
 
-    })
+
+    });
+
+
+    // function addToCart(elem)
+    // {
+    //     console.log(elem)
+    // //    let cart = JSON.parse(localStorage.getItem("cart_item")) || [];
+
+    // //    let flag = true;
+
 
 
     let arr2 = JSON.parse(localStorage.getItem("tempiteam")) || [];
