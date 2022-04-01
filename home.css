@@ -1,3 +1,8 @@
+body{
+    font-family:"Lato", sans-serif;
+
+}
+
 .banner{
     margin: auto;
      width: 80%;
@@ -22,6 +27,9 @@
      }
 
  }
+ .desc{
+     height: 80px;
+ }
 
 .promoline{
  /* background-color: aqua; */
@@ -30,10 +38,10 @@
 }
 .discounts{
     color: red;
-    line-height: 30px;
-    font-size: 16px;
+    line-height: 0.5;
+    font-size: 12px;
     text-align: start;
-    font-family: sans-serif;
+    font-family:  'Lato', sans-serif;
     /* font-weight: bold; */
 }
 
@@ -44,17 +52,25 @@ text-align: center;
 border-bottom: 5px solid #000; 
 line-height: 0.1em;
 letter-spacing: 3px;
+<<<<<<< HEAD
 font-family:  sans-serif;
+=======
+font-family:  'Lato', sans-serif;
+>>>>>>> main
 font-size: 19px;
 word-spacing: 6px;
 margin: 40px 160px 20px;
 
 } 
+.offer{
+    color: red;
+    font-size: 14px;
+}
 
 #promo>span { 
 background:#fff; 
 padding:0 10px; 
-font-family:  sans-serif;
+font-family:   'Lato', sans-serif;;
 }
 #products{
 margin-top: 80px;
@@ -118,7 +134,9 @@ gap: 15px;
 }
 #bestdeal>.productind{
 margin-top: 20px;
-border: 5px solid linear-gradient(#662d91, #e2195c), linear-gradient(#662d91, #e2195c);
+border-width: 10px;
+border-style: solid;
+border-image: linear-gradient( darkblue, darkorchid) 1;
 
 background-color: white;
 
@@ -173,7 +191,7 @@ width: 50%;
 height: 200px;
 }
 .name{
-font-family: sans-serif;
+font-family:  'Lato', sans-serif;;
 font-size: 15px;
 font-weight: bold;
 margin-top: 10px;
@@ -200,14 +218,14 @@ z-index: 2;
 }
 .price{
 text-align: left;
-font-family: sans-serif;
+font-family:  'Lato', sans-serif;;
 color:black;
 font-size: 20px;
 font-weight: bold;
 margin-top: 10px;
 }
 .bag{
-margin-top: 20px;
+margin-top: 30px;
 border-radius: 5px;
 height: 40px;
 background-color: #00a69c;
@@ -217,9 +235,9 @@ color: white;
 width: 130px;
 }
 .desc{
-font-family: sans-serif;
-font-size: 15px;
-line-height: 30px;
+font-family:  'Lato', sans-serif;;
+font-size: 12px;
+line-height: 1.9;
 /* * font-weight: bold; */ 
 
 text-align: start;
