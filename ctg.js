@@ -28,7 +28,6 @@ let arr = [
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
       quant: 1,
-
     },
     {
       image1: "https://a.cdnsbn.com/images/products/250/20079465901.jpg",
@@ -43,7 +42,6 @@ let arr = [
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★★",
       quant: 1,
-
     },
     {
       image1: "https://a.cdnsbn.com/images/products/250/16305336601.jpg",
@@ -58,7 +56,6 @@ let arr = [
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
       quant: 1,
-
     },
     {
       image1: "https://b.cdnsbn.com/images/products/250/26990380301.jpg",
@@ -73,7 +70,6 @@ let arr = [
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
       quant: 1,
-
     },
 
     {
@@ -89,7 +85,6 @@ let arr = [
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★★☆",
       quant: 1,
-
     },
     {
       image1: "https://a.cdnsbn.com/images/products/msn/17975043503.jpg",
@@ -104,7 +99,6 @@ let arr = [
       extraof: "Extra 8% Off The Entire Site",
       rating: "★★★☆☆",
       quant: 1,
-
     },
   ],
 ];
@@ -396,7 +390,7 @@ let d19 = new getdata(
   "SAVE 14%",
   3637.0,
   "4,200.00",
-  "Extra 8% Off The Entire Site",     
+  "Extra 8% Off The Entire Site",
   "★★★★☆"
 );
 let d20 = new getdata(
@@ -460,9 +454,10 @@ let shodata = (aradata) => {
     let wishdiv = document.createElement("div");
     wishdiv.id = "crt_addtowish";
 
-    let wishsym = document.createElement("p");
-    wishsym.innerText = "♡";
-    wishsym.id = "crt_wishlitbtn";
+    let wishsym = document.createElement("input");
+    wishsym.type = "checkbox"
+    // wishsym.innerText = "♡";
+    wishsym.id = "crt_wishchechbox";
 
     wishdiv.append(wishsym);
 
@@ -472,19 +467,21 @@ let shodata = (aradata) => {
     pname.addEventListener("click", () => {
       tempsavetodesc(elem);
     });
-
+    let descsizediv = document.createElement("div")
     let descc = document.createElement("p");
     descc.innerText = elem.desc;
     descc.id = "crt_p_decriptin";
     descc.addEventListener("click", () => {
       tempsavetodesc(elem);
     });
-    let sizep = document.createElement("p");
+    let sizep = document.createElement("span");
     sizep.innerText = elem.size;
     sizep.id = "crt_p_size";
     sizep.addEventListener("click", () => {
       tempsavetodesc(elem);
     });
+    descsizediv.id = "crt_descsizecomdiv"
+    descsizediv.append(descc,sizep)
     let savep = document.createElement("p");
     savep.innerText = elem.save;
     savep.id = "crt_p_save";
@@ -498,7 +495,7 @@ let shodata = (aradata) => {
     let pricep = document.createElement("p");
 
     let calprice = elem.price;
-    // calprice = calprice.toFixed(2);
+    calprice = calprice.toFixed(2);
 
     // let calprice = elem.price;
     // calprice = calprice.toFixed(2);
@@ -553,8 +550,7 @@ let shodata = (aradata) => {
       wishsym,
       proimg,
       pname,
-      descc,
-      sizep,
+      descsizediv,
       savep,
       pricep,
       striked,
@@ -562,7 +558,7 @@ let shodata = (aradata) => {
     );
     parofappend.append(div);
   });
-  let arr = JSON.parse(localStorage.getItem("cart_iteam")) || [];
+  let arr = JSON.parse(localStorage.getItem("cart_item")) || [];
   document.querySelector("#crt_counter").innerText = arr.length;
 };
 shodata(aradata);
@@ -570,7 +566,7 @@ import { navbar, footer } from "../components/header.js";
 // console.log(navbar);
 
 let adtocartfunc = (elem) => {
-  let arr = JSON.parse(localStorage.getItem("cart_iteam")) || [];
+  let arr = JSON.parse(localStorage.getItem("cart_item")) || [];
   let flag = true;
   console.log(arr);
   for (let i = 0; i < arr.length; i++) {
@@ -580,7 +576,7 @@ let adtocartfunc = (elem) => {
   }
   if (flag === true) {
     arr.push(elem);
-    localStorage.setItem("cart_iteam", JSON.stringify(arr));
+    localStorage.setItem("cart_item", JSON.stringify(arr));
     document.querySelector("#crt_counter").innerText = arr.length;
   }
 };
