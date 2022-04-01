@@ -132,6 +132,13 @@ import {navbar , footer} from "./components/header.js"
 let homenav=document.getElementById("homenavbar")
 homenav.innerHTML=navbar()
 
+var search=document.getElementById("search")
+search.addEventListener("keypress",function(event){
+    if(event.key=="Enter"){
+        localStorage.setItem("search_item",search.value)
+        window.location.href="search.html"
+    }
+})
 
 let homefoot=document.getElementById("homefooter")
 homefoot.innerHTML=footer()
