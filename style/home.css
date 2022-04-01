@@ -1,7 +1,9 @@
 body{
     font-family:"Lato", sans-serif;
-
+   
 }
+
+
 
 .banner{
     margin: auto;
@@ -66,6 +68,7 @@ margin: 40px 160px 20px;
     color: red;
     font-size: 14px;
 }
+
 
 #promo>span { 
 background:#fff; 
