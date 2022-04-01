@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/bag.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- this is our header -->
+    <div id="bag-header"></div>
+
+    <div id="main-div-bag">
+        <div id="main-div-bag-left">
+            <div id="shoping-bag">
+                <p>SHOPPING BAG</p>
+            </div>
+            <div id="dilvery-box">
+                <div>Deliver To :
+                    <div id="flag-img"></div>
+                <div> 
+                    <select>
+                        <option>India</option>
+                        <option>India</option>
+                        <option>India</option>
+                        <option>India</option>
+                        <option>India</option>
+                </select>
+                </div>
+            </div>
+        </div>
+        <div id="show-bag-item">
+
+        </div>
+    </div>
+        <div id="main-div-bag-right"></div>
+    </div>
+</body>
+</html>
+<!-- <script src="/script/bag.js"></script>/ -->
+<script type="module">
+    import{navbar , footer} from './components/header.js'
+    console.log(navbar);
+
+    let  header = document.getElementById("bag-header");
+    header.innerHTML=navbar();
+
+
+    import showDataOnbag from './script/bag.js'
+    console.log(showDataOnbag)
+
+    let showData = JSON.parse(localStorage.getItem("cart_item"))|| []
+
+    let showitemInBag = document.getElementById("show-bag-item")
+
+    showitemInBag = showDataOnbag(showData,showitemInBag)
+</script>
