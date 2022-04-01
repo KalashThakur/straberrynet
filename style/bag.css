@@ -1,0 +1,21 @@
+#main-div-bag{
+    width: 100%;
+    box-sizing: border-box;
+}
+#flag-img{
+    background-image: url(https://a.cdnsbn.com/images/common/flags/india.png);
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+}
+#dilvery-box div{
+  display: flex
+}
+#show-bag-item{
+  display:flex;
+  flex-direction: column;
+}
+
+#prodcutDiv{
+    display: flex;
+}
