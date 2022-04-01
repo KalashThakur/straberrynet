@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 *{
     padding: 0;
     margin: 0;
@@ -356,4 +357,366 @@ margin: auto;
     margin-left: 10px;
 }
 
+=======
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#mainmenu{
+   background:  url(https://a.cdnsbn.com/images/common/2016headerbg.jpg?v=2)  center no-repeat #fff;
+}
+.header{
+    position:sticky;
+    /* top: 0; */
+    /* z-index: 100; */
+    /* border: 2px solid red; */
+}
+#navbar{
+    min-height: 107px;
+    
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+
+#logo{
+width: 268px;
+height: 63px;
+background: url(https://a.cdnsbn.com/images/common/2016CompanyLogo.png) no-repeat  center transparent;
+margin-left:  190px;
+cursor: pointer;
+}
+
+#searchBar{
+    /* border: 1px soild red; */
+    margin-left: 50px;
+}
+
+#inputSearch-Box{
+    /* width: 100%; */
+    border: 2px soild red;
+}
+#inputSearch-Box>input{
+    width: 95%;
+    height: 33px;
+}
+#inputSearch-Item{
+    margin-top: 5px;
+    cursor: pointer;
+    color: #a1a1a1;
+    font-weight: bold;
+}
+
+#inputSearch-Item>ul{
+    display: flex;
+    list-style: none;
+}
+#inputSearch-Item>ul>li{
+    border-right: 2px solid;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+.searchBtn{
+    border: none;
+}
+#accountSetPage{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    text-align: center;
+    margin-left: 30px;
+}
+.account{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-right: 12px;
+}
+#account2{
+    margin-right: 25px;
+}
+#accountSetPage-top{
+    text-align: center;
+}
+#accountSetPage-button{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.account-icon{
+    background: url(https://a.cdnsbn.com/images/common/2016CommonSprite.png) -277px -315px no-repeat;
+    /* border-radius: 0; */
+    padding: 33px 0 0;
+    display: inline-block;
+    /* vertical-align: middle; */
+    margin-right: 5px;
+    width: 34px;
+  
+  }
+  .account-Singin{
+      margin-bottom: 4px;
+      cursor: pointer;
+  }
+ .whitelist-icon{background: url(https://a.cdnsbn.com/images/common/2016CommonSprite.png) -349px -315px no-repeat;
+  border-radius: 0;
+  /* padding: 31px 0 0; */
+  width: 34px;
+  height: 33px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.bag-icon{
+  background: url(https://a.cdnsbn.com/images/common/2016CommonSprite.png) -313px -315px no-repeat;
+  border-radius: 0;
+  border-radius: 0;
+  /* padding: 31px 0 0; */
+  width: 34px;
+  height: 33px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  cursor: pointer;
+  /* position: absolute; */
+}
+/* .totalBag-item{
+    border: 1px solid black;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 100;
+    top: 0;
+     left: -100; 
+} */
+
+#name-menu{
+    background-color: #623381;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    font-family: Lato,sans-serif;
+}
+#name-menu ul {
+    /* width: 100%; */
+    height: 40px;
+   display: inline-flex; 
+   align-items: center;
+   list-style: none;
+}
+#name-menu ul li {
+    margin-left: 30px;
+    font-size: 13px;
+    font-weight: 550;
+    /* margin-top: 5px; */
+}
+#name-menu ul li:hover{
+    background-color: #fff;
+    color: #623381;
+    border: 1px solid #fff;
+    height: 35px;
+    width: 130px;
+    padding-top: 10px;
+}
+#home{
+    width: 100%;
+    height: 900px;
+    /* border: 2px solid blue; */
+}
+
+                    /* footer */
+#first-main-footer{
+    width: 100%;
+    margin-left: 200px;
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+}
+#first-main-footer-bg{
+    background: url(https://a.cdnsbn.com/images/common/2016footer.jpg) center top no-repeat #702f80;
+    width: 100%;
+    background-size: cover;
+    /* height: 300px; */
+    display: flex;
+    box-sizing: border-box;
+}    
+
+#socia-mediaAnd-search{
+    /* justify-content: center;
+    align-items: center; 
+    /* display: flex; */
+    box-sizing: border-box;
+}
+#search-emailOffer{
+    width: 380px
+
+}
+
+#inputSearch-Box{
+    color: #370458
+}
+.stayConnected{
+    font-size: 25px;
+    color: #fff;
+    margin-top: 30px;
+    /* padding-bottom: 50px; */
+}
+.stayConnected+input{
+    margin-top: 50px;
+    width: 280px;
+    height: 55px;
+}
+.stayConnected+input+button{
+    height: 55px;
+    width: 70px;
+}
+#sociaMedia-icon{
+    margin-top: 30px;
+}
+.fa-brands {
+    height: 90px;
+    width: 40px;
+}
+
+#middle-top-footer{
+   display: flex;
+   align-items: center;
+   width: 330px;
+   margin-left: 20px;
+}
+#middle-top-footer-img-bg{
+    width: 75px;
+    height: 95px;
+    /* margin-top: 15px; */
+    background: url(https://a.cdnsbn.com/images/common/2016CommonSprite.png) -89px -381px no-repeat;
+    /* left: 20px; */
+    /* position: absolute; */
+}
+#middle-top-footer-img-side-content{
+    font-size: 20px;
+    margin-left: 18px;
+    color: #fff;
+}
+.over{
+    font-size: 25px;
+}
+.number{
+    font-size: 30px;
+}
+#right-top-footer{
+    width: 350px;
+   display: flex;
+   align-items: center;
+}
+#right-top-footer-img{
+    width: 84px;
+   height: 91px;
+  background: url('https://a.cdnsbn.com/images/English/shippingicon_1.png') -10px -5px no-repeat;
+}
+#right-top-footer-img-side-content{
+    width: 170px;
+  color: #fff;
+  font-size: 25px;
+  margin-left: 10px;
+  line-height: 30px;
+}
+.conditionsApply{
+    width: 170px;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+#second-main-footer{
+    background-color: #52246d;
+    width: 100%;
+    height: 400px;
+}
+
+#footer-little-menu{
+    /* width: 90%; */
+ padding-top: 20px;
+ display: flex;
+ justify-content: space-around;
+ color: #fff;
+ font-size: 19px;
+ margin-right: 40px;
+}
+#footer-little-menu-left ul {
+    list-style: none;
+    display: flex;
+}
+#footer-little-menu-left ul li{
+    padding-right: 50px;
+    border-right: 2px solid #fff;
+    padding-left: 20px;
+}
+#paytem-Img{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,70px);
+    grid-template-rows: repeat(4,50px);
+}
+#footer-middile-menu{
+    margin-top: 40px;
+    display: flex;
+    color: #fff;
+    /* justify-content: center; */
+    margin-left: 200px;
+}
+#footer-middile-menu ul{
+    list-style: none;
+}
+#footer-middile-menu ul li{
+    margin-top: 10px;
+    width: 100px;
+}
+#myAccount{
+    margin-left: 60px;
+}
+.ourCompany{
+    margin-left: 60px;
+}
+.app{
+    background: url(https://a.cdnsbn.com/images/common/2016CommonSprite.png) -133px -595px;
+    width: 100px;
+    height: 50px;
+}
+.playStore{
+    background: url(https://a.cdnsbn.com/images/common/2016CommonSprite.png) -235px -597px;
+    width: 100px;
+    height: 45px;
+}
+.ratedExcellent-Img-1{
+    display: flex;
+    margin-top: 10px;
+}
+.ratedExcellent-Img-1>div{
+    margin-left: 15px;
+}
+.pink{
+    border-color: #ee2c72;
+border-width: 3px;
+width: 83%;
+margin: auto;
+}
+#terms-and-condition{
+    width: 80%;
+    margin: auto
+}
+.terms{
+    margin-top: 10px;
+    width: 570px;
+    color: white;
+}
+.rated{
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+>>>>>>> Stashed changes
     

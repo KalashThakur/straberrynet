@@ -1,6 +1,6 @@
 
 
-
+var cart=JSON.parse(localStorage.getItem("cart_item"))||[]
 
 
 
@@ -31,7 +31,10 @@ function showdata(idname,arr){
      var button=document.createElement("button")
      button.innerText="Add To Bag"
      button.className="bag"
-
+    button.addEventListener("click",function(){
+        cart.push(elem)
+        localStorage.setItem("cart_item",JSON.stringify(cart))
+    })
 var offer=document.createElement("p")
 offer.innerText="Extra 8% Off The Entire Site"
 offer.className="offer"
@@ -41,6 +44,8 @@ offer.className="offer"
     })
  
 }
+
+
 
 var topbrands=document.getElementById("topbrands")
 var tops=JSON.parse(localStorage.getItem("top_brand"))
