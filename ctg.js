@@ -444,7 +444,7 @@ document.querySelector("#crt_topbranchildrenmain").innerText =
 let shodata = (aradata) => {
 
   let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
-  document.querySelector("#crt_counter").innerText = arr2.length;
+  // document.querySelector("#crt_counter").innerText = arr2.length;
   document.querySelector("#crt_count_of_prod").innerText = aradata.length;
   let parofappend = document.querySelector("#crt_parrentforappendingdata");
   parofappend.innerHTML = "";
@@ -571,6 +571,7 @@ shodata(aradata);
 import { navbar, footer } from "./components/header.js";
 console.log(navbar);
 document.querySelector("#crt_navbar").innerHTML = navbar();
+document.querySelector("#crt_fotter").innerHTML = footer();
 let adtocartfunc = (elem) => {
   let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
   let flag = true;
