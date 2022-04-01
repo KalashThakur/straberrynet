@@ -1,16 +1,9 @@
-<<<<<<< HEAD:style/header.css
 
 #mainmenu{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-=======
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
->>>>>>> main:header.css
 }
 
 #mainmenu{
@@ -18,12 +11,6 @@
 }
 .header{
     position:sticky;
-<<<<<<< HEAD:style/header.css
-=======
-    /* top: 0; */
-    /* z-index: 100; */
-    /* border: 2px solid red; */
->>>>>>> main:header.css
 }
 #navbar{
     min-height: 107px;
@@ -38,16 +25,11 @@
 width: 268px;
 height: 63px;
 background: url(https://a.cdnsbn.com/images/common/2016CompanyLogo.png) no-repeat  center transparent;
-<<<<<<< HEAD:style/header.css
 margin-left:  20%;
-=======
-margin-left:  190px;
->>>>>>> main:header.css
 cursor: pointer;
 }
 
 #searchBar{
-<<<<<<< HEAD:style/header.css
     margin-left: 5%;
 }
 
@@ -59,22 +41,6 @@ cursor: pointer;
     height: 33px;
 }
 #inputSearch-Item{
-=======
-    /* border: 1px soild red; */
-    margin-left: 50px;
-}
-
-#inputSearch-Box{
-    /* width: 100%; */
-    border: 2px soild red;
-}
-#inputSearch-Box>input{
-    width: 95%;
-    height: 33px;
-}
-#inputSearch-Item{
-    margin-top: 5px;
->>>>>>> main:header.css
     cursor: pointer;
     color: #a1a1a1;
     font-weight: bold;
@@ -87,10 +53,6 @@ cursor: pointer;
 #inputSearch-Item>ul>li{
     border-right: 2px solid;
     padding-right: 7px;
-<<<<<<< HEAD:style/header.css
-=======
-    padding-left: 7px;
->>>>>>> main:header.css
 }
 .searchBtn{
     border: none;
@@ -129,10 +91,6 @@ cursor: pointer;
   }
   .account-Singin{
       margin-bottom: 4px;
-<<<<<<< HEAD:style/header.css
-=======
-      cursor: pointer;
->>>>>>> main:header.css
   }
  .whitelist-icon{background: url(https://a.cdnsbn.com/images/common/2016CommonSprite.png) -349px -315px no-repeat;
   border-radius: 0;
@@ -149,33 +107,15 @@ cursor: pointer;
   background: url(https://a.cdnsbn.com/images/common/2016CommonSprite.png) -313px -315px no-repeat;
   border-radius: 0;
   border-radius: 0;
-<<<<<<< HEAD:style/header.css
-=======
-  /* padding: 31px 0 0; */
->>>>>>> main:header.css
   width: 34px;
   height: 33px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
   cursor: pointer;
-<<<<<<< HEAD:style/header.css
 
 }
 
-=======
-  /* position: absolute; */
-}
-/* .totalBag-item{
-    border: 1px solid black;
-    width: 20px;
-    border-radius: 50%;
-    position: relative;
-    bottom: 100;
-    top: 0;
-     left: -100; 
-} */
->>>>>>> main:header.css
 
 #name-menu{
     background-color: #623381;
@@ -186,23 +126,15 @@ cursor: pointer;
     font-family: Lato,sans-serif;
 }
 #name-menu ul {
-<<<<<<< HEAD:style/header.css
     width: 100%;
     height: 40px;
    display: inline-flex; 
    align-items: center;
    justify-content: center;
-=======
-    /* width: 100%; */
-    height: 40px;
-   display: inline-flex; 
-   align-items: center;
->>>>>>> main:header.css
    list-style: none;
 }
 #name-menu ul li {
     margin-left: 30px;
-<<<<<<< HEAD:style/header.css
     padding-bottom: 10px;
     font-size: 13px;
     font-weight: 550;
@@ -212,61 +144,27 @@ cursor: pointer;
     color: #fff;
     cursor: pointer;
     text-decoration: underline;
-=======
-    font-size: 13px;
-    font-weight: 550;
-    /* margin-top: 5px; */
-}
-#name-menu ul li:hover{
-    background-color: #fff;
-    color: #623381;
-    border: 1px solid #fff;
-    height: 35px;
-    width: 130px;
-    padding-top: 10px;
->>>>>>> main:header.css
 }
 #home{
     width: 100%;
     height: 900px;
-<<<<<<< HEAD:style/header.css
-=======
-    /* border: 2px solid blue; */
->>>>>>> main:header.css
 }
 
                     /* footer */
 #first-main-footer{
     width: 100%;
-<<<<<<< HEAD:style/header.css
     margin-left: 18%;
     display: flex;
-=======
-    margin-left: 200px;
-    display: flex;
-    /* justify-content: space-around; */
-    /* align-items: center; */
->>>>>>> main:header.css
 }
 #first-main-footer-bg{
     background: url(https://a.cdnsbn.com/images/common/2016footer.jpg) center top no-repeat #702f80;
     width: 100%;
     background-size: cover;
-<<<<<<< HEAD:style/header.css
-=======
-    /* height: 300px; */
->>>>>>> main:header.css
     display: flex;
     box-sizing: border-box;
 }    
 
 #socia-mediaAnd-search{
-<<<<<<< HEAD:style/header.css
-=======
-    /* justify-content: center;
-    align-items: center; 
-    /* display: flex; */
->>>>>>> main:header.css
     box-sizing: border-box;
 }
 #search-emailOffer{
@@ -383,11 +281,7 @@ cursor: pointer;
     display: flex;
     color: #fff;
     /* justify-content: center; */
-<<<<<<< HEAD:style/header.css
     margin-left: 18%;
-=======
-    margin-left: 200px;
->>>>>>> main:header.css
 }
 #footer-middile-menu ul{
     list-style: none;
@@ -439,7 +333,6 @@ margin: auto;
     margin-left: 10px;
 }
 
-<<<<<<< HEAD:style/header.css
   /* sub Menu */
 
   #submenu-1{
@@ -451,6 +344,3 @@ margin: auto;
   }
  
 
-=======
-    
->>>>>>> main:header.css
