@@ -1,7 +1,7 @@
 const navbar = () => {
     return `  <div id="mainmenu" class="header">
     <div id="navbar">
-        <div id="logo"></div>
+        <a href="index.html"><div id="logo"></div></a>
         <div id="searchBar">
            <div id="inputSearch-Box">
             <input type="text" id="search" placeholder="SEARCH BRAND / PRODUCT">
@@ -32,7 +32,7 @@ const navbar = () => {
                 </div>
                 <div class="account" id="account3" >
                     <div class="bag-icon"></div>
-                    <div id="account-Bag" class="account-Singin">Bag</div>
+                    <div id="account-Bag" class="account-Singin"><a href="bag.html">Bag</a></div>
                     <!-- <div id="total" class="totalBag-item">0</div> -->
                 </div>
             </div>
@@ -43,7 +43,7 @@ const navbar = () => {
 <div id="name-menu">
 <ul>
     <li>SHOP BY BRAND</li>
-    <li>SKINCARE</li>
+    <li><a href="catg.html">SKINCARE</a></li>
     <li>MAKEUP</li>
     <li>HAIRCARE</li>
     <li>PERFUME</li>
