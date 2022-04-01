@@ -431,9 +431,9 @@ arr[1].push(
 );
 
 let aradata = arr[1];
-console.log("arr[1]", arr[1]);
-console.log("arr", arr);
-document.querySelector("#crt_count_of_prod").innerText = arr[1].length;
+// console.log("arr[1]", arr[1]);
+// console.log("arr", arr);
+// document.querySelector("#crt_count_of_prod").innerText = aradata.length;
 document.querySelector("#cat_catshow").innerText = arr[0];
 document.querySelector("#cat_redcatname").innerText = arr[0];
 document.querySelector("#cat_cath1").innerText = arr[0];
@@ -442,8 +442,12 @@ document.querySelector("#crt_main_vat_header").innerText = arr[0];
 document.querySelector("#crt_topbranchildrenmain").innerText =
   " Top" + " " + arr[0] + " " + "Brands";
 let shodata = (aradata) => {
-  let parofappend = document.querySelector("#crt_parrentforappendingdata");
 
+  let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
+  document.querySelector("#crt_counter").innerText = arr2.length;
+  document.querySelector("#crt_count_of_prod").innerText = aradata.length;
+  let parofappend = document.querySelector("#crt_parrentforappendingdata");
+  parofappend.innerHTML = "";
   // console.log(aradata.length);
 
   aradata.forEach((elem) => {
@@ -455,7 +459,7 @@ let shodata = (aradata) => {
     wishdiv.id = "crt_addtowish";
 
     let wishsym = document.createElement("input");
-    wishsym.type = "checkbox"
+    wishsym.type = "checkbox";
     // wishsym.innerText = "♡";
     wishsym.id = "crt_wishchechbox";
 
@@ -467,7 +471,7 @@ let shodata = (aradata) => {
     pname.addEventListener("click", () => {
       tempsavetodesc(elem);
     });
-    let descsizediv = document.createElement("div")
+    let descsizediv = document.createElement("div");
     let descc = document.createElement("p");
     descc.innerText = elem.desc;
     descc.id = "crt_p_decriptin";
@@ -480,8 +484,8 @@ let shodata = (aradata) => {
     sizep.addEventListener("click", () => {
       tempsavetodesc(elem);
     });
-    descsizediv.id = "crt_descsizecomdiv"
-    descsizediv.append(descc,sizep)
+    descsizediv.id = "crt_descsizecomdiv";
+    descsizediv.append(descc, sizep);
     let savep = document.createElement("p");
     savep.innerText = elem.save;
     savep.id = "crt_p_save";
@@ -496,9 +500,6 @@ let shodata = (aradata) => {
 
     let calprice = elem.price;
     calprice = calprice.toFixed(2);
-
-    // let calprice = elem.price;
-    // calprice = calprice.toFixed(2);
 
     pricep.innerText = `Rs .${calprice}`;
     pricep.id = "crt_p_price";
@@ -558,61 +559,376 @@ let shodata = (aradata) => {
     );
     parofappend.append(div);
   });
-  let arr = JSON.parse(localStorage.getItem("cart_item")) || [];
-  document.querySelector("#crt_counter").innerText = arr.length;
+  // let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
+  // document.querySelector("#crt_counter").innerText = arr2.length;
 };
 shodata(aradata);
-import { navbar, footer } from "../components/header.js";
-// console.log(navbar);
+// document.querySelector("#cat_clearfilterbtn").addEventListener("click", () => {
+//   // shodata(aradata);
 
+// });
+
+import { navbar, footer } from "./components/header.js";
+console.log(navbar);
+document.querySelector("#crt_navbar").innerHTML = navbar();
 let adtocartfunc = (elem) => {
-  let arr = JSON.parse(localStorage.getItem("cart_item")) || [];
+  let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
   let flag = true;
   console.log(arr);
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].title === elem.title) {
+  for (let i = 0; i < arr2.length; i++) {
+    if (arr2[i].title === elem.title) {
       flag = false;
-    }
+    } 
   }
   if (flag === true) {
-    arr.push(elem);
-    localStorage.setItem("cart_item", JSON.stringify(arr));
-    document.querySelector("#crt_counter").innerText = arr.length;
+    arr2.push(elem);
+    localStorage.setItem("cart_item", JSON.stringify(arr2));
+    document.querySelector("#crt_counter").innerText = arr2.length;
   }
 };
 let tempsavetodesc = (elem) => {
-  let arr = [];
-  arr.push(elem);
+  let arr2 = [];
+  arr2.push(elem);
 
-  console.log(arr);
-  localStorage.setItem("tempiteam", JSON.stringify(arr));
+  console.log(arr2);
+  localStorage.setItem("tempiteam", JSON.stringify(arr2));
   window.location.href = "./PRODUCT DESCRIPTION/1marvis.html";
 };
 // crt_parrentforappendingdata>div
 // document.querySelector("#crt_navbar").innerHTML = navbar();
 // document.querySelector("#crt_fotter").innerHTML = footer();
-// let cd = new getdata();
-// let c1 = new getdata();
-// let c2 = new getdata();
-// let c3 = new getdata();
-// let c4 = new getdata();
-// let c5 = new getdata();
-// let c6 = new getdata();
-// let c7 = new getdata();
-// let c8 = new getdata();
-// let c9 = new getdata();
-// let c10 = new getdata();
-// let c11 = new getdata();
-// let c12 = new getdata();
-// let c13 = new getdata();
-// let c14 = new getdata();
-// let c15 = new getdata();
-// let c16 = new getdata();
-// let c17 = new getdata();
-// let c18 = new getdata();
-// let c19 = new getdata();
-// let c20 = new getdata();
-// let c21 = new getdata();
-// let c22 = new getdata();
-// let c23 = new getdata();
-// let c24 = new getdata();
+
+// let d20 = new getdata(
+//   "https://a.cdnsbn.com/images/products/250/17727242001.jpg",
+//   "https://a.cdnsbn.com/images/products/msn/25353480401-2.jpg",
+//   "",
+//   "Obagi",
+//   "BAGI 360 Retinol ",
+//   "0.5 30ml/1oz",
+//   "",
+//   1799.0,
+//   "",
+// "Extra 8% Off The Entire Site",
+// "★★★★☆"
+// );
+
+let c0 = new getdata(
+  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
+  "",
+  "",
+  "111Skin",
+  "SkinCelestial Black Diamond Eye Mask",
+  "8x6ml/0.2oz",
+  "SAVE 15%",
+  7666.0,
+  "8,995.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let c1 = new getdata(
+  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
+  "",
+  "",
+  "111Skin",
+  "Celestial Black Diamond Lifting & Firming Treatment Mask",
+  "31ml/1.04oz",
+  "SAVE 14%",
+  2,
+  347.0,
+  "2,738.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let c2 = new getdata(
+  "https://a.cdnsbn.com/images/products/250/27121193301.jpg",
+  "",
+  "",
+  "111Skin",
+  "Antioxidant Energising Essence ",
+  "100ml/3.4oz",
+  "SAVE 12%",
+  6649.0,
+  "7,822.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let c3 = new getdata(
+  "https://a.cdnsbn.com/images/products/250/26665393301.jpg",
+  "",
+  "",
+  "111Skin",
+  "Celestial Black Diamond Contour Gel ",
+  "15ml/0.5oz",
+  "SAVE 10%",
+  9308.0,
+  "10,951.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let c4 = new getdata(
+  "https://b.cdnsbn.com/images/products/250/26783093301.jpg",
+  "",
+  "",
+  "111Skin",
+  "The Firming Concentrate",
+  "7x2ml/0.07oz",
+  "SAVE 15%",
+  13063.0,
+  "14,862.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let c5 = new getdata(
+  "https://b.cdnsbn.com/images/products/250/27127093301.jpg",
+  "",
+  "",
+  "111Skin",
+  "Vitamin C Brightening Cleanser ",
+  "120ml/4.06oz",
+  "SAVE 15%",
+  5319.0,
+  "6,258.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let c6 = new getdata(
+  "https://b.cdnsbn.com/images/products/250/26783193301.jpg",
+  "",
+  "",
+  "111Skin",
+  "Cryo Activating Hydra Gel",
+  "45ml/1.52oz",
+  "SAVE 30%",
+  12515.0,
+  "15,644.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let c7 = new getdata(
+  "https://b.cdnsbn.com/images/products/250/26664693301.jpg",
+  "",
+  "",
+  "111Skin",
+  "Hyaluronic Acid Aqua Booster",
+  "20ml/0.68oz",
+  "SAVE 30%",
+  8995.0,
+  "10,560.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let c8 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/26664993301.jpg",
+  "",
+  "",
+  "111Skin",
+  "Rose Gold Radiance Booster ",
+  "20ml/0.68oz",
+  "SAVE 25%",
+  8,
+  995.0,
+  "10,560.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let c9 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/26782493301.jpg",
+  "",
+  "",
+  "111Skin",
+  "The Hydration Concentrate 7",
+  "x2ml/0.07oz",
+  "SAVE 12%",
+  12046.0,
+  "13,689.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let c10 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/26666493314.jpg",
+  "",
+  "",
+  "111Skin",
+  "SkinThe Master-Masking Planner ",
+  "(4x Eye Mask + 4) 8pcs+1case",
+  "SAVE 25%",
+  10560.0,
+  "12,672.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let c11 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/26782593301.jpg",
+  "",
+  "",
+  "111Skin",
+  "The Radiance Concentrate ",
+  "7x2ml/0.07oz",
+  "SAVE 15%",
+  12046.0,
+  "13,689.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+
+let brand11arr = [];
+brand11arr.push(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11);
+console.log(brand11arr);
+document.querySelector(".skin11").addEventListener("input", () => {
+  show111skin();
+});
+
+let show111skin = () => {
+  shodata(brand11arr);
+  // document.querySelector(".skin11").removeAttributeNode("checked");
+  document.querySelector("#crt_count_of_prod").innerText = brand11arr.length;
+  console.log("hhfgfhfgfgfddddddd");
+};
+
+
+
+
+
+
+// // let c12 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+
+//   "",
+//   "",
+//   "");
+// // let c13 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+
+//   "",
+//   "",
+//   "");
+// // let c14 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+
+//   "",
+//   "",
+//   "");
+// // let c15 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+
+//   "",
+//   "",
+//   "");
+// // let c16 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+
+//   "",
+//   "",
+//   "");
+// // let c17 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+
+//   "",
+//   "",
+//   "");
+// // let c18 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+
+//   "",
+//   "",
+//   "");
+// // let c19 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+
+//   "",
+//   "",
+//   "");
+// // let c20 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+
+//   "",
+//   "",
+//   "");
+// // let c21 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+
+//   "",
+//   "",
+//   "");
+// // let c22 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+
+//   "",
+//   "",
+//   "");
+// // let c23 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+
+//   "",
+//   "",
+//   "");
+// // let c24 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+
+//   "",
+  // "",
