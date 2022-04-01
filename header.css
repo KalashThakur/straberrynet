@@ -1,7 +1,8 @@
-*{
+#mainmenu{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 #mainmenu{
@@ -23,7 +24,7 @@
 width: 268px;
 height: 63px;
 background: url(https://a.cdnsbn.com/images/common/2016CompanyLogo.png) no-repeat  center transparent;
-margin-left:  190px;
+margin-left:  12%;
 cursor: pointer;
 }
 
@@ -34,14 +35,15 @@ cursor: pointer;
 
 #inputSearch-Box{
     /* width: 100%; */
+    /* margin-right: 40px; */
     border: 2px soild red;
 }
 #inputSearch-Box>input{
-    width: 95%;
+    width: 85%;
     height: 33px;
 }
 #inputSearch-Item{
-    margin-top: 5px;
+    /* margin-top: 5px; */
     cursor: pointer;
     color: #a1a1a1;
     font-weight: bold;
@@ -54,7 +56,7 @@ cursor: pointer;
 #inputSearch-Item>ul>li{
     border-right: 2px solid;
     padding-right: 7px;
-    padding-left: 7px;
+    /* padding-left: 7px; */
 }
 .searchBtn{
     border: none;
@@ -128,25 +130,24 @@ cursor: pointer;
     font-family: Lato,sans-serif;
 }
 #name-menu ul {
-    /* width: 100%; */
+    width: 100%;
     height: 40px;
    display: inline-flex; 
    align-items: center;
+   justify-content: center;
    list-style: none;
 }
 #name-menu ul li {
     margin-left: 30px;
+    padding-bottom: 10px;
     font-size: 13px;
     font-weight: 550;
-    /* margin-top: 5px; */
+    height: 100%;
 }
 #name-menu ul li:hover{
-    background-color: #fff;
-    color: #623381;
-    border: 1px solid #fff;
-    height: 35px;
-    width: 130px;
-    padding-top: 10px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
 }
 #home{
     width: 100%;
@@ -156,7 +157,7 @@ cursor: pointer;
                     /* footer */
 #first-main-footer{
     width: 100%;
-    margin-left: 200px;
+    margin-left: 18%;
     display: flex;
 }
 #first-main-footer-bg{
@@ -284,7 +285,7 @@ cursor: pointer;
     display: flex;
     color: #fff;
     /* justify-content: center; */
-    margin-left: 200px;
+    margin-left: 18%;
 }
 #footer-middile-menu ul{
     list-style: none;
@@ -336,4 +337,14 @@ margin: auto;
     margin-left: 10px;
 }
 
+  /* sub Menu */
+
+  #submenu-1{
+      display: flex;
+      width: 500px;
+      height: 600px;
+      border: 2px solid red;
+      display: none;
+  }
+ 
     
