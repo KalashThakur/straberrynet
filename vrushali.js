@@ -8,4 +8,3 @@ function getdata(image1,title,desc,price){
 }
 
 var elem1=getdata("	https://a.cdnsbn.com/images/products/250/11009781301.jpg","Orlane","Orlane Absolute Skin Recovery Care Eye Contour  15ml/0.5oz")
-v

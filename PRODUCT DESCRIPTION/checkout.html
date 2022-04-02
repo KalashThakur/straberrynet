@@ -307,7 +307,7 @@
                 <form action="" id="myForm">
                     <h3 id="shipping">SHIPPING ADDRESS</h3>
 
-                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="First Name" required>
                     <input type="text" placeholder="Last Name">
                     <input type="text" placeholder="Company">
                     <select name="" id="">
@@ -352,14 +352,14 @@
              <h3>PAYMENT</h3>
 
              <form action="" id="pay_form">
-                 <input type="radio" class="radio" style="display: inline;" id="visa"> <img src="https://s.cdnsbn.com/images/common/Visa.png" alt=""> Visa - credit or debit card
+                 <input type="radio" class="radio" style="display: inline;" id="visa" value="checked"> <img src="https://s.cdnsbn.com/images/common/Visa.png" alt=""> Visa - credit or debit card
                  <div id="input1">
-                     <input type="number" placeholder="Card Number (no spaces)">
-                     <input type="date" placeholder="DD/MM/YY">
-                     <input type="cvv" placeholder="Enter your CVV number">
+                     <input type="number" required placeholder="Card Number (no spaces)">
+                     <input type="date" required placeholder="DD/MM/YY">
+                     <input type="cvv" required placeholder="Enter your CVV number">
                  </div>
                  <br>
-                 <input type="radio" style="display: inline;" id="master" class="radio"> <img src="https://s.cdnsbn.com/images/common/Master.png" alt=""> MasterCard - credit or debit card
+                 <input type="radio" style="display: inline;" id="master" class="radio" > <img src="https://s.cdnsbn.com/images/common/Master.png" alt=""> MasterCard - credit or debit card
                  <!-- <br> -->
                  <div id="input2"></div>
 
@@ -454,7 +454,7 @@
     })
 
 
-document.getElementById("myForm").addEventListener("click",function(event)
+document.getElementById("myForm").addEventListener("submit",function(event)
 {
     event.preventDefault();
 
@@ -492,14 +492,14 @@ if(visa.checked==true)
 
     // document.getElementById("input1").append(card,date,cvv);  
 
-    document.querySelector("#input1").style.display = "inline";
+    document.querySelector("#input1").style.display = "flex";
 }
 
-document.getElementById("visa").addEventListener("input",function()
-{
-    document.querySelector("#input1").style.display = "block";
+// document.getElementById("visa").addEventListener("input",function()
+// {
+//     document.querySelector("#input1").style.display = "block";
 
-})
+// })
 
 
 </script>
