@@ -24,7 +24,7 @@ const navbar = () => {
             <div id="accountSetPage-button">
                 <div class="account">
                     <div class="account-icon"></div>
-                    <div class="account-Singin" >Sign in</div>
+                    <div class="account-Singin">Sign in</div>
                 </div>
                 <div class="account" id="account2">
                     <div class="whitelist-icon"></div>
@@ -32,7 +32,7 @@ const navbar = () => {
                 </div>
                 <div class="account" id="account3" >
                     <div class="bag-icon"></div>
-                    <div id="account-Bag" class="account-Singin"><a href="bag.html">Bag</a></div>
+                    <div id="account-Bag" class="account-Singin"><a href="bag.html" class="bag">Bag</a></div>
                     <!-- <div id="total" class="totalBag-item">0</div> -->
                 </div>
             </div>
@@ -45,9 +45,9 @@ const navbar = () => {
     <li>SHOP BY BRAND</li>
     <li><a href="catg.html">SKINCARE</a></li>
     <li>MAKEUP</li>
-    <li>HAIRCARE</li>
+    <li><a href="catghaircare.html">HAIRCARE</a></li>
     <li>PERFUME</li>
-    <li>MEN'S SKINCARE</li>
+    <li><a href="catgmensskincare.html">MEN'S SKINCARE</a></li>
     <li>MEN'S COLOGNE</li>
     <li>HOME SCENTS</li>
     <li>NATURAL BEAUTY</li>

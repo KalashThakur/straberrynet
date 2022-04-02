@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/bag.css">
     <!-- <link rel="stylesheet" href="./style/signup.css"> -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"> -->
     <title>Document</title>
 </head>
 <body>
     <!-- this is our header -->
+    <div id="bag-lg"></div>
     <div id="bag-header"></div>
 
     <div id="main-div-bag">
@@ -51,17 +53,24 @@
             </div>
         </div> 
      </div>
+    </div>
      <div id="totalPrice">
          <p id="toatalItem"></p>
-         <p id="ExtraOffer"></p>
+         <p id="ExtraOffer" onclick="checkoutpage()">Go TO CHECKOUT PAGE</p>
          <p></p>
      </div>  
-</div>
 <div id="bag-footer"></div>
 </body>
 </html>
+<script>
+    const checkoutpage = ()=>{
+        window.location.href="checkout.html"
+    }
+</script>
 <!-- <script src="/script/bag.js"></script>/ -->
 <script type="module">
+    // let bagSing = document.getElementById("bag-lg");
+    // bagSing.innerHTML=singupPankaj();
     import{navbar , footer} from './components/header.js'
     console.log(navbar);
 
@@ -97,7 +106,7 @@ var qu = document.getElementById("quant").value
         return acc+(elem.price*qu);
     },0);
     
- document.getElementById("toatalItem").innerText=total;
+ document.getElementById("toatalItem").innerText="Total Paymetn"+":"+total;
     
 }
 showTotal()
@@ -146,8 +155,8 @@ function addUser(event) {
 
     localStorage.setItem('userDatabase', JSON.stringify(userStack));
 
-    //window.location.href = "home.html";
     alert("register sucessfull")
+    //window.location.href = "home.html";
 }
 function puneethspl(){
     let email = document.getElementById('useremail').value;
@@ -162,8 +171,11 @@ function puneethspl(){
 }
   if (flag ==true) {
       //document.querySelector("input[type='submit']").addEventListener("click",function(){
-              window.location.href="home.html";
-              alert("Login successful")
+          alert("Login successful")
+          window.location.href="index.html";
+              for(let i=0; i<SingData.length; i++){
+              loginData.innerHTML=SingData[i].name
+              }
      // })
     }
  else {
