@@ -12,11 +12,11 @@ function showdata(idname,arr){
  product_ind.setAttribute("class","productind")
  var image=document.createElement("img")
        image.className="product_img"
-       image.src=elem.img;
+       image.src=elem.image1;
 
  var title=document.createElement("div")
  title.className="name"
- title.innerText=elem.name
+ title.innerText=elem.title
 
  var desc=document.createElement("div")
  desc.className="desc"
@@ -25,7 +25,7 @@ function showdata(idname,arr){
  discount.className="discounts"
  discount.innerText="save "+(Math.random()*30).toFixed(0)+"%"
  var price=document.createElement("div")
-     price.innerText=elem.price
+     price.innerText=`Rs.${elem.price}`
      price.className="price"
 
      var button=document.createElement("button")

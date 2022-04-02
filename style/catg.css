@@ -467,5 +467,6 @@ color: #ef1275;
   height: 50px;
   flex-direction: column;
   padding-left: 10px;
+  padding-right: 10px;
   margin-top: -20px;
 }
