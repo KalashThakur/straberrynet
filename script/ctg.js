@@ -416,8 +416,9 @@ let e24 = new getdata(
   "SAVE 2%",
   4772.0,
   "4,850.00",
-  "★★★★★",
-  "Extra 8% Off The Entire Site"
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+  
 );
 
 // ------------------------------------------------------111Skin----------------------------------
@@ -722,6 +723,27 @@ let shodata = (aradata) => {
     );
     parofappend.append(div);
   });
+
+  document.querySelector("#crt_popularityfilter").addEventListener("change",()=>{
+    sorting();
+  })
+  let sorting =()=>{
+   let selval = document.querySelector("#crt_popularityfilter").value;
+    console.log(selval)
+    if(selval=="LOWEST PRICE"){
+      aradata.sort(function (a,b){
+        return a.price-b.price;
+      })
+      shodata(aradata)
+    }
+    else if (selval=="BRAND: A-Z"){
+      aradata.sort((a, b) => a.title < b.title ? -1 : (a.title > b.title ? 1 : 0))
+
+      // })
+      shodata(aradata)
+    }
+  }
+
 };
 shodata(aradata);
 
@@ -924,13 +946,17 @@ document.querySelector(".crt_Borghese").addEventListener("input", () => {
   document.querySelector(".skin11").checked = false;
   Borghe();
 });
-
-// document.querySelector(".crt_Borghese").checked = false;
-// show111skin();
-// if(document.querySelector(".crt_Borghese").checked === false && document.querySelector(".skin11").checked === false){
-//   shodata(aradata)
+document.querySelector("#crticonnamearrnging").addEventListener("click",()=>{
+  showdataingridformat()
+})
+// document.querySelector(".LowPricePicks").addEventListener()  
+// .style.backgroundcolor="black"
+// let showdataingridformat =()=>{
+//    let sssssss = document.querySelector("#crt_parrentforappendingdata")
+//   //  sssssss.style.display = "flex";
+//   //  sssssss.style.direction="column";
+//   //  flexdirection: column;
 // }
-
 let Borghe = () => {
   shodata(Borghesearr);
 };
@@ -1106,6 +1132,7 @@ let ToolsAcces = () => {
   // document.querySelector("#crt_count_of_prod").innerText = Borghesearr.length;
   // console.log("hhfgfhfgfgfddddddd");
 };
+
 
 import { navbar, footer } from "../components/header.js";
 
