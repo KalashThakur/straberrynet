@@ -138,7 +138,7 @@ let title = document.getElementById("heading").innerText;
         let price = document.querySelector(".intPrice").innerText;
 
         let obj = 
-            {image: image, 
+            {image1: image, 
              title: title,   
              desc: desc,
              quant: Number(quant),
