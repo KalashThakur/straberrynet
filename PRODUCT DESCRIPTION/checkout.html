@@ -77,14 +77,19 @@
         #row{
             /* height: 150px; */
             border: 2px solid green;
+            
         }
+
+        /* table{
+            margin-bottom: 20px;
+        } */
 
         td{
             margin-right: 50px;
             border: 2px solid green;
             /* padding: 20px; */
-            padding-right: 40px;
-            padding-left: 40px;
+            padding-right: 50px;
+            padding-left: 50px;
 
             height: 130px;
         }
@@ -92,9 +97,11 @@
         #pImage{
             height: 140px;
         }
-        /* #cart_details{
-            display: block;
-        } */
+
+        #cart_details{
+           margin-bottom: 20px;
+        }
+
 
         #form1 div:nth-child(3){
             height: 720px;
@@ -289,7 +296,15 @@
         #input1{
             display: none;
         }
-       
+/*        
+        hr{
+           width: 30%;
+           text-align: center;
+        } */
+
+        #payment_detail{
+            padding-left: 20px;
+        }
     </style>
 
 </head>
@@ -318,6 +333,8 @@
                     <div id="price"></div> -->
                 <!-- </div> -->
             </div> 
+
+            <!-- <div></div> -->
 
 
 <!-- ****************************************************** -->
@@ -414,10 +431,10 @@
                     
                     <button id="btn">APPLY</button>
 
-                </div id="payment_detail">
-
-                <div>
-
+                </div>
+                
+                <div id="payment_detail">
+                  <h2>Payment Detail</h2>
                 </div>
             </form>
         </div>
@@ -484,6 +501,8 @@ arr.map(function(elem)
     let row = document.createElement("tr");
     row.setAttribute("id","row")
     
+    // let hr = document.createElement("hr");
+
     let col1 = document.createElement("td");
     let image = document.createElement("img");
     image.setAttribute("id","pImage")
@@ -500,7 +519,7 @@ arr.map(function(elem)
     col3.innerText = elem.quant;
 
     let col4 = document.createElement("td");
-    col3.innerText = elem.price;
+    col4.innerText = elem.price;
 
     row.append(col1,col2,col3,col4);
     document.getElementById("table").append(row)
