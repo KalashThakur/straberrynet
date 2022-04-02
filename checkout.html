@@ -52,8 +52,17 @@
         
         #form2 div{
             border: 2px solid red;
-            height: 250px;
             
+        }
+
+        #form2 > div:first-child{
+            height: 250px;
+
+        }
+
+        #form2 > div:nth-child(2){
+            height: 250px;
+
         }
 
         #form1 > div{
@@ -305,6 +314,89 @@
         #payment_detail{
             padding-left: 20px;
         }
+
+        #total_price{
+            display: flex;
+            border: 2px solid blue;
+            height: 100px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #total_price > div{
+            border: 2px solid black;
+            width: 50%;
+            padding-top: 20px;
+        }
+
+        #total_price > div:first-child{
+            text-align: left;
+            margin-left: 30px;
+        }
+
+        #total_price > div:last-child{
+            text-align: right;
+            margin-right: 30px;
+            font-size: 24px;
+        }
+
+        #total2,#total3,#total4,#total5{
+            display: flex;
+            height: 40px;
+            margin-right: 15px;
+        }
+
+        #total2 div,#total5 div{
+            width: 50%;
+            border: 2px solid green;
+            font-weight: 600;
+        }
+
+        #total4 div:first-child{
+            width: 70%;
+            border: 2px solid green;
+        }
+
+        #total4 div:last-child{
+            width: 30%;
+            border: 2px solid green;
+            text-align: right;
+            padding-right: 10px;
+
+        }
+        #total5 div:first-child{
+            width: 70%;
+        }
+
+        #total5 div:last-child{
+            width: 30%;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        #amount2{
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        #total3 div{
+            /* width: 50%; */
+            border: 2px solid green;
+            color: red;
+        }
+
+        #total3 div:last-child{
+            text-align: right;
+            width: 30%;
+            padding-right: 10px;
+            
+        }
+
+        #total3 div:first-child{
+            width: 70%;
+
+        }
     </style>
 
 </head>
@@ -332,6 +424,10 @@
                     <div id="qty">kjbjb</div>
                     <div id="price"></div> -->
                 <!-- </div> -->
+                <div id="total_price">
+                    <div>Item Total (<span class="count">0</span>)</div>
+                    <div id="amount"></div>
+                </div>
             </div> 
 
             <!-- <div></div> -->
@@ -415,7 +511,7 @@
          </div>
 
          </form>
-         <div style="border: 2px solid red; height: 200px;" id=""></div>
+         <!-- <div style="border: 2px solid red; height: 200px;" id=""></div> -->
 
         </div>
 
@@ -436,7 +532,39 @@
                 </div>
                 
                 <div id="payment_detail">
+
                   <h2>Payment Detail</h2>
+
+                  <div id="total2">
+                      <div>Item Total</div>
+                    <div id="amount2"></div>
+                  </div>
+
+                  <div id="total3">
+                    <div>Extra 10% Off (New Customer)</div>
+                  <div> -907</div>
+                </div>
+
+                <div id="total3">
+                    <div>Extra 8% Off (Spring Savings Sale)</div>
+                  <div> -725</div>
+                </div>
+
+                <div id="total4">
+                    <div>Standard Shipping (Signature)</div>
+                  <div> 782</div>
+                </div>
+
+                <div id="total4">
+                    <div>Freight Surcharge</div>
+                  <div> 317</div>
+                </div>
+
+                <div id="total5">
+                    <div>Order Total</div>
+                   <div id="final_price"> 0</div>
+                </div>
+                  
                 </div>
             </form>
         </div>
@@ -502,6 +630,7 @@ arr.map(function(elem)
 {
     let row = document.createElement("tr");
     row.setAttribute("id","row")
+
     
     // let hr = document.createElement("hr");
 
@@ -523,11 +652,37 @@ arr.map(function(elem)
     let col4 = document.createElement("td");
     col4.innerText = elem.price;
 
+    
+
+
     row.append(col1,col2,col3,col4);
     document.getElementById("table").append(row)
 
 })
 
+function showTotal()
+    {
+        var total = arr.reduce(function(acc,elem){
+            return acc + elem.price*elem.quant;
+        }, 0);
+    
+       document.querySelector("#amount").innerText = total;
+       document.querySelector("#amount2").innerText = total;
+
+    }
+
+showTotal();
+
+function countproduct()
+{
+    document.querySelector(".count").innerText = arr.length;
+}
+countproduct();
+
+let product_price = document.querySelector("#amount2").innerText;
+let final = ((product_price - 907)-725) + 1099;
+
+document.querySelector("#final_price").innerText = final;
 
 // document.getElementById("myForm").addEventListener("submit",function(event)
 // {
