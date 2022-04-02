@@ -418,7 +418,6 @@ let e24 = new getdata(
   "4,850.00",
   "Extra 8% Off The Entire Site",
   "★★★★★"
-  
 );
 
 // ------------------------------------------------------111Skin----------------------------------
@@ -625,9 +624,9 @@ let shodata = (aradata) => {
     let wishsym = document.createElement("input");
     wishsym.type = "checkbox";
     wishsym.id = "crt_wishchechbox";
-    wishsym.addEventListener("input",()=>{
+    wishsym.addEventListener("input", () => {
       addthisproductstowishlist(elem);
-    })
+    });
 
     wishdiv.append(wishsym);
 
@@ -726,43 +725,44 @@ let shodata = (aradata) => {
     parofappend.append(div);
   });
 
-  document.querySelector("#crt_popularityfilter").addEventListener("change",()=>{
-    sorting();
-  })
-  let sorting =()=>{
-   let selval = document.querySelector("#crt_popularityfilter").value;
-    console.log(selval)
-    if(selval=="LOWEST PRICE"){
-      aradata.sort(function (a,b){
-        return a.price-b.price;
-      })
-      shodata(aradata)
-    }
-    else if (selval=="BRAND: A-Z"){
-      aradata.sort((a, b) => a.title < b.title ? -1 : (a.title > b.title ? 1 : 0))
+  document
+    .querySelector("#crt_popularityfilter")
+    .addEventListener("change", () => {
+      sorting();
+    });
+  let sorting = () => {
+    let selval = document.querySelector("#crt_popularityfilter").value;
+    console.log(selval);
+    if (selval == "LOWEST PRICE") {
+      aradata.sort(function (a, b) {
+        return a.price - b.price;
+      });
+      shodata(aradata);
+    } else if (selval == "BRAND: A-Z") {
+      aradata.sort((a, b) =>
+        a.title < b.title ? -1 : a.title > b.title ? 1 : 0
+      );
 
       // })
-      shodata(aradata)
+      shodata(aradata);
     }
-  }
-
+  };
 };
 shodata(aradata);
-let addthisproductstowishlist = (elem)=>{
+let addthisproductstowishlist = (elem) => {
   // console.log(elem);
-let mywisharr = JSON.parse(localStorage.getItem("wish_list")) || [];
-let flag = true;
-for (let i = 0; i < mywisharr.length; i++){
-  if (mywisharr[i].title === elem.title) {
-    flag = false;
+  let mywisharr = JSON.parse(localStorage.getItem("wish_list")) || [];
+  let flag = true;
+  for (let i = 0; i < mywisharr.length; i++) {
+    if (mywisharr[i].title === elem.title) {
+      flag = false;
+    }
   }
-}
-if(flag === true){
-  mywisharr.push(elem)
-  localStorage.setItem("wish_list",JSON.stringify(mywisharr))
-}
-
-}
+  if (flag === true) {
+    mywisharr.push(elem);
+    localStorage.setItem("wish_list", JSON.stringify(mywisharr));
+  }
+};
 
 let adtocartfunc = (elem) => {
   let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
@@ -963,10 +963,10 @@ document.querySelector(".crt_Borghese").addEventListener("input", () => {
   document.querySelector(".skin11").checked = false;
   Borghe();
 });
-document.querySelector("#crticonnamearrnging").addEventListener("click",()=>{
-  showdataingridformat()
-})
-// document.querySelector(".LowPricePicks").addEventListener()  
+document.querySelector("#crticonnamearrnging").addEventListener("click", () => {
+  showdataingridformat();
+});
+// document.querySelector(".LowPricePicks").addEventListener()
 // .style.backgroundcolor="black"
 // let showdataingridformat =()=>{
 //    let sssssss = document.querySelector("#crt_parrentforappendingdata")
@@ -1149,7 +1149,6 @@ let ToolsAcces = () => {
   // document.querySelector("#crt_count_of_prod").innerText = Borghesearr.length;
   // console.log("hhfgfhfgfgfddddddd");
 };
-
 
 import { navbar, footer } from "../components/header.js";
 
