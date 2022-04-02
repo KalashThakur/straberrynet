@@ -23,8 +23,8 @@ const showDataOnbag = (data,parent)=>{
         proinfo.append(productName,descripiton,productSize);
 
         let Proquant = document.createElement("p")
-        Proquant.innerHTML="quant"+`<select>
-        <Option>1</Option><Option>2</Option><Option>3</Option><Option>4</Option><select>`
+        Proquant.innerHTML="quant"+`<select id="quant">
+        <Option id="onclick">1</Option><Option id="onclick">2</Option><Option>3</Option><Option>4</Option><select>`
         // +el.quant
 
         let Proprice = document.createElement("h5")
