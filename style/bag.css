@@ -1,34 +1,45 @@
 #main-div-bag{
-    width: 100%;
+    width: 1200px;
+    height: 100%;
+    background-color: #eeeeee;
     box-sizing: border-box;
-    display: flex;
+    margin: auto;
 }
 #main-div-bag-left{
-  width: 55%;
+  width: 60%;
   margin-left: 5%;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+  float: left;
+}
+#shoping-bag{
+  margin: 40px -5px;
+  font-size: 25px;
+  font-weight: 650;
+  letter-spacing: 7px;
+}
+#dilvery-box{
+  box-shadow: rgba(253, 253, 253, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin: 20px 0px;
+  padding: 15px 0px;
+  height: 35px;
+  font-weight: 650;
+  font-size: 22px;
 }
 
-
 #bag-right-div{
-  width: 40%;
-  display: grid;
-  /* grid-template-rows: repeat(2,1fr); */
-  padding: 0;
-  margin: 0;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  width: 30%;
+  margin-left: 3%;
   box-sizing: border-box;
-
+  float: left;
 }
 #main-div-bag-right{
   margin-left: 5%;
-  /* padding: 20px; */
-  width: 40%;
-  border: 1px solid red;
-  height: 500px;
+  padding: 20px;
   box-sizing: border-box;
 }
 #gust-checkout{
-  width: 500px;
+  text-align: center;
 }
 #flag-img{
     background-image: url(https://a.cdnsbn.com/images/common/flags/india.png);
@@ -41,6 +52,7 @@
 }
 #show-bag-item{
   display:flex;
+  height: 900px;
   flex-direction: column;
 }
 
@@ -48,10 +60,11 @@
     display: flex;
     gap: 30px;
     border: 1px solid black;
-    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;/ */
+    height: 150px;
 }
 #proinfoid{
   width: 250px;
+  height: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -63,14 +76,23 @@
   font-weight: 660;
   font-size: 17px;
 }
-
+.gust-button{
+  background-color: #623380;
+  width: 40%;
+  height: 50px;
+  text-align: center;
+  font-size: 17px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
  /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .login{
   width: 100%;
-  height: 500px;
-  z-index: 1;
-  background: rgba(255, 255, 255, 0.918);
+  /* height: 500px; */
+  /* z-index: 1; */
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +103,7 @@ display: none;
 .main{
   /* height: 100%; */
   width: 90%;
-  background: rgba(250, 239, 239, 0.952);
+  background: white;
   margin-top: 80px;
 }
 #cont{
