@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/bag.css">
+    <!-- <link rel="stylesheet" href="./style/signup.css"> -->
     <title>Document</title>
 </head>
 <body>
@@ -23,10 +24,10 @@
                 <div> 
                     <select>
                         <option>India</option>
-                        <option>India</option>
-                        <option>India</option>
-                        <option>India</option>
-                        <option>India</option>
+                        <option>Pak</option>
+                        <option>Shrilanka</option>
+                        <option>Nepal</option>
+                        <option>Bangladesh</option>
                 </select>
                 </div>
             </div>
@@ -35,8 +36,10 @@
 
         </div>
     </div>
-        <div id="main-div-bag-right"></div>
-    </div>
+            <div id="main-div-bag-right"></div>
+            <!-- <div id="gust-checkout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vero. Mollitia voluptatum maiores, a aliquid sit facilis alias quas natus. Sint temporibus autem ut provident, dolorem fugiat doloribus veniam praesentium, magnam iure natus dolor debitis ullam. Odio aliquid iure qui. </div>    -->
+</div>
+<div id="bag-footer"></div>
 </body>
 </html>
 <!-- <script src="/script/bag.js"></script>/ -->
@@ -47,6 +50,9 @@
     let  header = document.getElementById("bag-header");
     header.innerHTML=navbar();
 
+    let  bagfooter = document.getElementById("bag-footer");
+    bagfooter.innerHTML=footer();
+    bagfooter.style.marginTop="20px"
 
     import showDataOnbag from './script/bag.js'
     console.log(showDataOnbag)
@@ -56,4 +62,83 @@
     let showitemInBag = document.getElementById("show-bag-item")
 
     showitemInBag = showDataOnbag(showData,showitemInBag)
+
+    import singupPankaj from './newlogin.js'
+    console.log(singupPankaj);
+
+    let loginData = document.getElementById("main-div-bag-right")
+    loginData.innerHTML=singupPankaj();
+
+
+
+
+
+
+
+    document.querySelector("#userSign").addEventListener("click", ()=>{
+        signin();
+    })
+    document.querySelector("#newHere").addEventListener("click", ()=>{
+        newhere();
+    })
+    function signin(){
+        console.log("hy");
+        document.querySelector(".div1").style.display="block";
+        document.querySelector(".div2").style.display="none";
+
+    }
+    function newhere(){
+        document.querySelector(".div1").style.display="none";
+        document.querySelector(".div2").style.display="block";
+        
+    }
+     // storing the user's email in local storage
+     document.getElementById('email').value = localStorage.getItem('userEmail');
+
+let userStack = JSON.parse(localStorage.getItem('userDatabase')) || [];
+
+// storing user data 
+function addUser(event) {
+    event.preventDefault();
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let password = document.getElementById('password').value;
+
+    let userData = {
+        'name': name,
+        'email': email,
+        'password': password
+    }
+
+    userStack.push(userData);
+
+    localStorage.setItem('userDatabase', JSON.stringify(userStack));
+
+    //window.location.href = "home.html";
+    alert("register sucessfull")
+}
+function puneethspl(){
+    let email = document.getElementById('useremail').value;
+    let password = document.getElementById('userpass').value;
+    let SingData=JSON.parse(localStorage.getItem('userDatabase'))|| []
+    
+   var flag=false
+    for(let i=0; i<SingData.length; i++){
+    if (SingData[i].email == email && SingData[i].password == password) {
+    flag=true;
+  }
+}
+  if (flag ==true) {
+      //document.querySelector("input[type='submit']").addEventListener("click",function(){
+              window.location.href="home.html";
+              alert("Login successful")
+     // })
+    }
+ else {
+     alert("Invalid")
+ }
+}
+document.getElementById('submit').addEventListener('click', addUser);
+document.getElementById('btt').addEventListener('click', puneethspl);
+
 </script>

@@ -2,9 +2,21 @@ body{
     font-family:"Lato", sans-serif;
    
 }
-
-
-
+#lg{
+ width: 100%;
+ height: 100%;
+ text-align:center;
+ border:solid 1px #bac0c3;
+ border-radius:5px;
+ /* box-shadow: 5px 10px 25px 5px #575754; */
+ position:fixed;
+ /* left:50%;
+ top:50%; */
+ z-index:1001;
+ display:none;
+ background:rgba(255, 255, 255, 0);
+ animation: animationDropCenter 1s;
+}
 .banner{
     margin: auto;
      width: 80%;
