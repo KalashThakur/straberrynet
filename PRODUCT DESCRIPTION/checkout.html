@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <style>
         *{
             font-family: sans-serif;
         }
         #container{
             border: 2px solid black;
-            height: 1500px;
+            height: 1800px;
             width: 80%;
             margin: 50px auto;
             
@@ -26,7 +28,7 @@
         }
 
         #cont1{
-            width: 60%;
+            width: 62%;
             height: 1000px;
 
         }
@@ -38,13 +40,11 @@
 
         #cont2 div{
             background-color: #fff;
-
         }
-
 
         #cont2
         {
-            width: 38%;
+            width: 36%;
             height: 550px;
             display: block;
         }
@@ -56,24 +56,61 @@
             
         }
 
-        #form1 div{
+        #form1 > div{
             border: 2px solid red;
 
         }
 
-        #form1 div:first-child{
+        #notification{
             height: 220px;
             overflow: auto;
             padding-right: 14px;
         }
 
-        #form1 div:nth-child(2){
-            height: 280px;
-            margin-bottom: 30px;
+        #cart-details{
+            /* height: 280px; */
+            /* margin-bottom: 30px; */
+            /* text-align: center; */
+            /* display: flex; */
         }
 
+        #row{
+            /* height: 150px; */
+            border: 2px solid green;
+            
+        }
+
+        /* table{
+            margin-bottom: 20px;
+        } */
+
+        td{
+            margin-right: 50px;
+            border: 2px solid green;
+            /* padding: 20px; */
+            padding-right: 50px;
+            padding-left: 50px;
+
+            height: 130px;
+        }
+
+        #pImage{
+            height: 140px;
+        }
+
+        #cart_details{
+           margin-bottom: 20px;
+        }
+
+
         #form1 div:nth-child(3){
-            height: 750px;
+            height: 720px;
+            margin-bottom: 20px;
+        }
+
+        #form1 div:nth-child(4){
+            height: 300px;
+            
         }
         /* #cont2:first-child{
             border: 2px solid red;
@@ -155,6 +192,11 @@
 
         }
 
+        /* #myForm  input{
+            width: 95%;
+
+        } */
+
         select{
             width: 98.2%;
 
@@ -182,6 +224,87 @@
         select:hover{
             border: 2px solid #623381;
         }
+
+        #cart_image{
+            border: 1px solid peru;
+            height: 100px;
+            width: 13%;
+        }
+
+        #cart_data{
+            /* border: 1px solid rgb(63, 129, 205); */
+            /* box-sizing: border-box; */
+            height: 180px;
+            width: 93%;
+            margin: auto; 
+            display: flex; 
+            gap: 40px;
+        }
+ 
+         #cart_info{
+            border: 1px solid purple;
+            height: 50px;
+            width: 24%;
+        } 
+
+        #qty{
+            border: 1px solid peru;
+            /* height: 100px; */
+            width: 16%;
+            /* text-align: center; */
+        }
+
+        #price{
+            border: 1px solid purple;
+            width: 16%;
+
+        } 
+
+        div{
+            display: block;
+        }
+
+        #mainDiv{
+            display: flex;
+            gap: 50px;
+            /* margin-bottom: 20px; */
+        }
+
+        #cont4{
+            border: 2px solid red;
+            /* padding: 8px; */
+            font-weight: bold;
+        }
+
+        #cont4 h3{
+            border: 2px solid blue;
+        }
+
+        #pay_form{
+            border: 2px solid green;
+            /* margin-left: 10px; */
+            /* text-align: left; */
+        }
+
+        .radio{
+         width: 10px;
+         /* display: inline-block; */
+         /* padding: 10px; */
+         /* border: 2px solid brown; */
+        }
+
+        #input1{
+            display: none;
+        }
+/*        
+        hr{
+           width: 30%;
+           text-align: center;
+        } */
+
+        #payment_detail{
+            padding-left: 20px;
+        }
     </style>
 
 </head>
@@ -191,7 +314,7 @@
         <div id="cont1">
 
         <form action="" id="form1">
-            <div>
+            <div id="notification">
                 <h3 id="notify">NOTIFICATION (4)</h3>
                 <ul>
                     <li>Please note that delivery to your selected region will be delayed because order dispatches are on hold due to shipping restrictions. For more information, please contact info@strawberrynet.com.</li>
@@ -200,8 +323,21 @@
                     <li>Spend a minimum of USD150 after discounts to qualify for free shipping, or spend a minimum of USD100 after discounts to qualify for a reduced shipping charge at USD5. A shipping cost of USD10 will be charged for orders below USD100.</li>
                 </ul>
             </div>
+<!-- ****************************************************** -->
+             <div id="cart-details"> 
+                 <table id="table"></table>
+                 <!-- <div id="cart_data">  -->
+                    <!-- <div id="cart_image"></div>
+                    <div id="cart_info"></div>
+                    <div id="qty">kjbjb</div>
+                    <div id="price"></div> -->
+                <!-- </div> -->
+            </div> 
 
-            <div id="cart-details"></div>
+            <!-- <div></div> -->
+
+
+<!-- ****************************************************** -->
 
             <div>
                 <h3>SHOPPING INFORMATION</h3>
@@ -210,10 +346,10 @@
                 <form action="" id="myForm">
                     <h3 id="shipping">SHIPPING ADDRESS</h3>
 
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
                     <input type="text" placeholder="Company">
-                    <select name="" id="">
+                    <select name="" id="" required>
                         <option value="India">India</option>
                         <option value="Finland">Finland</option>
                         <option value="Germany">Germany</option>
@@ -238,11 +374,11 @@
                         <option value="Pakistan">Pakistan</option>
                     </select>
 
-                    <input type="text" placeholder="Address">
-                    <input type="text" placeholder="City/town">
-                    <input type="text" placeholder="State/province">
-                    <input type="number" placeholder="Zip/postcode">
-                    <input type="number" placeholder="Mobile">
+                    <input type="text" placeholder="Address" required>
+                    <input type="text" placeholder="City/town" required>
+                    <input type="text" placeholder="State/province" required>
+                    <input type="number" placeholder="Zip/postcode" required>
+                    <input type="number" placeholder="Mobile" required>
                     <input type="submit" value="SAVE & CONTINUE" id="submit_btn">
 
 
@@ -251,9 +387,40 @@
 
             </div>
 
-        </form>
+         <div id="cont4">
+             <h3>PAYMENT</h3>
+
+             <form action="" id="pay_form">
+                 <!-- <div id="pay_form"> -->
+                 <input type="radio" class="radio" style="display: inline;" id="visa" value="visacard"> <img src="https://s.cdnsbn.com/images/common/Visa.png" alt=""> Visa - credit or debit card
+                    <div id="input1">
+                        <input type="number" required placeholder="Card Number (no spaces)">
+                        <input type="date" required placeholder="DD/MM/YY">
+                        <input type="cvv" required placeholder="Enter your CVV number">
+                    </div>
+                 <br>
+                 <input type="radio" value="mastercard" style="display: inline;" id="master" class="radio" > <img src="https://s.cdnsbn.com/images/common/Master.png" alt=""> MasterCard - credit or debit card
+                 <!-- <br> -->
+                 <div id="input2"></div>
+
+                 <input type="radio" value="paypalcard" style="display: inline;" id="paypal" class="radio"> <img src="	https://s.cdnsbn.com/images/common/Paypal.png" alt=""> Paypal
+                 <!-- <br> -->
+                 <div id="input3"></div>
+
+                 <input type="radio" value="americancard" style="display: inline;" id="american" class="radio"> <img src="https://s.cdnsbn.com/images/common/AmericanExpress.png" alt=""> American express
+                 <div id="input4"></div>
+                <!-- </div> -->
+                 
+             </form>
+         </div>
+
+         </form>
+         <div style="border: 2px solid red; height: 200px;" id=""></div>
 
         </div>
+
+
+
 <!-- ******************Promo*********************** -->
         <div id="cont2">
             <!-- <div></div>
@@ -266,13 +433,146 @@
                     
                     <button id="btn">APPLY</button>
 
-                </div id="payment_detail">
-
-                <div>
-
+                </div>
+                
+                <div id="payment_detail">
+                  <h2>Payment Detail</h2>
                 </div>
             </form>
         </div>
     </div>
+
+    
 </body>
 </html>
+
+<script>
+  
+    let arr = JSON.parse(localStorage.getItem("cart_item"));
+    console.log('arr:', arr)
+
+
+//     arr.map(function(elem)
+//     {
+//         let mainDiv = document.createElement("div");
+//         mainDiv.setAttribute("id","mainDiv")
+
+//         let image_div = document.createElement("div");
+        
+//         let image = document.createElement("img");
+//         image.src = elem.image1;
+//         image.width = "90px";
+//         image.height = "90px";
+        
+//         image_div.append(image)
+// // *************************************************
+//         let info_div = document.createElement("div");
+//         info_div.style.border = "2px solid black";
+//         info_div.style.height = "140px";
+//         info_div.style.width = "140px";
+
+//         // ------
+//         let title_div = document.createElement("div");
+//         title_div.innerText = elem.title;
+//         title_div.style.marginBottom = "10px"
+
+//         let desc_div = document.createElement("div");
+//         desc_div.innerText = elem.desc;
+
+//         let price_div = document.createElement("div");
+//         // price_div.innerText = elem.price;
+
+//         info_div.append(title_div,desc_div)
+
+       
+// // *************************************************
+
+//         let qty_div = document.createElement("div");
+//         qty_div.innerText = elem.quant;
+
+//         let productPrice_div = document.createElement("div");  
+//         productPrice_div.innerText = elem.price;
+
+//         mainDiv.append(image,info_div,qty_div,productPrice_div)
+//         document.getElementById("cart-details").append(mainDiv)
+//     })
+
+
+arr.map(function(elem)
+{
+    let row = document.createElement("tr");
+    row.setAttribute("id","row")
+    
+    // let hr = document.createElement("hr");
+
+    let col1 = document.createElement("td");
+    let image = document.createElement("img");
+    image.setAttribute("id","pImage")
+    image.src = elem.image1;
+    col1.append(image)
+    
+    let col2 = document.createElement("td");
+    // col2.se
+    col2.innerText = elem.title;
+    col2.innerText = elem.desc;
+    col2.style.width = "170px";
+
+    let col3 = document.createElement("td");
+    col3.innerText = elem.quant;
+
+    let col4 = document.createElement("td");
+    col4.innerText = elem.price;
+
+    row.append(col1,col2,col3,col4);
+    document.getElementById("table").append(row)
+
+})
+
+
+// document.getElementById("myForm").addEventListener("submit",function(event)
+// {
+//     event.preventDefault();
+
+//     let payment_div = document.createElement("div");
+
+//     let form = document.createElement("form");
+
+//     let input1 = document.createElement("input");
+// })
+
+// *******************PAYMENT************************
+
+let visa = document.getElementById("visa");
+
+let card = document.createElement("input");
+let date = document.createElement("input");
+let cvv = document.createElement("input");
+
+let pay_form = document.getElementById("pay_form").value;
+
+
+
+
+if(pay_form=="visacard")
+{
+ document.querySelector("#input1").style.display = "block";
+}
+
+if(pay_form=="mastercard")
+{
+ document.querySelector("#input2").style.display = "flex";
+}
+
+if(pay_form=="americancard")
+{
+ document.querySelector("#input3").style.display = "flex";
+}
+
+// document.getElementById("visa").addEventListener("input",function()
+// {
+//     document.querySelector("#input1").style.display = "block";
+
+// })
+
+
+</script>
