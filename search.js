@@ -19,10 +19,10 @@ var arr12=JSON.parse(localStorage.getItem("BestSellerData2"))
 var arr13=JSON.parse(localStorage.getItem("top40SepicalsData"))
 var arr14=JSON.parse(localStorage.getItem("bundle_joy"))
     
-
+var arr15=JSON.parse(localStorage.getItem("extra_data"))
 
  var main_arr=[];
- main_arr.push(...arr0,...arr2,...arr3,...arr4,...arr5,...arr6,...arr7,...arr9,...arr10,...arr11,...arr12,...arr13,...arr14)
+ main_arr.push(...arr0,...arr2,...arr3,...arr4,...arr5,...arr6,...arr7,...arr9,...arr10,...arr11,...arr12,...arr13,...arr14,...arr15)
     
 
 //  console.log(main_arr)
