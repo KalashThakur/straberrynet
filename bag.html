@@ -16,7 +16,7 @@
     <div id="main-div-bag">
         <div id="main-div-bag-left">
             <div id="shoping-bag">
-                <p>SHOPPING BAG</p>
+                <h3>SHOPPING BAG</h3>
             </div>
             <div id="dilvery-box">
                 <div>Deliver To :
@@ -36,8 +36,26 @@
 
         </div>
     </div>
-            <div id="main-div-bag-right"></div>
-            <!-- <div id="gust-checkout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vero. Mollitia voluptatum maiores, a aliquid sit facilis alias quas natus. Sint temporibus autem ut provident, dolorem fugiat doloribus veniam praesentium, magnam iure natus dolor debitis ullam. Odio aliquid iure qui. </div>    -->
+    <div id="bag-right-div">
+        <div id="main-div-bag-right"></div>
+        <div id="gust-checkout">
+            <div id="gust-checkout-text">
+                <h3>OR</h3>
+                <p>GUEST CHECKOUT</p>
+            </div> 
+            <div id="gust-inputbox">
+                <input type="text " placeholder="Email  address">
+            </div>
+            <div id="gust-input-button">
+                <button class="gust-button">CONTINUE AS GUEST</button>
+            </div>
+        </div> 
+     </div>
+     <div id="totalPrice">
+         <p id="toatalItem"></p>
+         <p id="ExtraOffer"></p>
+         <p></p>
+     </div>  
 </div>
 <div id="bag-footer"></div>
 </body>
@@ -51,7 +69,7 @@
     header.innerHTML=navbar();
 
     let  bagfooter = document.getElementById("bag-footer");
-    bagfooter.innerHTML=footer();
+    // bagfooter.innerHTML=footer();
     bagfooter.style.marginTop="20px"
 
     import showDataOnbag from './script/bag.js'
@@ -69,6 +87,20 @@
     let loginData = document.getElementById("main-div-bag-right")
     loginData.innerHTML=singupPankaj();
 
+    document.getElementById("onclick").addEventListener("click", ()=>{
+        showTotal()
+    })
+// toatal rupees
+const showTotal = ()=>{
+var qu = document.getElementById("quant").value
+    var total = showData.reduce(function(acc,elem){
+        return acc+(elem.price*qu);
+    },0);
+    
+ document.getElementById("toatalItem").innerText=total;
+    
+}
+showTotal()
 
 
 
