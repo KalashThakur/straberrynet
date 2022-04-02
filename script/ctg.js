@@ -442,9 +442,8 @@ document.querySelector("#crt_main_vat_header").innerText = arr[0];
 document.querySelector("#crt_topbranchildrenmain").innerText =
   " Top" + " " + arr[0] + " " + "Brands";
 let shodata = (aradata) => {
-
   let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
-  document.querySelector("#crt_counter").innerText = arr2.length;
+  // document.querySelector("#crt_counter").innerText = arr2.length;
   document.querySelector("#crt_count_of_prod").innerText = aradata.length;
   let parofappend = document.querySelector("#crt_parrentforappendingdata");
   parofappend.innerHTML = "";
@@ -568,9 +567,11 @@ shodata(aradata);
 
 // });
 
-import { navbar, footer } from "./components/header.js";
-console.log(navbar);
+import { navbar, footer } from "../components/header.js";
+// components\header.js
+// console.log(navbar);
 document.querySelector("#crt_navbar").innerHTML = navbar();
+document.querySelector("#crt_fotter").innerHTML = footer();
 let adtocartfunc = (elem) => {
   let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
   let flag = true;
@@ -578,7 +579,7 @@ let adtocartfunc = (elem) => {
   for (let i = 0; i < arr2.length; i++) {
     if (arr2[i].title === elem.title) {
       flag = false;
-    } 
+    }
   }
   if (flag === true) {
     arr2.push(elem);
@@ -785,11 +786,6 @@ let show111skin = () => {
   console.log("hhfgfhfgfgfddddddd");
 };
 
-
-
-
-
-
 // // let c12 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
 //   "",
 //   "",
@@ -931,4 +927,4 @@ let show111skin = () => {
 //   "",
 
 //   "",
-  // "",
+// "",
