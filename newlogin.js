@@ -9,18 +9,18 @@ const singupPankaj = () =>{
          </div>
          
          <div class="div1">
-             <input type="text" placeholder="Email Adress" id="useremail">
-             <input type="password" placeholder="Password" id="userpass">
+             <input type="text" class="input" placeholder="Email Adress" id="useremail">
+             <input type="password" class="input" placeholder="Password" id="userpass">
              <p class="punnetp">Forget Password</p>
              <button id="btt">Sign In</button>
          </div>
          <div class="div2">
-             <input type="text" placeholder="First Name" id="name" class="input-field" required>
-             <input type="text" placeholder="Last Name">
-             <input type="text" placeholder="Email Adress" id="email" class="input-field" required>
-             <input type="text" placeholder="Password" id="password" class="input-field" required>
+             <input type="text" class="input" placeholder="First Name" id="name" class="input-field" required>
+             <input type="text" class="input" placeholder="Last Name">
+             <input type="text" class="input" placeholder="Email Adress" id="email" class="input-field" required>
+             <input type="text" class="input" placeholder="Password" id="password" class="input-field" required>
              <p class="punnetp">Please enter a minimum of 8 characters.</p>
-             <input type="text" placeholder="Re-enter Password">
+             <input type="text" class="input" placeholder="Re-enter Password">
              <button id="submit">Register</button>
              
          </div>

@@ -12,11 +12,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="./style/catg.css">
     <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/signup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-
+  <div id="catg-lg"></div>
     <div id="crt_navbar"> </div>
     <!-- <h2 id="crt_counter"></h2> -->
 
@@ -225,6 +226,88 @@
 </body>
 
 </html>
-<script type="module" src="./script/ctg.js">
+<script type="module" src="./script/ctg.js"></script>
+<script src="./lg.js/"></script>
+<script type="module">
 // script\ctg.js
+import singupPankaj from './newlogin.js'
+console.log(singupPankaj());
+let bagSing = document.getElementById("catg-lg");
+    bagSing.innerHTML=singupPankaj();
+
+    document.getElementById("userSign").addEventListener("click",()=>{
+        singin();
+    })
+
+    document.getElementById("newHere").addEventListener("click",()=>{
+        newhere();
+    })
+
+    // document.querySelector(".div2").style.display="none";
+    function signin(){
+        document.querySelector(".div1").style.display="block";
+        document.querySelector(".div2").style.display="none";
+
+    }
+    function newhere(){
+        document.querySelector(".div1").style.display="";
+        document.querySelector(".div2").style.display="block";
+        
+    }
+    document.querySelector(".cross").addEventListener("click",()=>{
+        document.querySelector(".login").style.display="none";
+        
+    })
+    document.querySelector(".account-Singin").addEventListener("click",()=>{
+        document.querySelector(".login").style.display="flex";
+    })
+     // storing the user's email in local storage
+     document.getElementById('email').value = localStorage.getItem('userEmail');
+
+let userStack = JSON.parse(localStorage.getItem('userDatabase')) || [];
+
+// storing user data 
+function addUser(event) {
+    event.preventDefault();
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let password = document.getElementById('password').value;
+
+    let userData = {
+        'name': name,
+        'email': email,
+        'password': password
+    }
+
+    userStack.push(userData);
+
+    localStorage.setItem('userDatabase', JSON.stringify(userStack));
+
+    //window.location.href = "home.html";
+    alert("register sucessfull")
+}
+function puneethspl(){
+    let email = document.getElementById('useremail').value;
+    let password = document.getElementById('userpass').value;
+    let SingData=JSON.parse(localStorage.getItem('userDatabase'))|| []
+    
+   var flag=false
+    for(let i=0; i<SingData.length; i++){
+    if (SingData[i].email == email && SingData[i].password == password) {
+    flag=true;
+  }
+}
+  if (flag ==true) {
+      //document.querySelector("input[type='submit']").addEventListener("click",function(){
+              window.location.href="home.html";
+              alert("Login successful")
+     // })
+    }
+ else {
+     alert("Invalid")
+ }
+}
+document.getElementById('submit').addEventListener('click', addUser);
+document.getElementById('btt').addEventListener('click', puneethspl);
 </script>
+<!-- <script src="./lg.js"></script> -->
