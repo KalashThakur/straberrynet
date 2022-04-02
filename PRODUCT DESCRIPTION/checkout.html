@@ -415,8 +415,10 @@
          </div>
 
          </form>
+         <div style="border: 2px solid red; height: 200px;" id=""></div>
 
         </div>
+
 
 
 <!-- ******************Promo*********************** -->
@@ -527,16 +529,16 @@ arr.map(function(elem)
 })
 
 
-document.getElementById("myForm").addEventListener("submit",function(event)
-{
-    event.preventDefault();
+// document.getElementById("myForm").addEventListener("submit",function(event)
+// {
+//     event.preventDefault();
 
-    let payment_div = document.createElement("div");
+//     let payment_div = document.createElement("div");
 
-    let form = document.createElement("form");
+//     let form = document.createElement("form");
 
-    let input1 = document.createElement("input");
-})
+//     let input1 = document.createElement("input");
+// })
 
 // *******************PAYMENT************************
 
@@ -553,7 +555,7 @@ let pay_form = document.getElementById("pay_form").value;
 
 if(pay_form=="visacard")
 {
- document.querySelector("#input1").style.display = "flex";
+ document.querySelector("#input1").style.display = "block";
 }
 
 if(pay_form=="mastercard")
