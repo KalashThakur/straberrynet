@@ -550,3 +550,26 @@ body {
           text-align: left;
           color: #2c2c2c;
         }          
+        .desc{
+          height: 80px;
+      }
+
+      .product_img{
+        width: 50%;
+        height: 200px;
+        }
+        .search_menu{
+          font-family: sans-serif;
+          font-weight: bold;
+          font-size: 15px;
+          margin-left: 180px;
+          word-spacing: 2px;
+        }
+        .glass{
+          color: #e82e74;
+        }
+
+        #crt_main_vat_header{
+          width: 80%;
+          margin: auto;
+        }

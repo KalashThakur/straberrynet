@@ -6,15 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+   <div id="navbar">
 
+   </div>
+    <div class="search_menu">
+     <h1>       <i class="fa-solid fa-magnifying-glass glass"></i> SEARCH RESULTS</h1>   
+
+    </div>
+
+   
+    <div id="crt_main_vat_header">
+                   
+    </div>
     <div id="cat_main">
         <div id="cat_sidebar">
 
-            <p id="cat_redcatname">Skincare</p>
-            <h1 id="cat_cath1">SKINCARE</h1>
-            <button id="cat_clearfilterbtn"> Clear Filters</button>
+            <!-- <p id="cat_redcatname">Skincare</p>
+            <h1 id="cat_cath1">SKINCARE</h1> -->
+            <!-- <button id="cat_clearfilterbtn"> Clear Filters</button> -->
             <p>Refine by Brands</p>
             <div id="cat_RefinebyBrands">
 
@@ -84,6 +99,8 @@
                 <br>
             </div>
 
+           
+
             <div id="cat_subcat">
                 <p id="cat_subcat_title">Skincare</p>
                 <p id="cat_subcatiteam">Body</p>
@@ -144,11 +161,11 @@
                 <!-- <img src="https://a.cdnsbn.com/images/english/category_SpringSale2Mar22_692_1.jpg" alt="8%off banner"> -->
             </div>
             <div id="crt_onemore">
-                <div id="crt_topbranchildrenmain">
+                <!-- <div id="crt_topbranchildrenmain">
                    
-                </div>
+                </div> -->
 
-                <div id="crt_tabulardata">
+                <!-- <div id="crt_tabulardata">
                     <div id="crt_topbranchildren">BIOTHERM</div>
                     <div id="crt_topbranchildren">CHRISTIAN DIOR</div>
                     <div id="crt_topbranchildren">CLARINS</div>
@@ -166,7 +183,7 @@
                     <div id="crt_topbranchildren"></div>
                     <div id="crt_topbranchildren"><button>View All Skincare Brands ➤ </button></div>
 
-                </div>
+                </div> -->
                 <div id="crt_countandcat">
                     <span id="crt_count_of_prod"></span>
                     <span>results for</span>
@@ -196,9 +213,9 @@
 
                     <!-- </div> -->
                 <!-- </div>  --> 
-                <div id="crt_main_vat_header">
+                <!-- <div id="crt_main_vat_header">
                    
-                </div>
+                </div> -->
                 <!--  -->
                 <div id="crt_parrentforappendingdata">
                     
@@ -212,3 +229,13 @@
 <script src="search.js"></script>
 <script src="script/data.js"></script>
 </html>
+
+<script type="module">
+    import {navbar , footer} from "./components/header.js"
+
+    var nav=document.getElementById("navbar")
+    nav.innerHTML=navbar();
+
+
+
+</script>

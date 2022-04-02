@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="signup.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </head>
 <body>
     <!-- -----------------------header & footer------------------------------- -->
-    <div id="mainmenu" class="header">
+    <!-- <div id="mainmenu" class="header">
         <div id="navbar">
             <div id="logo"></div>
             <div id="searchBar">
@@ -45,8 +45,8 @@
                     <div class="account" id="account3" >
                         <div class="bag-icon"></div>
                         <div id="account-Bag" class="account-Singin">Bag</div>
-                        <!-- <div id="total" class="totalBag-item">0</div> -->
-                    </div>
+                         <div id="total" class="totalBag-item">0</div> -->
+                    <!-- </div>
                 </div>
             </div>
         </div>
@@ -68,11 +68,11 @@
     </ul>
 </div>
 
-<div id="home"></div>
+<div id="home"></div> --> 
 
 
 <!-- //footer -->
-<div id="footer">
+<!-- <div id="footer">
     <div id="first-main-footer-bg">
 
         <div id="first-main-footer">
@@ -193,8 +193,10 @@
                 1998 - 2022 © StrawberryNET.com All Rights Reserved. </p>
         </div>
     </div>
-</div>
+</div> -->
 <!-- -----------------------------signup------------------------------------ -->
+<div id="puneeth-header"></div>
+
     <div class="login">
        <div class="main">
            <span class="cross">❌</span>
@@ -225,10 +227,20 @@
 
        </div>
     </div>
-    
+    <div id="punneth-footer"></div>
 </body>
 </html>
-<script>
+<script type="module">
+import {navbar , footer} from "./components/header.js"
+// console.log(navbar())
+let homenav=document.getElementById("puneeth-header")
+homenav.innerHTML=navbar()
+
+// let homefooter=document.getElementById("punneth-footer")
+// homefooter.innerHTML=footer()
+</script>
+
+ <script>
     document.querySelector(".div2").style.display="none";
     function signin(){
         document.querySelector(".div1").style.display="none";
