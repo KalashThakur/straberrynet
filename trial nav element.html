@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        #cont {
+            height: 40px;
+            width: 100%;
+            background-color: #623381;
+            position: fixed;
+        }
+
+        #secpar {
+            width: 1200px;
+            height: 100%;
+            background-color: #623381;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;
+        }
+
+        #secpar>div {
+            width: auto;
+            height: 100%;
+            font-size: 12px;
+            padding: 0px 13px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #secpar>div:hover {
+            background-color: white;
+            color: #623381;
+        }
+
+        #star {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cont">
+        <div id="secpar">
+            <div><span class="material-icons-outlined">reorder</span>SHOP BY BRAND</div>
+            <div>SKINCARE</div>
+            <div>MAKEUP</div>
+            <div>HAIRCARE</div>
+            <div>PERFUME</div>
+            <div>MEN'S SKINCARE</div>
+            <div>MEN'S COLOGNE</div>
+            <div>HOME SCENTS</div>
+            <div>NATURAL BEAUTY</div>
+            <div><span class="material-icons-outlined">redeem</span>SPECIALS</div>
+            <div><span id="star" class="material-icons-outlined">star</span>NEW</div>
+        </div>
+    </div>
+</body>
+
+</html>
