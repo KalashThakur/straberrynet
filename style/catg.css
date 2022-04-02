@@ -173,6 +173,7 @@ body {
   height: 28px;
   font-weight: 600;
   margin-bottom: -30px;
+  margin-left: -45px;
 }
 #crt_topbranchildren button:hover{
   background-color: rgb(231, 231, 231);
