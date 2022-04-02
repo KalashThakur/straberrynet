@@ -137,12 +137,15 @@ let title = document.getElementById("heading").innerText;
 
         let price = document.querySelector(".intPrice").innerText;
 
+        // let size = document.getElementById("size").innerText;
+
         let obj = 
             {image1: image, 
              title: title,   
              desc: desc,
              quant: Number(quant),
-             price: price*quant
+             price: price*quant,
+            
             }
         cart.push(obj)
 

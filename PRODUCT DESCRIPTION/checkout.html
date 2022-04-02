@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <style>
         *{
             font-family: sans-serif;
         }
         #container{
             border: 2px solid black;
-            height: 1500px;
+            height: 1800px;
             width: 80%;
             margin: 50px auto;
             
@@ -26,7 +28,7 @@
         }
 
         #cont1{
-            width: 60%;
+            width: 62%;
             height: 1000px;
 
         }
@@ -38,13 +40,11 @@
 
         #cont2 div{
             background-color: #fff;
-
         }
-
 
         #cont2
         {
-            width: 38%;
+            width: 36%;
             height: 550px;
             display: block;
         }
@@ -56,24 +56,36 @@
             
         }
 
-        #form1 div{
+        #form1 > div{
             border: 2px solid red;
 
         }
 
-        #form1 div:first-child{
+        #notification{
             height: 220px;
             overflow: auto;
             padding-right: 14px;
         }
 
-        #form1 div:nth-child(2){
-            height: 280px;
+        #cart-details{
+            /* height: 280px; */
             margin-bottom: 30px;
+            /* text-align: center; */
+            /* display: flex; */
         }
 
+        /* #cart_details{
+            display: flex;
+        } */
+
         #form1 div:nth-child(3){
-            height: 750px;
+            height: 720px;
+            margin-bottom: 20px;
+        }
+
+        #form1 div:nth-child(4){
+            height: 300px;
+            
         }
         /* #cont2:first-child{
             border: 2px solid red;
@@ -155,6 +167,11 @@
 
         }
 
+        /* #myForm  input{
+            width: 95%;
+
+        } */
+
         select{
             width: 98.2%;
 
@@ -182,6 +199,78 @@
         select:hover{
             border: 2px solid #623381;
         }
+
+        #cart_image{
+            border: 1px solid peru;
+            height: 100px;
+            width: 13%;
+        }
+
+        #cart_data{
+            /* border: 1px solid rgb(63, 129, 205); */
+            /* box-sizing: border-box; */
+            height: 180px;
+            width: 93%;
+            margin: auto; 
+            display: flex; 
+            gap: 40px;
+        }
+ 
+         #cart_info{
+            border: 1px solid purple;
+            height: 50px;
+            width: 24%;
+        } 
+
+        #qty{
+            border: 1px solid peru;
+            /* height: 100px; */
+            width: 16%;
+            /* text-align: center; */
+        }
+
+        #price{
+            border: 1px solid purple;
+            width: 16%;
+
+        } 
+
+        div{
+            display: block;
+        }
+
+        #mainDiv{
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        #cont4{
+            border: 2px solid red;
+            /* padding: 8px; */
+            font-weight: bold;
+        }
+
+        #cont4 h3{
+            border: 2px solid blue;
+        }
+
+        #pay_form{
+            border: 2px solid green;
+            /* margin-left: 10px; */
+            /* text-align: left; */
+        }
+
+        .radio{
+         width: 10px;
+         /* display: inline-block; */
+         /* padding: 10px; */
+         /* border: 2px solid brown; */
+        }
+
+        #input1{
+            display: none;
+        }
+       
     </style>
 
 </head>
@@ -191,7 +280,7 @@
         <div id="cont1">
 
         <form action="" id="form1">
-            <div>
+            <div id="notification">
                 <h3 id="notify">NOTIFICATION (4)</h3>
                 <ul>
                     <li>Please note that delivery to your selected region will be delayed because order dispatches are on hold due to shipping restrictions. For more information, please contact info@strawberrynet.com.</li>
@@ -200,8 +289,16 @@
                     <li>Spend a minimum of USD150 after discounts to qualify for free shipping, or spend a minimum of USD100 after discounts to qualify for a reduced shipping charge at USD5. A shipping cost of USD10 will be charged for orders below USD100.</li>
                 </ul>
             </div>
-
-            <div id="cart-details"></div>
+<!-- ****************************************************** -->
+            <div id="cart-details">
+                <!-- <div id="cart_data"> -->
+                    <!-- <div id="cart_image"></div>
+                    <div id="cart_info"></div>
+                    <div id="qty">kjbjb</div>
+                    <div id="price"></div> -->
+                <!-- </div> -->
+            </div>
+<!-- ****************************************************** -->
 
             <div>
                 <h3>SHOPPING INFORMATION</h3>
@@ -251,9 +348,37 @@
 
             </div>
 
-        </form>
+         <div id="cont4">
+             <h3>PAYMENT</h3>
+
+             <form action="" id="pay_form">
+                 <input type="radio" class="radio" style="display: inline;" id="visa"> <img src="https://s.cdnsbn.com/images/common/Visa.png" alt=""> Visa - credit or debit card
+                 <div id="input1">
+                     <input type="number" placeholder="Card Number (no spaces)">
+                     <input type="date" placeholder="DD/MM/YY">
+                     <input type="cvv" placeholder="Enter your CVV number">
+                 </div>
+                 <br>
+                 <input type="radio" style="display: inline;" id="master" class="radio"> <img src="https://s.cdnsbn.com/images/common/Master.png" alt=""> MasterCard - credit or debit card
+                 <!-- <br> -->
+                 <div id="input2"></div>
+
+                 <input type="radio" style="display: inline;" id="paypal" class="radio"> <img src="	https://s.cdnsbn.com/images/common/Paypal.png" alt=""> Paypal
+                 <!-- <br> -->
+                 <div id="input3"></div>
+
+                 <input type="radio" style="display: inline;" id="american" class="radio"> <img src="https://s.cdnsbn.com/images/common/AmericanExpress.png" alt=""> American express
+                 <div id="input4"></div>
+                 
+                 
+             </form>
+         </div>
+
+         </form>
 
         </div>
+
+
 <!-- ******************Promo*********************** -->
         <div id="cont2">
             <!-- <div></div>
@@ -274,5 +399,107 @@
             </form>
         </div>
     </div>
+
+    
 </body>
 </html>
+
+<script>
+  
+    let arr = JSON.parse(localStorage.getItem("cart_item"));
+    console.log('arr:', arr)
+
+
+    arr.map(function(elem)
+    {
+        let mainDiv = document.createElement("div");
+        mainDiv.setAttribute("id","mainDiv")
+
+        let image_div = document.createElement("div");
+        
+        let image = document.createElement("img");
+        image.src = elem.image1;
+        image.width = "90px";
+        image.height = "90px";
+        
+        image_div.append(image)
+// *************************************************
+        let info_div = document.createElement("div");
+        info_div.style.border = "2px solid black";
+        info_div.style.height = "140px";
+        info_div.style.width = "140px";
+
+        // ------
+        let title_div = document.createElement("div");
+        title_div.innerText = elem.title;
+        title_div.style.marginBottom = "10px"
+
+        let desc_div = document.createElement("div");
+        desc_div.innerText = elem.desc;
+
+        let price_div = document.createElement("div");
+        // price_div.innerText = elem.price;
+
+        info_div.append(title_div,desc_div)
+
+        mainDiv.append(image,info_div)
+        document.getElementById("cart-details").append(mainDiv)
+// *************************************************
+
+        let qty_div = document.createElement("div");
+        
+
+        let productPrice_div = document.createElement("div");  
+         
+    })
+
+
+document.getElementById("myForm").addEventListener("click",function(event)
+{
+    event.preventDefault();
+
+    let payment_div = document.createElement("div");
+
+    let form = document.createElement("form");
+
+    let input1 = document.createElement("input");
+})
+
+// *******************PAYMENT************************
+
+let visa = document.getElementById("visa");
+
+let card = document.createElement("input");
+let date = document.createElement("input");
+let cvv = document.createElement("input");
+
+
+
+if(visa.checked==true)
+{
+// let maindiv = document.createElement("div");
+    // let card = document.createElement("input");
+    // card.type = "number"
+    // card.placeholder = "Card Number (no spaces)";
+
+    // // let date = document.createElement("input");
+    // date.type = "date";
+    // date.placeholder = "DD/MM/YY";
+
+    // // let cvv = document.createElement("input");
+    // cvv.type = "number";
+    // cvv.placeholder = "Enter CVV";
+
+    // document.getElementById("input1").append(card,date,cvv);  
+
+    document.querySelector("#input1").style.display = "inline";
+}
+
+document.getElementById("visa").addEventListener("input",function()
+{
+    document.querySelector("#input1").style.display = "block";
+
+})
+
+
+</script>
