@@ -809,7 +809,7 @@ let adtocartfunc = (elem) => {
   if (flag === true) {
     arr2.push(elem);
     localStorage.setItem("cart_item", JSON.stringify(arr2));
-    document.querySelector("#crt_counter").innerText = arr2.length;
+    // document.querySelector("#crt_counter").innerText = arr2.length;
   }
 };
 let tempsavetodesc = (elem) => {
