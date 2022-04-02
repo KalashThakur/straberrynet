@@ -1,3 +1,65 @@
+function getdata(url,name,description,price,extraof,rating,size,strikedprice,url1,url2,save,quant)
+{
+    this.image1 = url;   
+    this.title = name;
+    this.desc = description;
+    this.price = price;
+
+    this.extraof = extraof;
+    this.rating = rating; 
+    this.size = size;
+    this.strikedprice = strikedprice;
+
+    this.img1 = url1;
+    this.img2 = url2;
+
+    this.save = save;
+
+    this.quant = quant;
+
+
+    
+}
+
+
+let menSkincare_data = [];
+
+let d1 = new getdata("https://a.cdnsbn.com/images/products/250/10057281421.jpg","Shiseido","Men Cleansing Foam 125ml/4.2oz",2151.50,"Extra 8% Off The Entire Site","★★★★☆","Size: 125ml/4.2oz","1,054.00","https://a.cdnsbn.com/images/products/10057281421.jpg","https://a.cdnsbn.com/images/products/10057281421-1.jpg","Save: 12%",1);
+let d2 = new getdata("https://a.cdnsbn.com/images/products/250/23695580321.jpg","Clarins","Men Super Moisture Gel (New Packaging) 50ml/1.7oz",3051.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 50ml/1.7oz","1,054.00","https://a.cdnsbn.com/images/products/23695580321-1.jpg","https://a.cdnsbn.com/images/products/23695580321-2.jpg","Save: 10%",1);
+let d3 = new getdata("https://a.cdnsbn.com/images/products/250/23695480321.jpg","Clarins","Men Super Moisture Balm (New Packaging) 50ml/1.6oz",3051.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 50ml/1.6oz","1,054.00","https://a.cdnsbn.com/images/products/23695480321-1.jpg","https://a.cdnsbn.com/images/products/23695480321-2.jpg","Save: 11%",1);
+let d4 = new getdata("https://a.cdnsbn.com/images/products/250/14461280321.jpg","Clarins","Men Exfoliating Cleanser 125ml/4.4oz",1995.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 125ml/4.4oz","1,054.00","https://a.cdnsbn.com/images/products/14461280321-1.jpg","https://a.cdnsbn.com/images/products/14461280321-2.jpg","Save: 6%",1);
+let d5 = new getdata("https://b.cdnsbn.com/images/products/250/10217380321.jpg","Clarins","Men After Shave Energizer 100ml/3.4oz",2738.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 100ml/3.4oz","1,054.00","https://a.cdnsbn.com/images/products/10217380321-1.jpg","https://a.cdnsbn.com/images/products/10217380321-2.jpg","Save: 8%",1);
+let d6 = new getdata("https://b.cdnsbn.com/images/products/250/10044280321.jpg","Clarins","Men Line-Control Balm 50ml/1.7oz",4576.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 50ml/1.7oz","1,054.00","https://a.cdnsbn.com/images/products/10044280321-1.jpg","https://a.cdnsbn.com/images/products/10044280321-2.jpg","Save: 3%",1);
+
+let d7 = new getdata("https://b.cdnsbn.com/images/products/250/10057481421.jpg","Shiseido","Men Hydrating Lotion 150ml/5oz",2855.50,"Extra 8% Off The Entire Site","★★★★☆","Size: 150ml/5oz","1,054.00","https://a.cdnsbn.com/images/products/10057481421-1.jpg","https://a.cdnsbn.com/images/products/10057481421-2.jpg","Save: 7%",1);
+let d8 = new getdata("https://b.cdnsbn.com/images/products/250/18844676721.jpg","Biotherm","Homme Aquapower 72H Concentrated Glacial Hydrator 50ml/1.69oz",3989.50,"Extra 8% Off The Entire Site","★★★★☆","Size: 50ml/1.69oz","1,054.00","https://a.cdnsbn.com/images/products/18844676721-1.jpg","https://a.cdnsbn.com/images/products/18844676721-2.jpg","Save: 2%",1);
+let d9 = new getdata("https://c.cdnsbn.com/images/products/250/10031180321.jpg","Clarins","Men Active Face Wash 125ml/4.4oz",1760.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 125ml/4.4oz","1,054.00","https://a.cdnsbn.com/images/products/10031180321-1.jpg","https://a.cdnsbn.com/images/products/10031180321-2.jpg","Save: 12%",1);
+let d10 = new getdata("https://c.cdnsbn.com/images/products/250/16822181421.jpg","Shiseido","Men Total Revitalizer Eye 15ml/0.53oz",4107.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 15ml/0.53oz","1,054.00","https://a.cdnsbn.com/images/products/16822181421-1.jpg","https://a.cdnsbn.com/images/products/16822181421-2.jpg","Save: 12%",1);
+
+let d11 = new getdata("https://c.cdnsbn.com/images/products/250/24330580421.jpg","Clinique","Maximum Hydrator 72-Hour Auto-Replenishing Hydrator 50ml/1.7oz",3481.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 50ml/1.7oz","1,054.00","https://a.cdnsbn.com/images/products/24330580421-1.jpg","https://a.cdnsbn.com/images/products/24330580421-2.jpg","Save: 15%",1);
+let d12 = new getdata("https://c.cdnsbn.com/images/products/250/20485676721.jpg","Biotherm","Homme Day Control Extreme Protection 72H Non-Stop Antiperspirant",2308.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 50ml/1.8oz","1,054.00","https://a.cdnsbn.com/images/products/20485676721-1.jpg","https://a.cdnsbn.com/images/products/20485676721-2.jpg","Save: 21%",1);
+
+let d13 = new getdata("https://d.cdnsbn.com/images/products/250/10046180321.jpg","Clarins","Men Anti Perspirant 50ml/1.7oz",1682.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 50ml/1.7oz","1,054.00","https://a.cdnsbn.com/images/products/10046180321-1.jpg","https://a.cdnsbn.com/images/products/10046180321-2.jpg","Save: 14%",1);
+let d14 = new getdata("https://d.cdnsbn.com/images/products/250/10968228621.jpg","Kiehl's","Facial Fuel Energizing Moisture Treatment For Men 125ml/4.2oz",3559.50,"Extra 8% Off The Entire Site","★★★★☆","Size: 125ml/4.2oz","1,054.00","https://a.cdnsbn.com/images/products/10968228621-1.jpg","https://a.cdnsbn.com/images/products/10968228621-2.jpg","Save: 8%",1);
+let d15 = new getdata("https://d.cdnsbn.com/images/products/250/10063176721.jpg","Biotherm","Homme Aquatic After Shave Lotion (Normal Skin) 200ml/6.76oz",3051.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 200ml/6.76oz","1,054.00","https://a.cdnsbn.com/images/products/10063176721-1.jpg","https://a.cdnsbn.com/images/products/10063176721-2.jpg","Save: 8%",1);
+let d16 = new getdata("https://d.cdnsbn.com/images/products/250/13424776721.jpg","Biotherm","Homme T-Pur Clay-Like Unclogging Purifying Cleanser 125ml/4.22oz",2464.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 125ml/4.22oz","1,054.00","https://a.cdnsbn.com/images/products/13424776721-1.jpg","https://a.cdnsbn.com/images/products/13424776721-2.jpg","Save: 12%",1);
+
+let d17 = new getdata("https://a.cdnsbn.com/images/products/250/18107076721.jpg","Biotherm","Homme Force Supreme Eye Architect Serum 15ml/0.5oz",4772.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 15ml/0.5oz","1,054.00","https://a.cdnsbn.com/images/products/18107076721-1.jpg","https://a.cdnsbn.com/images/products/18107076721-2.jpg","Save: 8%",1);
+let d18 = new getdata("https://a.cdnsbn.com/images/products/250/20485576721.jpg","Biotherm","Homme Day Control Protection 48H Non-Stop Antiperspirant 75ml/2.53oz",2308.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 75ml/2.53oz","1,054.00","https://a.cdnsbn.com/images/products/20485576721-1.jpg","https://a.cdnsbn.com/images/products/20485576721-2.jpg","Save: 6%",1);
+let d19 = new getdata("https://a.cdnsbn.com/images/products/250/13687699921.jpg","Jack Black","Double Duty Face Moisturizer SPF 20 251ml/8.5oz",4185.00,"Extra 8% Off The Entire Site","★★★★☆","Size:251ml/8.5oz","1,054.00","https://a.cdnsbn.com/images/products/13687699921-1.jpg","https://a.cdnsbn.com/images/products/13687699921-2.jpg","Save: 2%",1);
+let d20 = new getdata("https://a.cdnsbn.com/images/products/250/10047076721.jpg","Biotherm","Homme Toning Cleansing Gel (Normal Skin) 150ml/5.07oz",2660.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 150ml/5.07oz","1,054.00","https://a.cdnsbn.com/images/products/10047076721.jpg","https://a.cdnsbn.com/images/products/10047076721.jpg","Save: 12%",1);
+let d21 = new getdata("https://b.cdnsbn.com/images/products/250/10217580321.jpg","Clarins","Men After Shave Soother 75ml/2.7oz",2738.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 75ml/2.7oz","1,054.00","https://a.cdnsbn.com/images/products/10217580321-1.jpg","https://a.cdnsbn.com/images/products/10217580321-2.jpg","Save: 10%",1);
+let d22 = new getdata("https://b.cdnsbn.com/images/products/250/11723628621.jpg","Kiehl's","Facial Fuel Energizing Moisture Treatment For Men 75ml/2.5oz",2855.50,"Extra 8% Off The Entire Site","★★★★☆","Size: 75ml/2.5oz","1,054.00","https://a.cdnsbn.com/images/products/11723628621-1.jpg","https://a.cdnsbn.com/images/products/11723628621-2.jpg","Save: 12%",1);
+let d23 = new getdata("https://b.cdnsbn.com/images/products/250/14045880421.jpg","Clinique","Anti-Age Moisturizer 100ml/3.4oz",4459.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 100ml/3.4oz","1,054.00","https://a.cdnsbn.com/images/products/14045880421-1.jpg","https://a.cdnsbn.com/images/products/14045880421-2.jpg","Save: 2%",1);
+let d24 = new getdata("https://b.cdnsbn.com/images/products/250/26162681421.jpg","Shiseido","Men Energizing Moisturizer Extra Light Fluid 100ml/3.3oz",4185.00,"Extra 8% Off The Entire Site","★★★★☆","Size: 100ml/3.3oz","1,054.00","https://a.cdnsbn.com/images/products/26162681421-1.jpg","https://a.cdnsbn.com/images/products/26162681421-2.jpg","Save: 12%",1);
+
+
+
+menSkincare_data.push(d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d21,d22,d23,d24);
+
+
+// localStorage.setItem("haircare_data",JSON.stringify(haircare_data));
+
 let arr = [
   ["Skincare"],
   [
@@ -103,323 +165,7 @@ let arr = [
   ],
 ];
 
-function getdata(
-  image1,
-  image2,
-  image3,
-  title,
-  desc,
-  size,
-  save,
-  price,
-  strikedprice,
-  extraof,
-  rating,
-  quant
-) {
-  this.image1 = image1;
-  this.image2 = image2;
-  this.image3 = image3;
-  this.title = title;
-  this.desc = desc;
-  this.size = size;
-  this.save = save;
-  this.price = price;
-  this.strikedprice = strikedprice;
-  this.extraof = extraof;
-  this.rating = rating;
-  this.quant = quant;
-}
 
-let d1 = new getdata(
-  "https://d.cdnsbn.com/images/products/250/23802077203.jpg",
-  "https://a.cdnsbn.com/images/products/msn/23802077203-1.jpg",
-  "https://a.cdnsbn.com/images/products/msn/23802077203-2.jpg",
-  "KISS ME",
-  "Medicated Hand Cream",
-  "Size: 75g/2.6oz",
-  "Save: 25%",
-  469.0,
-  "626.00",
-  "Extra 8% Off The Entire Site",
-  "★★★★☆",
-  1
-);
-let d2 = new getdata(
-  "https://b.cdnsbn.com/images/products/250/25682680401.jpg",
-  "https://a.cdnsbn.com/images/products/msn/25682680401-1.jpg",
-  "https://a.cdnsbn.com/images/products/msn/25682680401-2.jpg",
-  "CLINIQUE",
-  "Moisture Surge 72-Hour Auto-Replenishing Hydrator (Limited Edition)",
-  "Size: 75ml/2.5oz",
-  "Save: 21%",
-  3324.0,
-  "4,224.00",
-  "Extra 8% Off The Entire Site",
-  "★★★★☆"
-);
-let d3 = new getdata(
-  "https://c.cdnsbn.com/images/products/250/23802177203.jpg",
-  "https://a.cdnsbn.com/images/products/msn/23802177203-1.jpg",
-  "",
-  "KISS ME",
-  "Medicated Hand Cream",
-  "Size: 65g/2.2oz",
-  "Save: 14%",
-  469.0,
-  "548.00",
-  "Extra 8% Off The Entire Site",
-  "★★★★★"
-);
-let d4 = new getdata(
-  "https://c.cdnsbn.com/images/products/250/21495580301.jpg",
-  "https://a.cdnsbn.com/images/products/msn/21495580301-1.jpg",
-  "https://a.cdnsbn.com/images/products/msn/21495580301-2.jpg",
-  "CLARINS",
-  "Double Serum (Hydric + Lipidic System) Complete Age Control Concentrate",
-  "Size: 30ml/1oz ",
-  "Save: 14%",
-  7588.0,
-  "8,588.00",
-  "Extra 8% Off The Entire Site",
-  "★★★★★"
-);
-let d5 = new getdata(
-  "https://d.cdnsbn.com/images/products/250/04873792001.jpg",
-  "https://a.cdnsbn.com/images/products/msn/04873792001-1.jpg",
-  "https://a.cdnsbn.com/images/products/msn/04873792001-1.jpg",
-  "DR. HAUSCHKA",
-  "Lip Care Stick",
-  "Size: 4.9g/0.16oz ",
-  "Save: 17%",
-  978.0,
-  "1,173.50",
-  "Extra 8% Off The Entire Site",
-  "★★★★☆"
-);
-let d6 = new getdata(
-  "https://d.cdnsbn.com/images/products/250/20457342003.jpg",
-  "https://a.cdnsbn.com/images/products/msn/20457342003-1.jpg",
-  "https://a.cdnsbn.com/images/products/msn/20457342003-2.jpg",
-  "MARIO BADESCU",
-  "A.H.A. Botanical Body Soap - For All Skin Types",
-  "Size: 236ml/8oz ",
-  "Save: 10%",
-  900.0,
-  "1200.00",
-  "Extra 8% Off The Entire Site",
-  "★★★★★"
-);
-let d7 = new getdata(
-  "https://a.cdnsbn.com/images/products/msn/11930580303.jpg",
-  "https://a.cdnsbn.com/images/products/msn/11930580303-1.jpg",
-  "https://a.cdnsbn.com/images/products/msn/11930580303-1.jpg",
-  "CLARINS",
-  "Gentle Care Roll On Deodorant",
-  "Size: 50ml/1.7oz",
-  "Save: 10%",
-  1995.0,
-  "2,200.00",
-  "Extra 8% Off The Entire Site",
-  "★★★★★"
-);
-let d8 = new getdata(
-  "https://a.cdnsbn.com/images/products/250/08070680901.jpg",
-  "https://a.cdnsbn.com/images/products/msn/08070680901-1.jpg",
-  "https://a.cdnsbn.com/images/products/msn/08070680901-2.jpg",
-  "LANCOME",
-  "Mousse Eclat Express Clarifying Self-Foaming Cleanser",
-  "Size: 200ml/6.7oz",
-  "",
-  2699.0,
-  "2,999.00",
-  "Extra 8% Off The Entire Site",
-  "★★★★☆"
-);
-let d9 = new getdata(
-  "https://b.cdnsbn.com/images/products/250/22665196301.jpg",
-  "https://a.cdnsbn.com/images/products/msn/22665196301-1.jpg",
-  "https://a.cdnsbn.com/images/products/msn/22665196301-2.jpg",
-  "Skin Ceuticals",
-  "C E Ferulic High Potency Triple Antioxidant Treatment",
-  "Size: 30ml/1oz",
-  "",
-  14432.0,
-  "16,432.00",
-  "Extra 8% Off The Entire Site",
-  "★★★★☆"
-);
-let d10 = new getdata(
-  "https://b.cdnsbn.com/images/products/250/18677708101.jpg",
-  "https://a.cdnsbn.com/images/products/msn/18677708101-1.jpg",
-  "https://a.cdnsbn.com/images/products/msn/18677708101-2.jpg",
-  "LA ROCHE POSAY",
-  "Cicaplast Baume B5 Soothing Repairing Balm",
-  "Size: 100ml/3.3oz ",
-  "Save: 15%",
-  1995.0,
-  "2,347.00",
-  "Extra 8% Off The Entire Site",
-  "★★★★★"
-);
-let d11 = new getdata(
-  "https://b.cdnsbn.com/images/products/250/01348880501.jpg",
-  "https://a.cdnsbn.com/images/products/msn/01348880501-1.jpg",
-  "https://a.cdnsbn.com/images/products/msn/01348880501-2.jpg",
-  "ELIZABETH ARDEN",
-  "Eight Hour Lipcare Stick",
-  "Size: 3.7g/0.13oz ",
-  "Save: 40%",
-  1134.0,
-  "1,877.50",
-  "Extra 8% Off The Entire Site",
-  "★★★★★"
-);
-
-let d12 = new getdata(
-  "https://c.cdnsbn.com/images/products/250/18677808101.jpg",
-  "https://a.cdnsbn.com/images/products/msn/18677808101-1.jpg",
-  "https://a.cdnsbn.com/images/products/msn/18677808101-2.jpg",
-  "La Roche Posay",
-  "Cicaplast Baume B5 Soothing Repairing Balm ",
-  "40ml/1.35oz",
-  "",
-  1730.0,
-  "",
-  "Extra 8% Off The Entire Site",
-  "★★★★☆"
-);
-let d13 = new getdata(
-  "https://c.cdnsbn.com/images/products/250/20621976701.jpg",
-  "https://a.cdnsbn.com/images/products/msn/20621976701-1.jpg",
-  "https://a.cdnsbn.com/images/products/msn/20621976701-2.jpg",
-  "Biotherm",
-  "Biosource 24H Hydrating & Tonifying Toner - For Normal/Combinatio",
-  "400ml/13.52oz",
-  "SAVE 14%",
-  2347.0,
-  "2,738.00",
-  "Extra 8% Off The Entire Site",
-  "★★★★☆"
-);
-let d14 = new getdata(
-  "https://c.cdnsbn.com/images/products/250/23954980501.jpg",
-  "https://a.cdnsbn.com/images/products/msn/23954980501-1.jpg",
-  "https://a.cdnsbn.com/images/products/msn/23954980501-2.jpg",
-  "Elizabeth Arden",
-  "Ceramide Retinol Capsules - Line Erasing Night Serum ",
-  " 60 Caps",
-  "SAVE 15%",
-  5554.0,
-  "6,805.50",
-  "Extra 8% Off The Entire Site",
-  "★★★★★"
-);
-let d15 = new getdata(
-  "https://c.cdnsbn.com/images/products/250/17974943503.jpg",
-  "https://a.cdnsbn.com/images/products/msn/23954980501-1.jpg",
-  "https://a.cdnsbn.com/images/products/msn/17974943503-2.jpg",
-  "3W Clinic",
-  "Hand Cream - Collagen ",
-  "100ml/3.38oz",
-  "SAVE 38%",
-  313.0,
-  "508.50",
-  "Extra 8% Off The Entire Site",
-  "★★★★☆"
-);
-let d16 = new getdata(
-  "https://d.cdnsbn.com/images/products/250/03191321601.jpg",
-  "https://a.cdnsbn.com/images/products/msn/17974943503-2.jpg",
-  "https://a.cdnsbn.com/images/products/msn/17974943503-2.jpg",
-  "Dermalogica",
-  "UltraCalming Cleanser",
-  "500ml/16.9oz",
-  "SAVE 10%",
-  4498.0,
-  "5,006.50",
-  "Extra 8% Off The Entire Site",
-  "★★★★☆"
-);
-let d17 = new getdata(
-  "https://d.cdnsbn.com/images/products/250/01347880501.jpg",
-  "https://a.cdnsbn.com/images/products/msn/20789765901-1.jpg",
-  "https://a.cdnsbn.com/images/products/msn/20789765901-2.jpg",
-  "EltaMD",
-  "UV Clear Facial Sunscreen SPF 46 - For Skin Types Prone To Acne, Rosa",
-  "48g/1.7oz",
-  "SAVE 35%",
-  2777.0,
-  "4,302.50",
-  "Extra 8% Off The Entire Site",
-  "★★★★★"
-);
-let d18 = new getdata(
-  "https://d.cdnsbn.com/images/products/250/01312680303.jpg",
-  "",
-  "",
-  "Elizabeth Arden",
-  "Visible Difference Refining Moisture Cream Complex",
-  "75ml/2.5oz",
-  "",
-  4302.0,
-  "5,241.00",
-  "Extra 8% Off The Entire Site",
-  "★★★★☆"
-);
-let d22 = new getdata(
-  "https://d.cdnsbn.com/images/products/250/17087308201.jpg",
-  "https://a.cdnsbn.com/images/products/msn/20789765901-2.jpg",
-  "https://a.cdnsbn.com/images/products/msn/01347880501-2.jpg",
-  "Clarins",
-  "Body Treatment Oil-Tonic ",
-  "100ml/3.3oz",
-  "SAVE 18%",
-  4654.0,
-  "5,397.50",
-  "Extra 8% Off The Entire Site",
-  "★★★★★"
-);
-let d19 = new getdata(
-  "https://a.cdnsbn.com/images/products/250/20789765901.jpg",
-  "https://a.cdnsbn.com/images/products/msn/01347880501-2.jpg",
-  "",
-  "Clinique",
-  "Re-Boost Comforting Hydrating Cream - For Dry & Sensitiv",
-  "50ml/1.7oz",
-  "SAVE 14%",
-  3637.0,
-  "4,200.00",
-  "Extra 8% Off The Entire Site",
-  "★★★★☆"
-);
-let d20 = new getdata(
-  "https://a.cdnsbn.com/images/products/250/17727242001.jpg",
-  "https://a.cdnsbn.com/images/products/msn/25353480401-2.jpg",
-  "",
-  "Obagi",
-  "BAGI360 Retinol ",
-  "0.5 30ml/1oz",
-  "",
-  1799.0,
-  "",
-  "Extra 8% Off The Entire Site",
-  "★★★★☆"
-);
-let e24 = new getdata(
-  "https://c.cdnsbn.com/images/products/250/26413580003.jpg",
-  "https://a.cdnsbn.com/images/products/msn/23582480001-1.jpg",
-  "https://a.cdnsbn.com/images/products/msn/23582480001-2.jpg",
-  "Borghese",
-  "Energia Vitamin E Antioxidant Creme ",
-  "28g/1oz",
-  "SAVE 2%",
-  4772.0,
-  "4,850.00",
-  "Extra 8% Off The Entire Site",
-  "★★★★★"
-  
-);
 
 // ------------------------------------------------------111Skin----------------------------------
 
@@ -579,32 +325,32 @@ let c11 = new getdata(
   "Extra 8% Off The Entire Site",
   "★★★★☆"
 );
-arr[1].push(
-  d1,
-  d2,
-  d3,
-  d4,
-  d5,
-  d6,
-  d8,
-  d9,
-  d10,
-  d11,
-  d12,
-  d13,
-  d14,
-  d15,
-  d16,
-  d17,
-  d18,
-  d19,
-  d20,
-  e24
-);
+// arr[1].push(
+//   d1,
+//   d2,
+//   d3,
+//   d4,
+//   d5,
+//   d6,
+//   d8,
+//   d9,
+//   d10,
+//   d11,
+//   d12,
+//   d13,
+//   d14,
+//   d15,
+//   d16,
+//   d17,
+//   d18,
+//   d19,
+//   d20,
+//   d24
+// );
 let brand11arr = [];
-brand11arr.push(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11);
+// brand11arr.push(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11);
 
-let aradata = arr[1];
+let aradata = menSkincare_data;
 
 let shodata = (aradata) => {
   let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
@@ -726,26 +472,28 @@ let shodata = (aradata) => {
     parofappend.append(div);
   });
 
-  document.querySelector("#crt_popularityfilter").addEventListener("change",()=>{
-    sorting();
-  })
-  let sorting =()=>{
-   let selval = document.querySelector("#crt_popularityfilter").value;
-    console.log(selval)
-    if(selval=="LOWEST PRICE"){
-      aradata.sort(function (a,b){
-        return a.price-b.price;
-      })
-      shodata(aradata)
-    }
-    else if (selval=="BRAND: A-Z"){
-      aradata.sort((a, b) => a.title < b.title ? -1 : (a.title > b.title ? 1 : 0))
+  document
+    .querySelector("#crt_popularityfilter")
+    .addEventListener("change", () => {
+      sorting();
+    });
+  let sorting = () => {
+    let selval = document.querySelector("#crt_popularityfilter").value;
+    console.log(selval);
+    if (selval == "LOWEST PRICE") {
+      aradata.sort(function (a, b) {
+        return a.price - b.price;
+      });
+      shodata(aradata);
+    } else if (selval == "BRAND: A-Z") {
+      aradata.sort((a, b) =>
+        a.title < b.title ? -1 : a.title > b.title ? 1 : 0
+      );
 
       // })
-      shodata(aradata)
+      shodata(aradata);
     }
-  }
-
+  };
 };
 shodata(aradata);
 let addthisproductstowishlist = (elem)=>{
@@ -963,10 +711,10 @@ document.querySelector(".crt_Borghese").addEventListener("input", () => {
   document.querySelector(".skin11").checked = false;
   Borghe();
 });
-document.querySelector("#crticonnamearrnging").addEventListener("click",()=>{
-  showdataingridformat()
-})
-// document.querySelector(".LowPricePicks").addEventListener()  
+document.querySelector("#crticonnamearrnging").addEventListener("click", () => {
+  showdataingridformat();
+});
+// document.querySelector(".LowPricePicks").addEventListener()
 // .style.backgroundcolor="black"
 // let showdataingridformat =()=>{
 //    let sssssss = document.querySelector("#crt_parrentforappendingdata")
@@ -1149,7 +897,6 @@ let ToolsAcces = () => {
   // document.querySelector("#crt_count_of_prod").innerText = Borghesearr.length;
   // console.log("hhfgfhfgfgfddddddd");
 };
-
 
 import { navbar, footer } from "../components/header.js";
 
