@@ -24,7 +24,7 @@ const navbar = () => {
             <div id="accountSetPage-button">
                 <div class="account">
                     <div class="account-icon"></div>
-                    <div class="account-Singin">Sign in</div>
+                    <div class="account-Singin" >Sign in</div>
                 </div>
                 <div class="account" id="account2">
                     <div class="whitelist-icon"></div>

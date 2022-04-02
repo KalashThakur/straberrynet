@@ -7,22 +7,52 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="signup.css">
     <link rel="stylesheet" href="./style/slider.css">
-
- 
-    <link rel="stylesheet" href="header.css">
+     <link rel="stylesheet" href="./style/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="header.css">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> -->
+<!-- <link rel="stylesheet" href="header.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  
 </head>
 <body>
-    <div id="homenavbar">
+    <div id="lg">
+         <div class="login">
+            <div class="main">
+                <div class="cross">❌</div>
+                <div id="cont">
+                 <div id="signup">
+                     <h6 onclick="newhere()">Sign In</h6>
+                    <h6 onclick="signin()">New Here?</h6>
+                 </div>
+                 
+                 <div class="div1">
+                     <input type="text" placeholder="Email Adress" id="useremail">
+                     <input type="text" placeholder="Password" id="userpass">
+                     <p>Forget Password</p>
+                     <button id="btt">Sign In</button>
+                 </div>
+                 <div class="div2">
+                     <input type="text" placeholder="First Name" id="name" class="input-field" required>
+                     <input type="text" placeholder="Last Name">
+                     <input type="text" placeholder="Email Adress" id="email" class="input-field" required>
+                     <input type="text" placeholder="Password" id="password" class="input-field" required>
+                     <p>Please enter a minimum of 8 characters.</p>
+                     <input type="text" placeholder="Re-enter Password">
+                     <button id="submit">Register</button>
+                     
+                 </div>
+                 
+                </div>
+        
+            </div>
+         </div> -->
+    </div>
+    <div id="homenavbar"></div>
 
-    </div>
-    <div class="banner">
-    </div>
+    <div class="banner"></div>
 
     <div class="content">
         <div class="promoline">
@@ -122,12 +152,31 @@
 </body>
 <script src="./script/home.js"></script>
 <script src="./script/data.js"></script>
+
 </html>
 <script type="module">
-import {navbar , footer} from "./components/header.js"
 
+import {navbar , footer} from "./components/header.js"
 let homenav=document.getElementById("homenavbar")
 homenav.innerHTML=navbar()
+
+ document.querySelector(".account-Singin").addEventListener("click",function(){
+     abc();
+ })
+const abc = ()=>{
+    document.querySelector("#lg").style.display="block"
+}
+
+// const aniket = ()=>{
+//     document.querySelector("#lg").innerHTML="aniket wagah come from hepls"; 
+// }
+// document.querySelector(".cross").addEventListener("click",()=>{
+//         document.querySelector("#lg").innerHTML="aniket wagah come from hepls";
+//         // console.log("hy bro");
+        
+//     })
+
+
 
 var search=document.getElementById("search")
 search.addEventListener("keypress",function(event){
@@ -140,13 +189,5 @@ search.addEventListener("keypress",function(event){
 let homefoot=document.getElementById("homefooter")
 homefoot.innerHTML=footer()
 
-
-
-   
-
-  
-
-
-  
-
 </script>
+<script src="./lg.js"></script>
