@@ -3,6 +3,7 @@ var arr2=JSON.parse(localStorage.getItem("blush_data"))
 var arr3=JSON.parse(localStorage.getItem("scents"))
 var arr4=JSON.parse(localStorage.getItem("hair_prod"))
 var arr5=JSON.parse(localStorage.getItem("bundle_joy"))
+    
 
 var main_arr=[]
 main_arr.push(...arr1,...arr2,...arr3,...arr4,...arr5)
