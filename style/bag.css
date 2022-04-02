@@ -1,6 +1,34 @@
 #main-div-bag{
     width: 100%;
     box-sizing: border-box;
+    display: flex;
+}
+#main-div-bag-left{
+  width: 55%;
+  margin-left: 5%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+#bag-right-div{
+  width: 40%;
+  display: grid;
+  /* grid-template-rows: repeat(2,1fr); */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+#main-div-bag-right{
+  margin-left: 5%;
+  /* padding: 20px; */
+  width: 40%;
+  border: 1px solid red;
+  height: 500px;
+  box-sizing: border-box;
+}
+#gust-checkout{
+  width: 500px;
 }
 #flag-img{
     background-image: url(https://a.cdnsbn.com/images/common/flags/india.png);
@@ -18,4 +46,96 @@
 
 #prodcutDiv{
     display: flex;
+    gap: 30px;
+    border: 1px solid black;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;/ */
+}
+#proinfoid{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+#proinfoid>div{
+  padding-top: 10px;
+}
+#proinfoid>div:nth-child(1){
+  color: black;
+  font-weight: 660;
+  font-size: 17px;
+}
+
+
+ /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.login{
+  width: 100%;
+  height: 500px;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.918);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cross{
+display: none;
+}
+.main{
+  /* height: 100%; */
+  width: 90%;
+  background: rgba(250, 239, 239, 0.952);
+  margin-top: 80px;
+}
+#cont{
+ display: grid;
+ /* grid-gap: 40px; */
+ width: 100%;
+ justify-content: center;
+ font-size: xx-large;
+ text-align: center;
+ align-content: center;
+ cursor: pointer;
+ /* margin-top: 20px; */
+}
+#signup{
+  display: flex;
+  justify-content: space-around;
+  text-decoration: underline;
+  color: #623380;
+}
+.div1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+ 
+}
+.punnetp{
+  font-size: 0.6em;
+  text-align: left;
+  text-decoration: underline;
+ 
+ 
+}
+#submit,#btt{
+  background-color: #623380;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.div2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  display: none;
+}
+input{
+  height: 30px;
+  width: 70%;
+  font-size: 18px;
+  margin-bottom: 30px;
+  border: 1px solid rgb(139, 70, 139);
 }

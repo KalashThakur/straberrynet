@@ -156,7 +156,8 @@ let d2 = new getdata(
   3324.0,
   "4,224.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let d3 = new getdata(
   "https://c.cdnsbn.com/images/products/250/23802177203.jpg",
@@ -169,7 +170,8 @@ let d3 = new getdata(
   469.0,
   "548.00",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let d4 = new getdata(
   "https://c.cdnsbn.com/images/products/250/21495580301.jpg",
@@ -182,7 +184,8 @@ let d4 = new getdata(
   7588.0,
   "8,588.00",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let d5 = new getdata(
   "https://d.cdnsbn.com/images/products/250/04873792001.jpg",
@@ -195,7 +198,8 @@ let d5 = new getdata(
   978.0,
   "1,173.50",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let d6 = new getdata(
   "https://d.cdnsbn.com/images/products/250/20457342003.jpg",
@@ -208,7 +212,8 @@ let d6 = new getdata(
   900.0,
   "1200.00",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let d7 = new getdata(
   "https://a.cdnsbn.com/images/products/msn/11930580303.jpg",
@@ -221,7 +226,8 @@ let d7 = new getdata(
   1995.0,
   "2,200.00",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let d8 = new getdata(
   "https://a.cdnsbn.com/images/products/250/08070680901.jpg",
@@ -234,7 +240,8 @@ let d8 = new getdata(
   2699.0,
   "2,999.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let d9 = new getdata(
   "https://b.cdnsbn.com/images/products/250/22665196301.jpg",
@@ -247,7 +254,8 @@ let d9 = new getdata(
   14432.0,
   "16,432.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let d10 = new getdata(
   "https://b.cdnsbn.com/images/products/250/18677708101.jpg",
@@ -260,7 +268,8 @@ let d10 = new getdata(
   1995.0,
   "2,347.00",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let d11 = new getdata(
   "https://b.cdnsbn.com/images/products/250/01348880501.jpg",
@@ -273,7 +282,8 @@ let d11 = new getdata(
   1134.0,
   "1,877.50",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 
 let d12 = new getdata(
@@ -287,7 +297,8 @@ let d12 = new getdata(
   1730.0,
   "",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let d13 = new getdata(
   "https://c.cdnsbn.com/images/products/250/20621976701.jpg",
@@ -300,7 +311,8 @@ let d13 = new getdata(
   2347.0,
   "2,738.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let d14 = new getdata(
   "https://c.cdnsbn.com/images/products/250/23954980501.jpg",
@@ -313,7 +325,8 @@ let d14 = new getdata(
   5554.0,
   "6,805.50",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let d15 = new getdata(
   "https://c.cdnsbn.com/images/products/250/17974943503.jpg",
@@ -326,7 +339,8 @@ let d15 = new getdata(
   313.0,
   "508.50",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let d16 = new getdata(
   "https://d.cdnsbn.com/images/products/250/03191321601.jpg",
@@ -339,7 +353,8 @@ let d16 = new getdata(
   4498.0,
   "5,006.50",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let d17 = new getdata(
   "https://d.cdnsbn.com/images/products/250/01347880501.jpg",
@@ -352,7 +367,8 @@ let d17 = new getdata(
   2777.0,
   "4,302.50",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let d18 = new getdata(
   "https://d.cdnsbn.com/images/products/250/01312680303.jpg",
@@ -365,7 +381,8 @@ let d18 = new getdata(
   4302.0,
   "5,241.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let d22 = new getdata(
   "https://d.cdnsbn.com/images/products/250/17087308201.jpg",
@@ -378,7 +395,8 @@ let d22 = new getdata(
   4654.0,
   "5,397.50",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let d19 = new getdata(
   "https://a.cdnsbn.com/images/products/250/20789765901.jpg",
@@ -391,7 +409,8 @@ let d19 = new getdata(
   3637.0,
   "4,200.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let d20 = new getdata(
   "https://a.cdnsbn.com/images/products/250/17727242001.jpg",
@@ -404,7 +423,8 @@ let d20 = new getdata(
   1799.0,
   "",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let e24 = new getdata(
   "https://c.cdnsbn.com/images/products/250/26413580003.jpg",
@@ -417,8 +437,8 @@ let e24 = new getdata(
   4772.0,
   "4,850.00",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
-  
+  "★★★★★",
+  1
 );
 
 // ------------------------------------------------------111Skin----------------------------------
@@ -434,7 +454,8 @@ let c0 = new getdata(
   7666.0,
   "8,995.50",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let c1 = new getdata(
   "https://a.cdnsbn.com/images/products/250/26665693301.jpg",
@@ -447,7 +468,8 @@ let c1 = new getdata(
   2347.0,
   "2,738.00",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let c2 = new getdata(
   "https://a.cdnsbn.com/images/products/250/27121193301.jpg",
@@ -460,7 +482,8 @@ let c2 = new getdata(
   6649.0,
   "7,822.50",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let c3 = new getdata(
   "https://a.cdnsbn.com/images/products/250/26665393301.jpg",
@@ -473,7 +496,8 @@ let c3 = new getdata(
   9308.0,
   "10,951.50",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let c4 = new getdata(
   "https://b.cdnsbn.com/images/products/250/26783093301.jpg",
@@ -486,7 +510,8 @@ let c4 = new getdata(
   13063.0,
   "14,862.50",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let c5 = new getdata(
   "https://b.cdnsbn.com/images/products/250/27127093301.jpg",
@@ -499,7 +524,8 @@ let c5 = new getdata(
   5319.0,
   "6,258.00",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let c6 = new getdata(
   "https://b.cdnsbn.com/images/products/250/26783193301.jpg",
@@ -512,7 +538,8 @@ let c6 = new getdata(
   12515.0,
   "15,644.50",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let c7 = new getdata(
   "https://b.cdnsbn.com/images/products/250/26664693301.jpg",
@@ -525,7 +552,8 @@ let c7 = new getdata(
   8995.0,
   "10,560.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let c8 = new getdata(
   "https://c.cdnsbn.com/images/products/250/26664993301.jpg",
@@ -538,7 +566,8 @@ let c8 = new getdata(
   8995.0,
   "10,560.00",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let c9 = new getdata(
   "https://c.cdnsbn.com/images/products/250/26782493301.jpg",
@@ -551,7 +580,8 @@ let c9 = new getdata(
   12046.0,
   "13,689.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let c10 = new getdata(
   "https://c.cdnsbn.com/images/products/250/26666493314.jpg",
@@ -564,7 +594,8 @@ let c10 = new getdata(
   10560.0,
   "12,672.00",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let c11 = new getdata(
   "https://c.cdnsbn.com/images/products/250/26782593301.jpg",
@@ -577,7 +608,8 @@ let c11 = new getdata(
   12046.0,
   "13,689.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 arr[1].push(
   d1,
@@ -625,9 +657,9 @@ let shodata = (aradata) => {
     let wishsym = document.createElement("input");
     wishsym.type = "checkbox";
     wishsym.id = "crt_wishchechbox";
-    wishsym.addEventListener("input",()=>{
+    wishsym.addEventListener("input", () => {
       addthisproductstowishlist(elem);
-    })
+    });
 
     wishdiv.append(wishsym);
 
@@ -726,43 +758,44 @@ let shodata = (aradata) => {
     parofappend.append(div);
   });
 
-  document.querySelector("#crt_popularityfilter").addEventListener("change",()=>{
-    sorting();
-  })
-  let sorting =()=>{
-   let selval = document.querySelector("#crt_popularityfilter").value;
-    console.log(selval)
-    if(selval=="LOWEST PRICE"){
-      aradata.sort(function (a,b){
-        return a.price-b.price;
-      })
-      shodata(aradata)
-    }
-    else if (selval=="BRAND: A-Z"){
-      aradata.sort((a, b) => a.title < b.title ? -1 : (a.title > b.title ? 1 : 0))
+  document
+    .querySelector("#crt_popularityfilter")
+    .addEventListener("change", () => {
+      sorting();
+    });
+  let sorting = () => {
+    let selval = document.querySelector("#crt_popularityfilter").value;
+    console.log(selval);
+    if (selval == "LOWEST PRICE") {
+      aradata.sort(function (a, b) {
+        return a.price - b.price;
+      });
+      shodata(aradata);
+    } else if (selval == "BRAND: A-Z") {
+      aradata.sort((a, b) =>
+        a.title < b.title ? -1 : a.title > b.title ? 1 : 0
+      );
 
       // })
-      shodata(aradata)
+      shodata(aradata);
     }
-  }
-
+  };
 };
 shodata(aradata);
-let addthisproductstowishlist = (elem)=>{
+let addthisproductstowishlist = (elem) => {
   // console.log(elem);
-let mywisharr = JSON.parse(localStorage.getItem("wish_list")) || [];
-let flag = true;
-for (let i = 0; i < mywisharr.length; i++){
-  if (mywisharr[i].title === elem.title) {
-    flag = false;
+  let mywisharr = JSON.parse(localStorage.getItem("wish_list")) || [];
+  let flag = true;
+  for (let i = 0; i < mywisharr.length; i++) {
+    if (mywisharr[i].title === elem.title) {
+      flag = false;
+    }
   }
-}
-if(flag === true){
-  mywisharr.push(elem)
-  localStorage.setItem("wish_list",JSON.stringify(mywisharr))
-}
-
-}
+  if (flag === true) {
+    mywisharr.push(elem);
+    localStorage.setItem("wish_list", JSON.stringify(mywisharr));
+  }
+};
 
 let adtocartfunc = (elem) => {
   let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
@@ -776,7 +809,7 @@ let adtocartfunc = (elem) => {
   if (flag === true) {
     arr2.push(elem);
     localStorage.setItem("cart_item", JSON.stringify(arr2));
-    document.querySelector("#crt_counter").innerText = arr2.length;
+    // document.querySelector("#crt_counter").innerText = arr2.length;
   }
 };
 let tempsavetodesc = (elem) => {
@@ -810,7 +843,8 @@ let e12 = new getdata(
   1956.0,
   "7,822.50",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let e13 = new getdata(
   "https://a.cdnsbn.com/images/products/250/23577880001.jpg",
@@ -823,7 +857,8 @@ let e13 = new getdata(
   2777.0,
   "3,911.50",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let e14 = new getdata(
   "https://a.cdnsbn.com/images/products/250/23578080001.jpg",
@@ -836,7 +871,8 @@ let e14 = new getdata(
   1604.0,
   "4,537.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let e15 = new getdata(
   "https://a.cdnsbn.com/images/products/250/23577980001.jpg",
@@ -849,7 +885,8 @@ let e15 = new getdata(
   1369.0,
   "4,537.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let e16 = new getdata(
   "https://b.cdnsbn.com/images/products/250/25035580001.jpg",
@@ -862,7 +899,8 @@ let e16 = new getdata(
   1017.0,
   "1,564.50",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let e17 = new getdata(
   "https://b.cdnsbn.com/images/products/250/16676780003.jpg",
@@ -875,7 +913,8 @@ let e17 = new getdata(
   1252.0,
   "4,224.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 
 let e18 = new getdata(
@@ -889,7 +928,8 @@ let e18 = new getdata(
   1017.0,
   "2,816.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 
 let e19 = new getdata(
@@ -903,7 +943,8 @@ let e19 = new getdata(
   1017.0,
   "2,816.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let e20 = new getdata(
   "https://b.cdnsbn.com/images/products/250/23578480001.jpg",
@@ -916,7 +957,8 @@ let e20 = new getdata(
   1604.0,
   "3,911.50",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let e21 = new getdata(
   "https://c.cdnsbn.com/images/products/250/23578180001.jpg",
@@ -929,7 +971,8 @@ let e21 = new getdata(
   5945.0,
   "979.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let e22 = new getdata(
   "https://c.cdnsbn.com/images/products/250/16676580001.jpg",
@@ -942,7 +985,8 @@ let e22 = new getdata(
   1173.0,
   "2,816.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let e23 = new getdata(
   "https://c.cdnsbn.com/images/products/250/23578380001.jpg",
@@ -955,7 +999,8 @@ let e23 = new getdata(
   2073.0,
   "2,816.00",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 let Borghesearr = [];
 Borghesearr.push(e12, e13, e14, e15, e16, e17, e18, e19, e20, e21, e22, e23);
@@ -963,10 +1008,10 @@ document.querySelector(".crt_Borghese").addEventListener("input", () => {
   document.querySelector(".skin11").checked = false;
   Borghe();
 });
-document.querySelector("#crticonnamearrnging").addEventListener("click",()=>{
-  showdataingridformat()
-})
-// document.querySelector(".LowPricePicks").addEventListener()  
+document.querySelector("#crticonnamearrnging").addEventListener("click", () => {
+  showdataingridformat();
+});
+// document.querySelector(".LowPricePicks").addEventListener()
 // .style.backgroundcolor="black"
 // let showdataingridformat =()=>{
 //    let sssssss = document.querySelector("#crt_parrentforappendingdata")
@@ -989,7 +1034,8 @@ let v0 = new getdata(
   2229.0,
   "2,629.0",
   "Extra 8% Off The Entire Site",
-  "★★★★☆"
+  "★★★★☆",
+  1
 );
 
 let v1 = new getdata(
@@ -1003,7 +1049,8 @@ let v1 = new getdata(
   821.0,
   "860.50",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let v2 = new getdata(
   "https://a.cdnsbn.com/images/products/250/22322281401.jpg",
@@ -1016,7 +1063,8 @@ let v2 = new getdata(
   1564.0,
   "",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 
 let v3 = new getdata(
@@ -1030,7 +1078,8 @@ let v3 = new getdata(
   6453.5,
   "",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let v4 = new getdata(
   "https://b.cdnsbn.com/images/products/250/25697189909.jpg",
@@ -1043,7 +1092,8 @@ let v4 = new getdata(
   782.0,
   "",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let v5 = new getdata(
   "https://b.cdnsbn.com/images/products/250/25301081309.jpg",
@@ -1056,7 +1106,8 @@ let v5 = new getdata(
   1330.0,
   "",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let v6 = new getdata(
   "https://b.cdnsbn.com/images/products/250/24423930009.jpg",
@@ -1069,7 +1120,8 @@ let v6 = new getdata(
   3012.0,
   "",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let v7 = new getdata(
   "https://b.cdnsbn.com/images/products/250/02554080209.jpg ",
@@ -1082,7 +1134,8 @@ let v7 = new getdata(
   1486.0,
   "1,721.00",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let v8 = new getdata(
   "https://c.cdnsbn.com/images/products/250/26611808209.jpg",
@@ -1095,7 +1148,8 @@ let v8 = new getdata(
   4772.0,
   "6,649.00",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let v9 = new getdata(
   "https://c.cdnsbn.com/images/products/250/26955494209.jpg",
@@ -1108,7 +1162,8 @@ let v9 = new getdata(
   1056.0,
   "1,095.50",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let v10 = new getdata(
   "https://c.cdnsbn.com/images/products/250/22594230009.jpg",
@@ -1121,7 +1176,8 @@ let v10 = new getdata(
   900.0,
   "",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 let v11 = new getdata(
   "https://c.cdnsbn.com/images/products/250/27183579109.jpg",
@@ -1134,7 +1190,8 @@ let v11 = new getdata(
   4772.0,
   "5,867.00",
   "Extra 8% Off The Entire Site",
-  "★★★★★"
+  "★★★★★",
+  1
 );
 
 let ToolsAccessoriesarr = [];
@@ -1149,7 +1206,6 @@ let ToolsAcces = () => {
   // document.querySelector("#crt_count_of_prod").innerText = Borghesearr.length;
   // console.log("hhfgfhfgfgfddddddd");
 };
-
 
 import { navbar, footer } from "../components/header.js";
 

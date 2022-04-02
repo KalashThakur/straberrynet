@@ -1089,9 +1089,9 @@ let shodata = (aradata) => {
     let wishsym = document.createElement("input");
     wishsym.type = "checkbox";
     wishsym.id = "crt_wishchechbox";
-    wishsym.addEventListener("input",()=>{
+    wishsym.addEventListener("input", () => {
       addthisproductstowishlist(elem);
-    })
+    });
     wishdiv.append(wishsym);
 
     let pname = document.createElement("p");
@@ -1213,21 +1213,20 @@ let shodata = (aradata) => {
   };
 };
 shodata(aradata);
-let addthisproductstowishlist = (elem)=>{
+let addthisproductstowishlist = (elem) => {
   // console.log(elem);
-let mywisharr = JSON.parse(localStorage.getItem("wish_list")) || [];
-let flag = true;
-for (let i = 0; i < mywisharr.length; i++){
-  if (mywisharr[i].title === elem.title) {
-    flag = false;
+  let mywisharr = JSON.parse(localStorage.getItem("wish_list")) || [];
+  let flag = true;
+  for (let i = 0; i < mywisharr.length; i++) {
+    if (mywisharr[i].title === elem.title) {
+      flag = false;
+    }
   }
-}
-if(flag === true){
-  mywisharr.push(elem)
-  localStorage.setItem("wish_list",JSON.stringify(mywisharr))
-}
-
-}
+  if (flag === true) {
+    mywisharr.push(elem);
+    localStorage.setItem("wish_list", JSON.stringify(mywisharr));
+  }
+};
 
 let adtocartfunc = (elem) => {
   let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
