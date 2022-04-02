@@ -29,7 +29,6 @@
 width: 268px;
 height: 63px;
 background: url(https://a.cdnsbn.com/images/common/2016CompanyLogo.png) no-repeat  center transparent;
-/* margin-left:  12%; */
 cursor: pointer;
 }
 
@@ -38,26 +37,31 @@ cursor: pointer;
 }
 
 #inputSearch-Box{
+    width: 450px;
+    height: 34px;
     border: 2px soild red;
+    display: flex;
+    flex-direction: column;
 }
-#inputSearch-Box>input{
-    width: 85%;
+#inputSearch-searchAndButton>input{
+    width: 90%;
     height: 33px;
 }
-#inputSearch-Item{
+ #inputSearch-Item{
+    border: 1px solid black;
     cursor: pointer;
     color: #a1a1a1;
     font-weight: bold;
+    text-align: center;
 }
 
 #inputSearch-Item>ul{
-    display: flex;
+    display: inline-flex;
     list-style: none;
 }
 #inputSearch-Item>ul>li{
-    border-right: 2px solid;
     padding-right: 7px;
-}
+} 
 .searchBtn{
     border: none;
 }
