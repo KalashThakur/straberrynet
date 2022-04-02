@@ -406,219 +406,28 @@ let d20 = new getdata(
   "Extra 8% Off The Entire Site",
   "★★★★☆"
 );
-
-// console.log(d1);
-arr[1].push(
-  d1,
-  d2,
-  d3,
-  d4,
-  d5,
-  d6,
-  d8,
-  d9,
-  d10,
-  d11,
-  d12,
-  d13,
-  d14,
-  d15,
-  d16,
-  d17,
-  d18,
-  d19,
-  d20
+let e24 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/26413580003.jpg",
+  "https://a.cdnsbn.com/images/products/msn/23582480001-1.jpg",
+  "https://a.cdnsbn.com/images/products/msn/23582480001-2.jpg",
+  "Borghese",
+  "Energia Vitamin E Antioxidant Creme ",
+  "28g/1oz",
+  "SAVE 2%",
+  4772.0,
+  "4,850.00",
+  "★★★★★",
+  "Extra 8% Off The Entire Site"
 );
 
-let aradata = arr[1];
-// console.log("arr[1]", arr[1]);
-// console.log("arr", arr);
-// document.querySelector("#crt_count_of_prod").innerText = aradata.length;
-document.querySelector("#cat_catshow").innerText = arr[0];
-document.querySelector("#cat_redcatname").innerText = arr[0];
-document.querySelector("#cat_cath1").innerText = arr[0];
-document.querySelector("#cat_subcat_title").innerText = arr[0];
-document.querySelector("#crt_main_vat_header").innerText = arr[0];
-document.querySelector("#crt_topbranchildrenmain").innerText =
-  " Top" + " " + arr[0] + " " + "Brands";
-let shodata = (aradata) => {
-  let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
-  // document.querySelector("#crt_counter").innerText = arr2.length;
-  document.querySelector("#crt_count_of_prod").innerText = aradata.length;
-  let parofappend = document.querySelector("#crt_parrentforappendingdata");
-  parofappend.innerHTML = "";
-  // console.log(aradata.length);
-
-  aradata.forEach((elem) => {
-    // console.log(element.title)
-    let div = document.createElement("div");
-    div.id = "crt_subcontain";
-
-    let wishdiv = document.createElement("div");
-    wishdiv.id = "crt_addtowish";
-
-    let wishsym = document.createElement("input");
-    wishsym.type = "checkbox";
-    // wishsym.innerText = "♡";
-    wishsym.id = "crt_wishchechbox";
-
-    wishdiv.append(wishsym);
-
-    let pname = document.createElement("p");
-    pname.innerText = elem.title;
-    pname.id = "crt_p_titile";
-    pname.addEventListener("click", () => {
-      tempsavetodesc(elem);
-    });
-    let descsizediv = document.createElement("div");
-    let descc = document.createElement("p");
-    descc.innerText = elem.desc;
-    descc.id = "crt_p_decriptin";
-    descc.addEventListener("click", () => {
-      tempsavetodesc(elem);
-    });
-    let sizep = document.createElement("span");
-    sizep.innerText = elem.size;
-    sizep.id = "crt_p_size";
-    sizep.addEventListener("click", () => {
-      tempsavetodesc(elem);
-    });
-    descsizediv.id = "crt_descsizecomdiv";
-    descsizediv.append(descc, sizep);
-    let savep = document.createElement("p");
-    savep.innerText = elem.save;
-    savep.id = "crt_p_save";
-    savep.addEventListener("click", () => {
-      tempsavetodesc(elem);
-    });
-
-    let unit = document.createElement("span");
-    unit.innerText = "Rs";
-
-    let pricep = document.createElement("p");
-
-    let calprice = elem.price;
-    calprice = calprice.toFixed(2);
-
-    pricep.innerText = `Rs .${calprice}`;
-    pricep.id = "crt_p_price";
-    pricep.addEventListener("click", () => {
-      tempsavetodesc(elem);
-    });
-
-    let striked = document.createElement("div");
-    striked.id = "crt_p_strikeddiv";
-    striked.addEventListener("click", () => {
-      tempsavetodesc(elem);
-    });
-    let spanforrp = document.createElement("p");
-    spanforrp.innerText = `RRP`;
-    spanforrp.id = "crt_p_rrpinitilize";
-    let strikedp = document.createElement("span");
-    strikedp.innerText = `Rs ${elem.strikedprice}`;
-    strikedp.id = "crt_p_strikedp";
-    striked.append(spanforrp, strikedp);
-
-    let btnrtndiv = document.createElement("div");
-    btnrtndiv.id = "crt_p_btnrtngsxtrp";
-
-    let ratingp = document.createElement("p");
-    ratingp.innerText = elem.rating;
-    ratingp.id = "crt_p_ratingstar";
-
-    let proimg = document.createElement("img");
-    proimg.src = elem.image1;
-    proimg.id = "crt_productimage";
-    proimg.addEventListener("click", () => {
-      tempsavetodesc(elem);
-    });
-
-    let extp = document.createElement("p");
-    extp.innerText = elem.extraof;
-    extp.id = "crt_p_sxtrofp";
-
-    let addtocartbutn = document.createElement("button");
-    addtocartbutn.innerText = "Add to Bag";
-    addtocartbutn.id = "crt_addbtn";
-    addtocartbutn.addEventListener("click", () => {
-      adtocartfunc(elem);
-    });
-
-    // let pricep = document.createElement("p");
-    btnrtndiv.append(addtocartbutn, ratingp, extp);
-    div.append(
-      wishsym,
-      proimg,
-      pname,
-      descsizediv,
-      savep,
-      pricep,
-      striked,
-      btnrtndiv
-    );
-    parofappend.append(div);
-  });
-  // let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
-  // document.querySelector("#crt_counter").innerText = arr2.length;
-};
-shodata(aradata);
-// document.querySelector("#cat_clearfilterbtn").addEventListener("click", () => {
-//   // shodata(aradata);
-
-// });
-
-import { navbar, footer } from "../components/header.js";
-// components\header.js
-// console.log(navbar);
-document.querySelector("#crt_navbar").innerHTML = navbar();
-document.querySelector("#crt_fotter").innerHTML = footer();
-let adtocartfunc = (elem) => {
-  let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
-  let flag = true;
-  console.log(arr);
-  for (let i = 0; i < arr2.length; i++) {
-    if (arr2[i].title === elem.title) {
-      flag = false;
-    }
-  }
-  if (flag === true) {
-    arr2.push(elem);
-    localStorage.setItem("cart_item", JSON.stringify(arr2));
-    document.querySelector("#crt_counter").innerText = arr2.length;
-  }
-};
-let tempsavetodesc = (elem) => {
-  let arr2 = [];
-  arr2.push(elem);
-
-  console.log(arr2);
-  localStorage.setItem("tempiteam", JSON.stringify(arr2));
-  window.location.href = "./PRODUCT DESCRIPTION/1marvis.html";
-};
-// crt_parrentforappendingdata>div
-// document.querySelector("#crt_navbar").innerHTML = navbar();
-// document.querySelector("#crt_fotter").innerHTML = footer();
-
-// let d20 = new getdata(
-//   "https://a.cdnsbn.com/images/products/250/17727242001.jpg",
-//   "https://a.cdnsbn.com/images/products/msn/25353480401-2.jpg",
-//   "",
-//   "Obagi",
-//   "BAGI 360 Retinol ",
-//   "0.5 30ml/1oz",
-//   "",
-//   1799.0,
-//   "",
-// "Extra 8% Off The Entire Site",
-// "★★★★☆"
-// );
+// ------------------------------------------------------111Skin----------------------------------
 
 let c0 = new getdata(
   "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
   "",
   "",
   "111Skin",
-  "SkinCelestial Black Diamond Eye Mask",
+  " Black Diamond Eye Mask",
   "8x6ml/0.2oz",
   "SAVE 15%",
   7666.0,
@@ -627,15 +436,14 @@ let c0 = new getdata(
   "★★★★☆"
 );
 let c1 = new getdata(
-  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
+  "https://a.cdnsbn.com/images/products/250/26665693301.jpg",
   "",
   "",
   "111Skin",
-  "Celestial Black Diamond Lifting & Firming Treatment Mask",
+  " Black Diamond Lifting & Firming Treatment Mask",
   "31ml/1.04oz",
   "SAVE 14%",
-  2,
-  347.0,
+  2347.0,
   "2,738.00",
   "Extra 8% Off The Entire Site",
   "★★★★★"
@@ -726,8 +534,7 @@ let c8 = new getdata(
   "Rose Gold Radiance Booster ",
   "20ml/0.68oz",
   "SAVE 25%",
-  8,
-  995.0,
+  8995.0,
   "10,560.00",
   "Extra 8% Off The Entire Site",
   "★★★★★"
@@ -736,7 +543,7 @@ let c9 = new getdata(
   "https://c.cdnsbn.com/images/products/250/26782493301.jpg",
   "",
   "",
-  "111Skin",
+  "111Skin ",
   "The Hydration Concentrate 7",
   "x2ml/0.07oz",
   "SAVE 12%",
@@ -750,7 +557,7 @@ let c10 = new getdata(
   "",
   "",
   "111Skin",
-  "SkinThe Master-Masking Planner ",
+  "The Master-Masking Planner ",
   "(4x Eye Mask + 4) 8pcs+1case",
   "SAVE 25%",
   10560.0,
@@ -762,7 +569,7 @@ let c11 = new getdata(
   "https://c.cdnsbn.com/images/products/250/26782593301.jpg",
   "",
   "",
-  "111Skin",
+  "111Skin ",
   "The Radiance Concentrate ",
   "7x2ml/0.07oz",
   "SAVE 15%",
@@ -771,160 +578,536 @@ let c11 = new getdata(
   "Extra 8% Off The Entire Site",
   "★★★★☆"
 );
-
+arr[1].push(
+  d1,
+  d2,
+  d3,
+  d4,
+  d5,
+  d6,
+  d8,
+  d9,
+  d10,
+  d11,
+  d12,
+  d13,
+  d14,
+  d15,
+  d16,
+  d17,
+  d18,
+  d19,
+  d20,
+  e24
+);
 let brand11arr = [];
 brand11arr.push(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11);
-console.log(brand11arr);
+
+let aradata = arr[1];
+
+let shodata = (aradata) => {
+  let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
+
+  document.querySelector("#crt_count_of_prod").innerText = aradata.length;
+
+  let parofappend = document.querySelector("#crt_parrentforappendingdata");
+
+  parofappend.innerHTML = "";
+
+  aradata.forEach((elem) => {
+    let div = document.createElement("div");
+    div.id = "crt_subcontain";
+
+    let wishdiv = document.createElement("div");
+    wishdiv.id = "crt_addtowish";
+
+    let wishsym = document.createElement("input");
+    wishsym.type = "checkbox";
+
+    wishsym.id = "crt_wishchechbox";
+
+    wishdiv.append(wishsym);
+
+    let pname = document.createElement("p");
+    pname.innerText = elem.title;
+    pname.id = "crt_p_titile";
+    pname.addEventListener("click", () => {
+      tempsavetodesc(elem);
+    });
+
+    let descsizediv = document.createElement("div");
+    let descc = document.createElement("p");
+    descc.innerText = elem.desc;
+    descc.id = "crt_p_decriptin";
+    descc.addEventListener("click", () => {
+      tempsavetodesc(elem);
+    });
+
+    let sizep = document.createElement("span");
+    sizep.innerText = elem.size;
+    sizep.id = "crt_p_size";
+    sizep.addEventListener("click", () => {
+      tempsavetodesc(elem);
+    });
+
+    descsizediv.id = "crt_descsizecomdiv";
+    descsizediv.append(descc, sizep);
+    let savep = document.createElement("p");
+    savep.innerText = elem.save;
+    savep.id = "crt_p_save";
+    savep.addEventListener("click", () => {
+      tempsavetodesc(elem);
+    });
+
+    let unit = document.createElement("span");
+    unit.innerText = "Rs";
+
+    let pricep = document.createElement("p");
+    let calprice = elem.price;
+    calprice = calprice.toFixed(2);
+
+    pricep.innerText = `Rs .${calprice}`;
+    pricep.id = "crt_p_price";
+    pricep.addEventListener("click", () => {
+      tempsavetodesc(elem);
+    });
+
+    let striked = document.createElement("div");
+    striked.id = "crt_p_strikeddiv";
+    striked.addEventListener("click", () => {
+      tempsavetodesc(elem);
+    });
+    let spanforrp = document.createElement("p");
+    spanforrp.innerText = `RRP`;
+    spanforrp.id = "crt_p_rrpinitilize";
+    let strikedp = document.createElement("span");
+    strikedp.innerText = `Rs ${elem.strikedprice}`;
+    strikedp.id = "crt_p_strikedp";
+    striked.append(spanforrp, strikedp);
+
+    let btnrtndiv = document.createElement("div");
+    btnrtndiv.id = "crt_p_btnrtngsxtrp";
+
+    let ratingp = document.createElement("p");
+    ratingp.innerText = elem.rating;
+    ratingp.id = "crt_p_ratingstar";
+
+    let proimg = document.createElement("img");
+    proimg.src = elem.image1;
+    proimg.id = "crt_productimage";
+    proimg.addEventListener("click", () => {
+      tempsavetodesc(elem);
+    });
+
+    let extp = document.createElement("p");
+    extp.innerText = elem.extraof;
+    extp.id = "crt_p_sxtrofp";
+
+    let addtocartbutn = document.createElement("button");
+    addtocartbutn.innerText = "Add to Bag";
+    addtocartbutn.id = "crt_addbtn";
+    addtocartbutn.addEventListener("click", () => {
+      adtocartfunc(elem);
+    });
+    btnrtndiv.append(addtocartbutn, ratingp, extp);
+    div.append(
+      wishsym,
+      proimg,
+      pname,
+      descsizediv,
+      savep,
+      pricep,
+      striked,
+      btnrtndiv
+    );
+    parofappend.append(div);
+  });
+};
+shodata(aradata);
+
+let adtocartfunc = (elem) => {
+  let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
+  let flag = true;
+  console.log(arr);
+  for (let i = 0; i < arr2.length; i++) {
+    if (arr2[i].title === elem.title) {
+      flag = false;
+    }
+  }
+  if (flag === true) {
+    arr2.push(elem);
+    localStorage.setItem("cart_item", JSON.stringify(arr2));
+    document.querySelector("#crt_counter").innerText = arr2.length;
+  }
+};
+let tempsavetodesc = (elem) => {
+  let arr2 = [];
+  arr2.push(elem);
+
+  console.log(arr2);
+  localStorage.setItem("tempiteam", JSON.stringify(arr2));
+  window.location.href = "./PRODUCT DESCRIPTION/1marvis.html";
+};
+
 document.querySelector(".skin11").addEventListener("input", () => {
+  document.querySelector(".crt_Borghese").checked = false;
   show111skin();
 });
 
 let show111skin = () => {
   shodata(brand11arr);
-  // document.querySelector(".skin11").removeAttributeNode("checked");
   document.querySelector("#crt_count_of_prod").innerText = brand11arr.length;
   console.log("hhfgfhfgfgfddddddd");
 };
 
-// // let c12 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
+let e12 = new getdata(
+  "https://a.cdnsbn.com/images/products/250/04351980001.jpg",
+  "",
+  "",
+  "Borghese",
+  "Fango Brillants (Brightening Mud Mask Face & Body)",
+  "430ml/17.6oz",
+  "SAVE 75%",
+  1956.0,
+  "7,822.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let e13 = new getdata(
+  "https://a.cdnsbn.com/images/products/250/23577880001.jpg",
+  "",
+  "",
+  "Borghese",
+  "fango Delicato Active Mud - For Delicate Dry Skin ",
+  "212g/7.5oz",
+  "SAVE 29%",
+  2777.0,
+  "3,911.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let e14 = new getdata(
+  "https://a.cdnsbn.com/images/products/250/23578080001.jpg",
+  "",
+  "",
+  "Borghese",
+  "Fango Ristorativo Hydrating Mud Mask For Face And Body ",
+  "212g/7.5oz",
+  "SAVE 65%",
+  1604.0,
+  "4,537.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let e15 = new getdata(
+  "https://a.cdnsbn.com/images/products/250/23577980001.jpg",
+  "",
+  "",
+  "Borghese",
+  "Fango Brillante Brightening Mud Mask ",
+  "212g/7.5oz",
+  "SAVE 70%",
+  1369.0,
+  "4,537.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let e16 = new getdata(
+  "https://b.cdnsbn.com/images/products/250/25035580001.jpg",
+  "",
+  "",
+  "Borghese",
+  "eFango Active Mud For Face & Body ",
+  "76g/2.7oz",
+  "SAVE 35%",
+  1017.0,
+  "1,564.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let e17 = new getdata(
+  "https://b.cdnsbn.com/images/products/250/16676780003.jpg",
+  "",
+  "",
+  "Borghese",
+  "Hydro-Minerali Deluxe Age Control Body Serum ",
+  "100ml/3.4oz",
+  "SAVE 70%",
+  1252.0,
+  "4,224.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
 
-//   "",
-//   "",
-//   "");
-// // let c13 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
+let e18 = new getdata(
+  "https://b.cdnsbn.com/images/products/250/23578580001.jpg",
+  "",
+  "",
+  "Borghese",
+  "Fango Essenziali Moisturize Mud Mask with Olive & Blood Orange ",
+  "198g/7oz ",
+  "SAVE 64%",
+  1017.0,
+  "2,816.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
 
-//   "",
-//   "",
-//   "");
-// // let c14 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
+let e19 = new getdata(
+  "https://d.cdnsbn.com/images/products/250/23582480001.jpg",
+  "",
+  "",
+  "Borghese",
+  "Fango Essenziali Purify Mud Mask with Grapefruit & Peppercorn ",
+  "198g/7oz",
+  "SAVE 64%",
+  1017.0,
+  "2,816.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let e20 = new getdata(
+  "https://b.cdnsbn.com/images/products/250/23578480001.jpg",
+  "",
+  "",
+  "Borghese",
+  "Fango Purificante Purifying Mud Mask ",
+  "141g/5oz",
+  "SAVE 59%",
+  1604.0,
+  "3,911.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let e21 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/23578180001.jpg",
+  "",
+  "",
+  "Borghese",
+  "Hydro-Minerali Deluxe Age Control Lift Serum ",
+  "40ml/1.4oz",
+  "SAVE 25%",
+  5945.0,
+  "979.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let e22 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/16676580001.jpg",
+  "",
+  "",
+  "Borghese",
+  "Fango Essenziali Calm Mud Mask with Lavender & Lemon Seed ",
+  "198g/7oz",
+  "SAVE 58%",
+  1173.0,
+  "2,816.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let e23 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/23578380001.jpg",
+  "",
+  "",
+  "Borghese",
+  "Splendide Mani Restorative Hand Creme",
+  "96g/3.4oz",
+  "SAVE 25%",
+  2073.0,
+  "2,816.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
+let Borghesearr = [];
+Borghesearr.push(e12, e13, e14, e15, e16, e17, e18, e19, e20, e21, e22, e23);
+document.querySelector(".crt_Borghese").addEventListener("input", () => {
+  document.querySelector(".skin11").checked = false;
+  Borghe();
+});
 
-//   "",
-//   "",
-//   "");
-// // let c15 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
+// document.querySelector(".crt_Borghese").checked = false;
+// show111skin();
+// if(document.querySelector(".crt_Borghese").checked === false && document.querySelector(".skin11").checked === false){
+//   shodata(aradata)
+// }
 
-//   "",
-//   "",
-//   "");
-// // let c16 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
+let Borghe = () => {
+  shodata(Borghesearr);
+};
 
-//   "",
-//   "",
-//   "");
-// // let c17 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
+let v0 = new getdata(
+  "https://a.cdnsbn.com/images/products/250/27448495762.jpg",
+  "",
+  "",
+  "Clinique",
+  "Purifying Cleansing Brush for Sonic System ",
+  "1pc",
+  "SAVE 2%",
+  2229.0,
+  "2,629.0",
+  "Extra 8% Off The Entire Site",
+  "★★★★☆"
+);
 
-//   "",
-//   "",
-//   "");
-// // let c18 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
+let v1 = new getdata(
+  "https://a.cdnsbn.com/images/products/250/19273780409.jpg",
+  "",
+  "",
+  "Timeless Skin Care ",
+  "Mirco Needle Roller   ",
+  "1.0mm",
+  "SAVE 2%",
+  821.0,
+  "860.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let v2 = new getdata(
+  "https://a.cdnsbn.com/images/products/250/22322281401.jpg",
+  "",
+  "",
+  "Shiseido ",
+  "oil Control Blotting Paper ",
+  "100sheets",
+  "",
+  1564.0,
+  "",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
 
-//   "",
-//   "",
-//   "");
-// // let c19 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
+let v3 = new getdata(
+  "https://b.cdnsbn.com/images/products/250/25697189909.jpg",
+  "",
+  "",
+  "Stacked Skincare  1pc ",
+  "Dermaplaning Tool ",
+  "1pc",
+  "",
+  6453.5,
+  "",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let v4 = new getdata(
+  "https://b.cdnsbn.com/images/products/250/25697189909.jpg",
+  "",
+  "",
+  "Timeless Skin Care ",
+  "Mirco Needle Roller  ",
+  " 0.5mm",
+  "",
+  782.0,
+  "",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let v5 = new getdata(
+  "https://b.cdnsbn.com/images/products/250/25301081309.jpg",
+  "",
+  "",
+  "Tweezerman ",
+  "Blackhead Extractor (Studio Collection) ",
+  "1pc",
+  "",
+  1330.0,
+  "",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let v6 = new getdata(
+  "https://b.cdnsbn.com/images/products/250/24423930009.jpg",
+  "",
+  "",
+  "Chanel ",
+  "Papier Matifiant ",
+  "150sheets",
+  "",
+  3012.0,
+  "",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let v7 = new getdata(
+  "https://b.cdnsbn.com/images/products/250/02554080209.jpg ",
+  "",
+  "",
+  "Obagi ",
+  "SUZANOBAGIMD Acne Cleansing Wipes ",
+  "25wipes",
+  "SAVE 14%",
+  1486.0,
+  "1,721.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let v8 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/26611808209.jpg",
+  "",
+  "",
+  "MZ Skin ",
+  "Tone & Lift Germanium Contouring Facial Roller ",
+  "1pc+bag",
+  "SAVE 4%",
+  4772.0,
+  "6,649.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let v9 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/26955494209.jpg",
+  "",
+  "",
+  "Tweezerman ",
+  "Clear Complexion Facial Tool ",
+  "1pc",
+  "SAVE 2%",
+  1056.0,
+  "1,095.50",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let v10 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/22594230009.jpg",
+  "",
+  "",
+  "Fenty Beauty by Rihanna ",
+  "Invisimatte Blotting Paper Refill",
+  "1roll",
+  "",
+  900.0,
+  "",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
+let v11 = new getdata(
+  "https://c.cdnsbn.com/images/products/250/27183579109.jpg",
+  "",
+  "",
+  "YHLOGLINE",
+  "2019-nCoV Ag COVID-19 Self-Testing Kit 5 Test",
+  "5 Test",
+  "SAVE 2%",
+  4772.0,
+  "5,867.00",
+  "Extra 8% Off The Entire Site",
+  "★★★★★"
+);
 
-//   "",
-//   "",
-//   "");
-// // let c20 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
+let ToolsAccessoriesarr = [];
+ToolsAccessoriesarr.push(v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11);
 
-//   "",
-//   "",
-//   "");
-// // let c21 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
+document.querySelector(".crt_ToolsA").addEventListener("click", () => {
+  ToolsAcces();
+});
 
-//   "",
-//   "",
-//   "");
-// // let c22 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
+let ToolsAcces = () => {
+  shodata(ToolsAccessoriesarr);
+  // document.querySelector("#crt_count_of_prod").innerText = Borghesearr.length;
+  // console.log("hhfgfhfgfgfddddddd");
+};
 
-//   "",
-//   "",
-//   "");
-// // let c23 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
+import { navbar, footer } from "../components/header.js";
 
-//   "",
-//   "",
-//   "");
-// // let c24 = new getdata(  "https://a.cdnsbn.com/images/products/250/26665493301.jpg",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
-//   "",
-
-//   "",
-// "",
+document.querySelector("#crt_navbar").innerHTML = navbar();
+document.querySelector("#crt_fotter").innerHTML = footer();
