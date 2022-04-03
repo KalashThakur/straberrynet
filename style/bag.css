@@ -1,8 +1,8 @@
 #main-div-bag{
     width: 1200px;
-    height: 100%;
     background-color: #eeeeee;
-    box-sizing: border-box;
+    /* height: 1000px; */
+    /* box-sizing: border-box; */
     margin: auto;
 }
 #totalPrice{
@@ -62,7 +62,7 @@
 }
 #show-bag-item{
   display:flex;
-  height: 900px;
+  /* height: 900px; */
   flex-direction: column;
 }
 
