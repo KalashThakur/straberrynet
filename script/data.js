@@ -10,11 +10,11 @@ var skincare_science=[]
 var data1=new getdata("https://a.cdnsbn.com/images/products/250/25930157001.jpg","colorescience","Sunforgettable Total Protection Face Shield SPF 50 - # Glow  55ml/1.8oz", 2888.50,1)
 var data2= new getdata("https://a.cdnsbn.com/images/products/250/17482140803.jpg","DERMAdoctor","KP Duty Dermatologist Formulated Body Scrub  473ml/16oz",3513.00,1)
 var data3=new getdata("https://a.cdnsbn.com/images/products/250/24594570901.jpg","Filorga","Lift-Designer Ultra-Lifting Serum  30ml/1oz", 2849.50,1)
-var data4=new getdata("https://a.cdnsbn.com/images/products/250/19143259701.jpg","Iluminage","Youth Cell Night Cream  50ml/1.7oz",1,874.00,1)
-var data5=new getdata("https://b.cdnsbn.com/images/products/250/17513128601.jpg","Kiehl's","Hydro-Plumping Re-Texturizing Serum Concentrate  50ml/1.7oz", 5,777.00,1)
-var data6=new getdata("https://b.cdnsbn.com/images/products/250/03973383301.jpg","La Prairie","Cellular Softening &amp; Balancing Lotion  250ml/8.4oz",12,803.00,1)
-var data7=new getdata("https://b.cdnsbn.com/images/products/250/23583681301.jpg","Oriane","Anagenese Essential Anti-Aging Serum  30ml/1oz"," 3,279.00",1)
-var data8=new getdata("https://b.cdnsbn.com/images/products/250/23720229301.jpg","StriVectin","StriVectin - S.T.A.R. Light Retinol Night Oil  30ml/1oz",5,777.00,1)
+var data4=new getdata("https://a.cdnsbn.com/images/products/250/19143259701.jpg","Iluminage","Youth Cell Night Cream  50ml/1.7oz",1874.00,1)
+var data5=new getdata("https://b.cdnsbn.com/images/products/250/17513128601.jpg","Kiehl's","Hydro-Plumping Re-Texturizing Serum Concentrate  50ml/1.7oz", 5777.00,1)
+var data6=new getdata("https://b.cdnsbn.com/images/products/250/03973383301.jpg","La Prairie","Cellular Softening &amp; Balancing Lotion  250ml/8.4oz",12803.00,1)
+var data7=new getdata("https://b.cdnsbn.com/images/products/250/23583681301.jpg","Oriane","Anagenese Essential Anti-Aging Serum  30ml/1oz", 3279.00,1)
+var data8=new getdata("https://b.cdnsbn.com/images/products/250/23720229301.jpg","StriVectin","StriVectin - S.T.A.R. Light Retinol Night Oil  30ml/1oz",5777.00,1)
 
 skincare_science.push(data1,data2,data3,data4,data5,data6,data7,data8)
 
@@ -158,9 +158,9 @@ localStorage.setItem("top_brand",JSON.stringify(top_brands))
 // top 40 special
 let top40SpecialsArr = [];
  let top1 = new getdata('https://a.cdnsbn.com/images/products/250/24288385903.jpg','Decleor','Bourrache Cica-Botanic Oil 100ml/3.38oz',1522.50,1);
- let top2 = new getdata('https://a.cdnsbn.com/images/products/250/24774580501.jpg','Elizabeth Arden','Ceramide Vitamin C Capsules - Radiance Renewal Serum 30caps',2615.50,1);
- let top3 = new getdata('https://a.cdnsbn.com/images/products/250/22933563101.jpg','Ella Bache','Nutridermologie Lab Magistral Cream-Mask Rejuvenium 27% Rescue Crea... 50ml/1.69oz',3513.00,1);
- let top4 = new getdata('https://a.cdnsbn.com/images/products/250/24467824702.jpg','Laura Mercier','Caviar Chrome Veil Lightweight Liquid Eye Colour 6ml/0.2oz',1249.50,1);
+ let top2 = new getdata('https://a.cdnsbn.com/images/products/250/24774580501.jpg','Elizabeth Arden','Ceramide Vitamin C Capsules - Radiance Renewal Serum 30caps',2615.50,1235);
+ let top3 = new getdata('https://a.cdnsbn.com/images/products/250/22933563101.jpg','Ella Bache','Nutridermologie Lab Magistral Cream-Mask Rejuvenium 27% Rescue Crea... 50ml/1.69oz',3513.00,1235);
+ let top4 = new getdata('https://a.cdnsbn.com/images/products/250/24467824702.jpg','Laura Mercier','Caviar Chrome Veil Lightweight Liquid Eye Colour 6ml/0.2oz',1249.50,1456.00);
 
  top40SpecialsArr.push(top1,top2,top3,top4);
  localStorage.setItem("top40SepicalsData",JSON.stringify(top40SpecialsArr));
@@ -168,10 +168,10 @@ let top40SpecialsArr = [];
 
   // New Arrivalse
   let newArrialsArr = [];
-  let na1 = new getdata('https://a.cdnsbn.com/images/products/250/26307826344.jpg','Bosley','Scalp Relief Anti-Dandruff Shampoo with Pyrithione Zinc 740ml/25oz',4,528.00,1)
-  let na2 = new getdata('https://a.cdnsbn.com/images/products/250/26164883301.jpg','La Prairie','Platinum Rare Haute-Rejuvenation Eye Elixir 15ml/0.5oz',77675.50,1)
-  let na3 = new getdata('https://a.cdnsbn.com/images/products/250/26307404144.jpg','Philip Kingsley','Pure Blonde Booster Colour- Correcting Weekly Shampoo 500ml/16.9oz',3864.50,1)
-  let na4 = new getdata('https://a.cdnsbn.com/images/products/250/25344264344.jpg','Redken','Nature + Science Color Extend Vibrancy Shampoo (For Color-Treated ... 300ml/10.1oz',2069.00,1)
+  let na1 = new getdata('https://a.cdnsbn.com/images/products/250/26307826344.jpg','Bosley','Scalp Relief Anti-Dandruff Shampoo with Pyrithione Zinc 740ml/25oz',4,528.00,1478.00)
+  let na2 = new getdata('https://a.cdnsbn.com/images/products/250/26164883301.jpg','La Prairie','Platinum Rare Haute-Rejuvenation Eye Elixir 15ml/0.5oz',77675.50,1263.00)
+  let na3 = new getdata('https://a.cdnsbn.com/images/products/250/26307404144.jpg','Philip Kingsley','Pure Blonde Booster Colour- Correcting Weekly Shampoo 500ml/16.9oz',3864.50,2051.00)
+  let na4 = new getdata('https://a.cdnsbn.com/images/products/250/25344264344.jpg','Redken','Nature + Science Color Extend Vibrancy Shampoo (For Color-Treated ... 300ml/10.1oz',2069.00)
   
   newArrialsArr.push(na1,na2,na3,na4);
   localStorage.setItem("newArrival", JSON.stringify(newArrialsArr));
