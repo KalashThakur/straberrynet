@@ -5,6 +5,9 @@ a{
 .bag{
     color: black;
 }
+#account-Bag>a{
+    color: black
+}
 #mainmenu{
     padding: 0;
     margin: 0;
