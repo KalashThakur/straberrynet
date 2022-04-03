@@ -73,7 +73,7 @@ sign_in();
         let input1 = document.createElement("input");
         input1.type = "email";
         input1.placeholder = "Email address";
-        input1.id = "email";
+        input1.id = "email2";
 
 
         let input2 = document.createElement("input");
@@ -159,6 +159,7 @@ let userArr = JSON.parse(localStorage.getItem("userDatabase")) || [];
 function submitForm(event)
 {
     event.preventDefault();
+    let name = document.getElementById("first").value;
 
     let email = document.getElementById("email").value;
 
@@ -171,24 +172,24 @@ function submitForm(event)
     }
 
     userArr.push(userData);
-    localStorage.setItem('userDatabase', JSON.stringify(userStack));
+    localStorage.setItem('userDatabase', JSON.stringify(userArr));
 
 }
 
 
 // ****************************************************************
+let loginArr = JSON.parse(localStorage.getItem("userDatabase"));
 
 document.querySelector("#form1").addEventListener("submit",loginForm);
 
-let loginArr = JSON.parse(localStorage.getItem("userDatabase")) || [];
 
-var form = document.querySelector("#form2");
+var form = document.querySelector("#form1");
 
 function loginForm(event)
 {
     event.preventDefault();
 
-    var user = form.email.value;
+    var user = form.email2.value;
     var pwd = form.pwd.value;
 
     var flag = false;
