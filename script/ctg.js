@@ -805,7 +805,7 @@ let addthisproductstowishlist = (elem) => {
   let mywisharr = JSON.parse(localStorage.getItem("wish_list")) || [];
   let flag = true;
   for (let i = 0; i < mywisharr.length; i++) {
-    if (mywisharr[i].title === elem.title) {
+    if (mywisharr[i].desc === elem.desc) {
       flag = false;
     }
   }
@@ -821,7 +821,7 @@ let adtocartfunc = (elem) => {
   let flag = true;
   console.log(arr);
   for (let i = 0; i < arr2.length; i++) {
-    if (arr2[i].title === elem.title) {
+    if (arr2[i].desc === elem.desc) {
       flag = false;
     }
   }
@@ -1235,3 +1235,27 @@ import { navbar, footer } from "../components/header.js";
 document.querySelector("#crt_navbar").innerHTML = navbar();
 document.querySelector("#crt_fotter").innerHTML = footer();
 // console.log("gfffffffffffffffhf",arr2.length)
+document.querySelector("#skincare").addEventListener("click",()=>{
+  pankaj();
+})
+const pankaj = ()=>{
+  window.location.href="catg.html"
+}
+document.querySelector("#haircare").addEventListener("click",()=>{
+  haircare();
+})
+const haircare = ()=>{
+  window.location.href="catghaircare.html"
+}
+document.querySelector("#menskincare").addEventListener("click",()=>{
+  menskincare();
+})
+const  menskincare = ()=>{
+  window.location.href="catgmensskincare.html"
+}
+document.querySelector("#prefume").addEventListener("click",()=>{
+  prefume();
+})
+const prefume = ()=>{
+  window.location.href="catg perfume.html"
+}
