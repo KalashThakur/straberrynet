@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./style/bag.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <!-- <link rel="stylesheet" href="./style/signup.css"> -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"> -->
     <title>Document</title>
   </head>
@@ -75,9 +77,39 @@
   import { navbar, footer } from "./components/header.js";
   console.log(navbar);
 
+
   let header = document.getElementById("bag-header");
   header.innerHTML = navbar();
 
+  // link navbar on click 
+  document.querySelector("#skincare").addEventListener("click",()=>{
+    pankaj();
+  })
+  const pankaj = ()=>{
+    window.location.href="catg.html"
+  }
+
+  document.querySelector("#haircare").addEventListener("click",()=>{
+    haircare();
+  })
+  const haircare = ()=>{
+    window.location.href="catghaircare.html"
+  }
+
+  document.querySelector("#menskincare").addEventListener("click",()=>{
+    menskincare();
+  })
+  const  menskincare = ()=>{
+    window.location.href="catgmensskincare.html"
+  }
+
+  document.querySelector("#prefume").addEventListener("click",()=>{
+    prefume();
+  })
+  const prefume = ()=>{
+    window.location.href="catg perfume.html"
+  }
+    
   let bagfooter = document.getElementById("bag-footer");
   // bagfooter.innerHTML=footer();
   bagfooter.style.marginTop = "20px";
