@@ -1235,3 +1235,9 @@ import { navbar, footer } from "../components/header.js";
 document.querySelector("#crt_navbar").innerHTML = navbar();
 document.querySelector("#crt_fotter").innerHTML = footer();
 // console.log("gfffffffffffffffhf",arr2.length)
+document.querySelector("#skincare").addEventListener("click",()=>{
+  pankaj();
+})
+const pankaj = ()=>{
+  window.location.href="catg.html"
+}
