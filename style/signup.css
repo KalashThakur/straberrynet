@@ -52,7 +52,7 @@
     align-content: center;
    
 }
-p{
+.number,.freeShipping,.conditionsApply{
     font-size: 0.4em;
     text-align: left;
     text-decoration: underline;
