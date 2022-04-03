@@ -302,7 +302,7 @@
          /* border: 2px solid brown; */
         }
 
-        #input1{
+        #input1,#input2,#input4{
             display: none;
         }
 /*        
@@ -397,6 +397,14 @@
             width: 70%;
 
         }
+
+        input[type="radio"]
+        {
+            /* margin-right: 5px; */
+            border: 0px;
+            width: 2%;
+            height: 1.2em;
+        }
     </style>
 
 </head>
@@ -488,24 +496,30 @@
 
              <form action="" id="pay_form">
                  <!-- <div id="pay_form"> -->
-                 <input type="radio" class="radio" style="display: inline;" id="visa" value="visacard"> <img src="https://s.cdnsbn.com/images/common/Visa.png" alt=""> Visa - credit or debit card
-                    <div id="input1">
-                        <input type="number" required placeholder="Card Number (no spaces)">
-                        <input type="date" required placeholder="DD/MM/YY">
-                        <input type="cvv" required placeholder="Enter your CVV number">
-                    </div>
+                 <input type="radio" class="radio" name="card" onclick="visacard()" style="display: inline;" id="visa" value="visacard"> <img src="https://s.cdnsbn.com/images/common/Visa.png" alt=""> Visa - credit or debit card
+                 <div id="input1">
+                    <input type="number" required placeholder="Card Number (no spaces)">
+                    <!-- <input type="date" required placeholder="DD/MM/YY"> -->
+                    <input type="cvv" required placeholder="Enter your CVV number">
+                </div>
                  <br>
-                 <input type="radio" value="mastercard" style="display: inline;" id="master" class="radio" > <img src="https://s.cdnsbn.com/images/common/Master.png" alt=""> MasterCard - credit or debit card
+                 <input type="radio" name="card" value="mastercard" onclick="mastercard()" style="display: inline;" id="master" class="radio" > <img src="https://s.cdnsbn.com/images/common/Master.png" alt=""> MasterCard - credit or debit card
                  <!-- <br> -->
-                 <div id="input2"></div>
+                 <div id="input2">
+                    <input type="number" required placeholder="Card Number (no spaces)">
+                    <!-- <input type="date" required placeholder="DD/MM/YY"> -->
+                    <input type="cvv" required placeholder="Enter your CVV number">
+                 </div>
 
-                 <input type="radio" value="paypalcard" style="display: inline;" id="paypal" class="radio"> <img src="	https://s.cdnsbn.com/images/common/Paypal.png" alt=""> Paypal
-                 <!-- <br> -->
-                 <div id="input3"></div>
-
-                 <input type="radio" value="americancard" style="display: inline;" id="american" class="radio"> <img src="https://s.cdnsbn.com/images/common/AmericanExpress.png" alt=""> American express
-                 <div id="input4"></div>
+              <br>
+                 <input type="radio" name="card" value="americancard" onclick="americancard()" style="display: inline;" id="american" class="radio"> <img src="https://s.cdnsbn.com/images/common/AmericanExpress.png" alt=""> American express
+                 <div id="input4">
+                    <input type="number" required placeholder="Card Number (no spaces)">
+                    <!-- <input type="date" required placeholder="DD/MM/YY"> -->
+                    <input type="cvv" required placeholder="Enter your CVV number">
+                 </div>
                 <!-- </div> -->
+               
                  
              </form>
          </div>
@@ -697,30 +711,48 @@ document.querySelector("#final_price").innerText = final;
 
 // *******************PAYMENT************************
 
-let visa = document.getElementById("visa");
+// let visa = document.getElementById("visa");
 
-let card = document.createElement("input");
-let date = document.createElement("input");
-let cvv = document.createElement("input");
+// let card = document.createElement("input");
+// let date = document.createElement("input");
+// let cvv = document.createElement("input");
 
-let pay_form = document.getElementById("pay_form").value;
-
-
+// let pay_form = document.getElementById("pay_form").value;
 
 
-if(pay_form=="visacard")
+
+
+// if(pay_form=="visacard")
+// {
+//  document.querySelector("#input1").style.display = "block";
+// }
+
+// if(pay_form=="mastercard")
+// {
+//  document.querySelector("#input2").style.display = "flex";
+// }
+
+// if(pay_form=="americancard")
+// {
+//  document.querySelector("#input3").style.display = "flex";
+// }
+
+function visacard()
 {
- document.querySelector("#input1").style.display = "block";
+    console.log("visa")
+    document.querySelector("#input1").style.display = "block";
 }
 
-if(pay_form=="mastercard")
+function mastercard()
 {
- document.querySelector("#input2").style.display = "flex";
+    document.querySelector("#input2").style.display = "block";
+
 }
 
-if(pay_form=="americancard")
+function americancard()
 {
- document.querySelector("#input3").style.display = "flex";
+    document.querySelector("#input4").style.display = "block";
+
 }
 
 // document.getElementById("visa").addEventListener("input",function()
@@ -729,5 +761,17 @@ if(pay_form=="americancard")
 
 // })
 
+let promo  = document.getElementById("input_promo").value;
+let discount = document.querySelector("#final_price").innerText = subtotal;
+
+document.getElementById("btn").addEventListener("click",function()
+{
+    if(promo=="masai30")
+    {
+        // let discount = subtotal-(subtotal*0.3);
+        document.querySelector("#final_price").innerText = subtotal-(discount*0.3);
+
+    }
+})
 
 </script>
