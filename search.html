@@ -157,8 +157,15 @@
         </div>
         <div id="cat_gridshow">
 
-            <div id="crt_showbanner">
+            <!-- <div id="crt_showbanner">
                 <!-- <img src="https://a.cdnsbn.com/images/english/category_SpringSale2Mar22_692_1.jpg" alt="8%off banner"> -->
+            <!-- </div> --> 
+
+
+            <div id="crt_countandcat">
+                <!-- <span id="crt_count_of_prod"></span> -->
+                <span>results for</span>
+                <span id="cat_catshow"></span>
             </div>
             <div id="crt_onemore">
                 <!-- <div id="crt_topbranchildrenmain">
@@ -184,11 +191,11 @@
                     <div id="crt_topbranchildren"><button>View All Skincare Brands ➤ </button></div>
 
                 </div> -->
-                <div id="crt_countandcat">
+                <!-- <div id="crt_countandcat">
                     <span id="crt_count_of_prod"></span>
                     <span>results for</span>
                     <span id="cat_catshow"></span>
-                </div>
+                </div> -->
                 <!-- <div id="crt_viewandpoppar">
                     <div>Worldwide RRP converted to INR.</div>
                      <div>
@@ -224,6 +231,10 @@
             </div>
         </div>
     </div>
+
+    <div id="foot">
+
+    </div>
     
 </body>
 <script src="search.js"></script>
@@ -236,6 +247,7 @@
     var nav=document.getElementById("homenav")
     nav.innerHTML=navbar();
 
-
+    var foote= document.getElementById("foot")
+    foote.innerHTML=footer()
 
 </script>

@@ -25,7 +25,7 @@ body{
      /* background-color: rgb(95, 61, 20); */
      background-image: url("	https://a.cdnsbn.com/images/English/banner_SkincareSpringEditsMar22_1170_1.jpg?v=3");
      background-size: 100% 100%;
-     animation: slider 30s infinite linear;
+     animation: slider 8s infinite linear;
 }
 @keyframes slider{
      0%{
@@ -43,6 +43,7 @@ body{
  }
  .desc{
      height: 80px;
+     
  }
 
 .promoline{
@@ -52,7 +53,7 @@ body{
 }
 .discounts{
     color: red;
-    line-height: 0.5;
+    line-height: 0.4;
     font-size: 12px;
     text-align: start;
     font-family:  'Lato', sans-serif;
@@ -198,8 +199,8 @@ gap: 15px;
 }
 /* } */
 .product_img{
-width: 50%;
-height: 200px;
+width: 65%;
+height: 250px;
 }
 .name{
 font-family:  'Lato', sans-serif;;
