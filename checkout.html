@@ -4,408 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Checkout</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <style>
-        *{
-            font-family: sans-serif;
-        }
-        #container{
-            border: 2px solid black;
-            height: 1800px;
-            width: 80%;
-            margin: 50px auto;
-            
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #container > div{
-            border: 2px solid blue;
-            /* width: 45%; */
-        }
-
-        #cont1{
-            width: 62%;
-            height: 1000px;
-
-        }
-
-        #cont1 div{
-            background-color: #fff;
-
-        }
-
-        #cont2 div{
-            background-color: #fff;
-        }
-
-        #cont2
-        {
-            width: 36%;
-            height: 550px;
-            display: block;
-        }
-
-        
-        #form2 div{
-            border: 2px solid red;
-            
-        }
-
-        #form2 > div:first-child{
-            height: 250px;
-
-        }
-
-        #form2 > div:nth-child(2){
-            height: 250px;
-
-        }
-
-        #form1 > div{
-            border: 2px solid red;
-
-        }
-
-        #notification{
-            height: 220px;
-            overflow: auto;
-            padding-right: 14px;
-        }
-
-        #cart-details{
-            /* height: 280px; */
-            /* margin-bottom: 30px; */
-            /* text-align: center; */
-            /* display: flex; */
-        }
-
-        #row{
-            /* height: 150px; */
-            border: 2px solid green;
-            
-        }
-
-        /* table{
-            margin-bottom: 20px;
-        } */
-
-        td{
-            margin-right: 50px;
-            border: 2px solid green;
-            /* padding: 20px; */
-            padding-right: 50px;
-            padding-left: 50px;
-
-            height: 130px;
-        }
-
-        #pImage{
-            height: 140px;
-        }
-
-        #cart_details{
-           margin-bottom: 20px;
-        }
-
-
-        #form1 div:nth-child(3){
-            height: 720px;
-            margin-bottom: 20px;
-        }
-
-        #form1 div:nth-child(4){
-            height: 300px;
-            
-        }
-        /* #cont2:first-child{
-            border: 2px solid red;
-            height: 200px;
-        }
-
-        #cont2:last-child{
-            border: 2px solid red;
-            height: 200px;
-        } */
-        #heading{
-            /* margin-left: 60px; */
-            border: 2px solid red;
-            font-size: 35px;
-            width: 80%;
-            margin: 50px auto;
-            letter-spacing: .14em;   
-            font-weight: bold;
-        }
-
-        #notify{
-            margin-left: 25px;
-        }
-
-        li{
-            margin-bottom: 16px;
-            line-height: 1.3;
-        }
-
-        body{
-            background-color: #f5f5f5;           
-        }
-
-        #input_promo{
-            width: 90%;
-            padding: 10px;
-            border: 1px solid #623381;
-            margin-bottom: 0px;
-        }
-
-        #input_promo:hover{
-            border: 2px solid #623381;
-        }
-        #enter_promo{
-            padding: 20px;
-            box-sizing: border-box;
-            margin-bottom: 15px;
-            background-color: #fff;
-        }
-
-        #btn{
-            padding: 10px;
-            width: 60%;
-            margin-top: 30px;
-            margin-left: 78px;
-            background-color: #623381;
-            color: #fff;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        /* #payment_detail{
-            background-color: #fff;
-        } */
-
-        #form_detail{
-            border: 2px solid ;
-            /* padding: 20px; */
-            width: 92%;
-            margin: auto;
-        }
-
-        input,select{
-            display: block;
-            width: 95%;
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #623381;
-
-        }
-
-        /* #myForm  input{
-            width: 95%;
-
-        } */
-
-        select{
-            width: 98.2%;
-
-        }
-
-        #submit_btn{
-            width: 70%;
-            margin: auto;
-            background-color: #623381;
-            color: #fff;
-            font-weight: bold;
-            font-size: 18px;
-        }
-        #shipping{
-            color: grey;
-            font-weight: bold;
-            /* border: 1px solid #623381; */
-        }
-
-
-        input:hover{
-            border: 2px solid #623381;
-        }
-
-        select:hover{
-            border: 2px solid #623381;
-        }
-
-        #cart_image{
-            border: 1px solid peru;
-            height: 100px;
-            width: 13%;
-        }
-
-        #cart_data{
-            /* border: 1px solid rgb(63, 129, 205); */
-            /* box-sizing: border-box; */
-            height: 180px;
-            width: 93%;
-            margin: auto; 
-            display: flex; 
-            gap: 40px;
-        }
- 
-         #cart_info{
-            border: 1px solid purple;
-            height: 50px;
-            width: 24%;
-        } 
-
-        #qty{
-            border: 1px solid peru;
-            /* height: 100px; */
-            width: 16%;
-            /* text-align: center; */
-        }
-
-        #price{
-            border: 1px solid purple;
-            width: 16%;
-
-        } 
-
-        div{
-            display: block;
-        }
-
-        #mainDiv{
-            display: flex;
-            gap: 50px;
-            /* margin-bottom: 20px; */
-        }
-
-        #cont4{
-            border: 2px solid red;
-            /* padding: 8px; */
-            font-weight: bold;
-        }
-
-        #cont4 h3{
-            border: 2px solid blue;
-        }
-
-        #pay_form{
-            border: 2px solid green;
-            /* margin-left: 10px; */
-            /* text-align: left; */
-        }
-
-        .radio{
-         width: 10px;
-         /* display: inline-block; */
-         /* padding: 10px; */
-         /* border: 2px solid brown; */
-        }
-
-        #input1,#input2,#input4{
-            display: none;
-        }
-/*        
-        hr{
-           width: 30%;
-           text-align: center;
-        } */
-
-        #payment_detail{
-            padding-left: 20px;
-        }
-
-        #total_price{
-            display: flex;
-            border: 2px solid blue;
-            height: 100px;
-            font-size: 18px;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        #total_price > div{
-            border: 2px solid black;
-            width: 50%;
-            padding-top: 20px;
-        }
-
-        #total_price > div:first-child{
-            text-align: left;
-            margin-left: 30px;
-        }
-
-        #total_price > div:last-child{
-            text-align: right;
-            margin-right: 30px;
-            font-size: 24px;
-        }
-
-        #total2,#total3,#total4,#total5{
-            display: flex;
-            height: 40px;
-            margin-right: 15px;
-        }
-
-        #total2 div,#total5 div{
-            width: 50%;
-            border: 2px solid green;
-            font-weight: 600;
-        }
-
-        #total4 div:first-child{
-            width: 70%;
-            border: 2px solid green;
-        }
-
-        #total4 div:last-child{
-            width: 30%;
-            border: 2px solid green;
-            text-align: right;
-            padding-right: 10px;
-
-        }
-        #total5 div:first-child{
-            width: 70%;
-        }
-
-        #total5 div:last-child{
-            width: 30%;
-            text-align: right;
-            padding-right: 10px;
-        }
-
-        #amount2{
-            text-align: right;
-            padding-right: 10px;
-        }
-
-        #total3 div{
-            /* width: 50%; */
-            border: 2px solid green;
-            color: red;
-        }
-
-        #total3 div:last-child{
-            text-align: right;
-            width: 30%;
-            padding-right: 10px;
-            
-        }
-
-        #total3 div:first-child{
-            width: 70%;
-
-        }
-
-        input[type="radio"]
-        {
-            /* margin-right: 5px; */
-            border: 0px;
-            width: 2%;
-            height: 1.2em;
-        }
-    </style>
+    <link rel="stylesheet" href="./checkout.css">
+    
 
 </head>
 <body>
@@ -498,26 +102,33 @@
                  <!-- <div id="pay_form"> -->
                  <input type="radio" class="radio" name="card" onclick="visacard()" style="display: inline;" id="visa" value="visacard"> <img src="https://s.cdnsbn.com/images/common/Visa.png" alt=""> Visa - credit or debit card
                  <div id="input1">
-                    <input type="number" required placeholder="Card Number (no spaces)">
+                    <input type="number" required id="cardno" placeholder="Card Number (no spaces)">
                     <!-- <input type="date" required placeholder="DD/MM/YY"> -->
-                    <input type="cvv" required placeholder="Enter your CVV number">
+                    <input type="cvv" id="cvvno" required placeholder="Enter your CVV number">
                 </div>
+<!-- ----------------------------------------- -->
                  <br>
+
                  <input type="radio" name="card" value="mastercard" onclick="mastercard()" style="display: inline;" id="master" class="radio" > <img src="https://s.cdnsbn.com/images/common/Master.png" alt=""> MasterCard - credit or debit card
                  <!-- <br> -->
                  <div id="input2">
-                    <input type="number" required placeholder="Card Number (no spaces)">
+                    <input type="number"  placeholder="Card Number (no spaces)">
                     <!-- <input type="date" required placeholder="DD/MM/YY"> -->
-                    <input type="cvv" required placeholder="Enter your CVV number">
+                    <input type="cvv"  placeholder="Enter your CVV number">
                  </div>
+<!-- ----------------------------------------- -->
 
               <br>
+
                  <input type="radio" name="card" value="americancard" onclick="americancard()" style="display: inline;" id="american" class="radio"> <img src="https://s.cdnsbn.com/images/common/AmericanExpress.png" alt=""> American express
                  <div id="input4">
-                    <input type="number" required placeholder="Card Number (no spaces)">
+                    <input type="number" placeholder="Card Number (no spaces)">
                     <!-- <input type="date" required placeholder="DD/MM/YY"> -->
-                    <input type="cvv" required placeholder="Enter your CVV number">
+                    <input type="cvv" placeholder="Enter your CVV number">
                  </div>
+
+
+                 <input type="submit" id="submitform" value="PAY NOW">
                 <!-- </div> -->
                
                  
@@ -541,7 +152,8 @@
                     <h2>ENTER PROMO CODE</h2>
                     <input type="text" id="input_promo">
                     
-                    <button id="btn">APPLY</button>
+                    <!-- <button id="btn">APPLY</button> -->
+                    <input type="submit" id="btn" value="APPLY">
 
                 </div>
                 
@@ -556,22 +168,22 @@
 
                   <div id="total3">
                     <div>Extra 10% Off (New Customer)</div>
-                  <div> -907</div>
+                  <div> -₹907</div>
                 </div>
 
                 <div id="total3">
                     <div>Extra 8% Off (Spring Savings Sale)</div>
-                  <div> -725</div>
+                  <div> -₹725</div>
                 </div>
 
                 <div id="total4">
                     <div>Standard Shipping (Signature)</div>
-                  <div> 782</div>
+                  <div> ₹782</div>
                 </div>
 
                 <div id="total4">
                     <div>Freight Surcharge</div>
-                  <div> 317</div>
+                  <div>₹317</div>
                 </div>
 
                 <div id="total5">
@@ -663,8 +275,12 @@ arr.map(function(elem)
     let col3 = document.createElement("td");
     col3.innerText = elem.quant;
 
+let unit = document.createElement("sup");
+unit.innerText = "INR"
     let col4 = document.createElement("td");
-    col4.innerText = elem.price;
+    col4.innerText =`₹ ${elem.price}`;
+    col4.setAttribute("id","col4")
+    // col4.append(unit)
 
     
 
@@ -680,8 +296,8 @@ function showTotal()
             return acc + elem.price*elem.quant;
         }, 0);
     
-       document.querySelector("#amount").innerText = total;
-       document.querySelector("#amount2").innerText = total;
+       document.querySelector("#amount").innerText = total.toFixed(2);
+       document.querySelector("#amount2").innerText = total.toFixed(2);
 
     }
 
@@ -696,46 +312,8 @@ countproduct();
 let product_price = document.querySelector("#amount2").innerText;
 let final = ((product_price - 907)-725) + 1099;
 
-document.querySelector("#final_price").innerText = final;
+document.querySelector("#final_price").innerText = final.toFixed(2);
 
-// document.getElementById("myForm").addEventListener("submit",function(event)
-// {
-//     event.preventDefault();
-
-//     let payment_div = document.createElement("div");
-
-//     let form = document.createElement("form");
-
-//     let input1 = document.createElement("input");
-// })
-
-// *******************PAYMENT************************
-
-// let visa = document.getElementById("visa");
-
-// let card = document.createElement("input");
-// let date = document.createElement("input");
-// let cvv = document.createElement("input");
-
-// let pay_form = document.getElementById("pay_form").value;
-
-
-
-
-// if(pay_form=="visacard")
-// {
-//  document.querySelector("#input1").style.display = "block";
-// }
-
-// if(pay_form=="mastercard")
-// {
-//  document.querySelector("#input2").style.display = "flex";
-// }
-
-// if(pay_form=="americancard")
-// {
-//  document.querySelector("#input3").style.display = "flex";
-// }
 
 function visacard()
 {
@@ -761,17 +339,61 @@ function americancard()
 
 // })
 
-let promo  = document.getElementById("input_promo").value;
-let discount = document.querySelector("#final_price").innerText = subtotal;
+// let promo  = document.querySelector("#input_promo").value;
+// var final_price = document.querySelector("#final_price").innerText;
 
-document.getElementById("btn").addEventListener("click",function()
-{
+document.getElementById("form2").addEventListener("submit",(e,final_price)=>{
+
+    applyPromo(e,final_price)
+})
+
+let applyPromo =(e,final_price)=>{
+    e.preventDefault();
+// console.log("fdggrtghghghghghghghghghghghghghghgh")
+let promo  = document.querySelector("#input_promo").value;
+var final_price = document.querySelector("#final_price").innerText;
+// console.log(final_price)
     if(promo=="masai30")
     {
         // let discount = subtotal-(subtotal*0.3);
-        document.querySelector("#final_price").innerText = subtotal-(discount*0.3);
-
+      document.querySelector("#final_price").innerText = Math.floor(final_price-(final_price*0.3)).toFixed(2);
+      console.log(final_price)
     }
-})
+
+}
+// console.log(final_price)
+
+
+// ********************
+
+
+
+
+document.querySelector("#pay_form").addEventListener("submit",formfunction)
+
+
+function formfunction(event)
+{
+    event.preventDefault();
+
+    let cardno = document.getElementById("cardno").value;
+    let cvvno = document.getElementById("cvvno").value;
+
+    if(cardno.length==16 && cvvno.length==3)
+    {
+        console.log("payment received")
+        alert("Enter Otp = 7575");
+        window.location.href = "otp.html";
+    }
+
+    else{
+        alert("Incorrect credentials")
+    }
+
+}
+
+
+
+ 
 
 </script>
