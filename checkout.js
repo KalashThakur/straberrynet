@@ -61,6 +61,7 @@ function countproduct()
 }
 countproduct();
 
+
 let product_price = document.querySelector("#amount2").innerText;
 let final = ((product_price - 907)-725) + 1099;
 
