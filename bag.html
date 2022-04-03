@@ -156,7 +156,6 @@ function addUser(event) {
     localStorage.setItem('userDatabase', JSON.stringify(userStack));
 
     alert("register sucessfull")
-    //window.location.href = "home.html";
 }
 function puneethspl(){
     let email = document.getElementById('useremail').value;
@@ -172,7 +171,7 @@ function puneethspl(){
   if (flag ==true) {
       //document.querySelector("input[type='submit']").addEventListener("click",function(){
           alert("Login successful")
-          window.location.href="index.html";
+        //   window.location.href="index.html";
               for(let i=0; i<SingData.length; i++){
               loginData.innerHTML=SingData[i].name
               }
