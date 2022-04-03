@@ -805,7 +805,7 @@ let addthisproductstowishlist = (elem) => {
   let mywisharr = JSON.parse(localStorage.getItem("wish_list")) || [];
   let flag = true;
   for (let i = 0; i < mywisharr.length; i++) {
-    if (mywisharr[i].title === elem.title) {
+    if (mywisharr[i].desc === elem.desc) {
       flag = false;
     }
   }
@@ -821,7 +821,7 @@ let adtocartfunc = (elem) => {
   let flag = true;
   console.log(arr);
   for (let i = 0; i < arr2.length; i++) {
-    if (arr2[i].title === elem.title) {
+    if (arr2[i].desc === elem.desc) {
       flag = false;
     }
   }
