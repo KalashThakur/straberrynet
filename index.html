@@ -12,9 +12,9 @@
      <link rel="stylesheet" href="./style/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> -->
 <!-- <link rel="stylesheet" href="header.css"> -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  
 </head>
@@ -168,6 +168,38 @@ homenav.innerHTML=navbar()
 const abc = ()=>{
     document.querySelector("#lg").style.display="block"
 }
+
+
+
+
+// ------------------------------------------------------------------------
+document.querySelector("#skincare").addEventListener("click",()=>{
+    pankaj();
+  })
+  const pankaj = ()=>{
+    window.location.href="catg.html"
+  }
+  document.querySelector("#haircare").addEventListener("click",()=>{
+    haircare();
+  })
+  const haircare = ()=>{
+    window.location.href="catghaircare.html"
+  }
+  document.querySelector("#menskincare").addEventListener("click",()=>{
+    menskincare();
+  })
+  const  menskincare = ()=>{
+    window.location.href="catgmensskincare.html"
+  }
+  document.querySelector("#prefume").addEventListener("click",()=>{
+    prefume();
+  })
+  const prefume = ()=>{
+    window.location.href="catg perfume.html"
+  }
+
+
+// -------------------------------------------------------------------------
 
 // const aniket = ()=>{
 //     document.querySelector("#lg").innerHTML="aniket wagah come from hepls"; 

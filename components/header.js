@@ -43,11 +43,11 @@ const navbar = () => {
 <div id="cont">
 <div id="secpar">
     <div><span class="material-icons-outlined">reorder</span>SHOP BY BRAND</div>
-    <div>SKINCARE</div>
+    <div id="skincare">SKINCARE</div>
     <div>MAKEUP</div>
-    <div>HAIRCARE</div>
-    <div>PERFUME</div>
-    <div>MEN'S SKINCARE</div>
+    <div id="haircare">HAIRCARE</div>
+    <div id="prefume">PERFUME</div>
+    <div id="menskincare">MEN'S SKINCARE</div>
     <div>MEN'S COLOGNE</div>
     <div>HOME SCENTS</div>
     <div>NATURAL BEAUTY</div>

@@ -34,6 +34,8 @@ function showdata(idname,arr){
     button.addEventListener("click",function(){
         cart.push(elem)
         localStorage.setItem("cart_item",JSON.stringify(cart))
+        let total_elem=JSON.parse(localStorage.getItem("cart_item"))
+        document.getElementById("total").innerText=total_elem.length;
     })
 var offer=document.createElement("p")
 offer.innerText="Extra 8% Off The Entire Site"
