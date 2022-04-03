@@ -637,9 +637,26 @@ let brand11arr = [];
 brand11arr.push(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11);
 
 let aradata = arr[1];
+let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
 
+// document.querySelector("#total").innerText = arr2.length
+
+
+
+
+
+
+
+console.log("gfffffffffffffffhf",arr2.length)
+// if(arr2===undefined){
+//   document.querySelector("#total").innerText = 0;
+// }
+// else{
+//   document.querySelector("#total").innerText = arr2.length
+// }
+// // document.querySelector("#total").innerText = arr2.length;
 let shodata = (aradata) => {
-  let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
+  //  arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
 
   document.querySelector("#crt_count_of_prod").innerText = aradata.length;
 
@@ -780,6 +797,7 @@ let shodata = (aradata) => {
       shodata(aradata);
     }
   };
+  // document.querySelector("#total").innerText = arr2.length;
 };
 shodata(aradata);
 let addthisproductstowishlist = (elem) => {
@@ -796,9 +814,10 @@ let addthisproductstowishlist = (elem) => {
     localStorage.setItem("wish_list", JSON.stringify(mywisharr));
   }
 };
-
+// let arr2
 let adtocartfunc = (elem) => {
-  let arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
+
+  //  arr2 = JSON.parse(localStorage.getItem("cart_item")) || [];
   let flag = true;
   console.log(arr);
   for (let i = 0; i < arr2.length; i++) {
@@ -809,9 +828,13 @@ let adtocartfunc = (elem) => {
   if (flag === true) {
     arr2.push(elem);
     localStorage.setItem("cart_item", JSON.stringify(arr2));
-    // document.querySelector("#crt_counter").innerText = arr2.length;
+    
+    document.querySelector("#total").innerText = arr2.length;
   }
+  document.querySelector("#total").innerText = arr2.length;
+  // console.log("gfffffffffffffffhf",arr2.length)
 };
+
 let tempsavetodesc = (elem) => {
   let arr2 = [];
   arr2.push(elem);
@@ -828,7 +851,7 @@ document.querySelector(".skin11").addEventListener("input", () => {
 
 let show111skin = () => {
   shodata(brand11arr);
-  document.querySelector("#crt_count_of_prod").innerText = brand11arr.length;
+  // document.querySelector("#crt_count_of_prod").innerText = brand11arr.length;
   console.log("hhfgfhfgfgfddddddd");
 };
 
@@ -1211,3 +1234,4 @@ import { navbar, footer } from "../components/header.js";
 
 document.querySelector("#crt_navbar").innerHTML = navbar();
 document.querySelector("#crt_fotter").innerHTML = footer();
+// console.log("gfffffffffffffffhf",arr2.length)
