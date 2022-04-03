@@ -22,8 +22,8 @@ function getdata(
   this.size = size;
   this.strikedprice = strikedprice;
 
-  this.img1 = url1;
-  this.img2 = url2;
+  this.image2 = url1;
+  this.image3 = url2;
 
   this.save = save;
 
