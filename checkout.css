@@ -2,7 +2,7 @@
     font-family: sans-serif;
 }
 #container{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 2000px;
     width: 80%;
     margin: 50px auto;
@@ -12,7 +12,7 @@
 }
 
 #container > div{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     /* width: 45%; */
 }
 
@@ -40,13 +40,17 @@
 
 
 #form2 div{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     
 }
 
 #form2 > div:first-child{
     height: 250px;
+    margin-bottom: 30px;
+}
 
+#payment_detail{
+    padding-top: 10px;
 }
 
 #form2 > div:nth-child(2){
@@ -54,8 +58,22 @@
 
 }
 
+#submitform{
+    margin-bottom: 20px;
+}
+
+#form1 > div:nth-child(2){
+    margin-bottom: 20px;
+}
+
+#form1 > div:nth-child(3)
+{
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
 #form1 > div{
-    border: 2px solid red;
+    /* border: 2px solid grey; */
 
 }
 
@@ -64,6 +82,7 @@
     overflow: auto;
     padding-right: 14px;
 }
+
 
 #cart-details{
     /* height: 280px; */
@@ -74,17 +93,14 @@
 
 #row{
     /* height: 150px; */
-    border: 2px solid green;
+    /* border: 2px solid green; */
     
 }
 
-/* table{
-    margin-bottom: 20px;
-} */
 
 td{
     margin-right: 50px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     /* padding: 20px; */
     /* padding-right: 50px;
     padding-left: 50px; */
@@ -126,17 +142,20 @@ table > tr > td:nth-child(3)
 }
 
 #cart_details{
-   margin-bottom: 20px;
+   margin-bottom: 30px;
 }
 
 
 #form1 div:nth-child(3){
     height: 720px;
     margin-bottom: 20px;
+    padding-left: 15px;
 }
 
 #form1 div:nth-child(4){
-    height: 300px;
+    height:400px;
+    padding-left: 15px;
+padding-top: 10px;
     /* margin-bottom: 100px; */
     
 }
@@ -151,7 +170,7 @@ table > tr > td:nth-child(3)
 } */
 #heading{
     /* margin-left: 60px; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
     font-size: 35px;
     width: 80%;
     margin: 50px auto;
@@ -205,7 +224,7 @@ body{
 } */
 
 #form_detail{
-    border: 2px solid ;
+    /* border: 2px solid ; */
     /* padding: 20px; */
     width: 92%;
     margin: auto;
@@ -299,17 +318,19 @@ div{
 }
 
 #cont4{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* padding: 8px; */
     font-weight: bold;
+    padding-left: 15px;
+    padding-top: 10px;
 }
 
 #cont4 h3{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 #pay_form{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     /* margin-left: 10px; */
     /* text-align: left; */
 }
@@ -337,7 +358,7 @@ hr{
 
 #total_price{
     display: flex;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 100px;
     font-size: 18px;
     font-weight: bold;
@@ -345,7 +366,7 @@ hr{
 }
 
 #total_price > div{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 50%;
     padding-top: 20px;
 }
@@ -369,18 +390,18 @@ hr{
 
 #total2 div,#total5 div{
     width: 50%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     font-weight: 600;
 }
 
 #total4 div:first-child{
     width: 70%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 #total4 div:last-child{
     width: 30%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     text-align: right;
     padding-right: 10px;
 
@@ -402,7 +423,7 @@ hr{
 
 #total3 div{
     /* width: 50%; */
-    border: 2px solid green;
+    /* border: 2px solid green; */
     color: red;
 }
 

@@ -11,180 +11,169 @@
 
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"> -->
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- this is our header -->
     <div id="bag-lg"></div>
     <div id="bag-header"></div>
 
     <div id="main-div-bag">
-        <div id="main-div-bag-left">
-            <div id="shoping-bag">
-                <h3>SHOPPING BAG</h3>
-            </div>
-            <div id="dilvery-box">
-                <div>Deliver To :
-                    <div id="flag-img"></div>
-                <div> 
-                    <select>
-                        <option>India</option>
-                        <option>Pak</option>
-                        <option>Shrilanka</option>
-                        <option>Nepal</option>
-                        <option>Bangladesh</option>
-                </select>
-                </div>
-            </div>
+      <div id="main-div-bag-left">
+        <div id="shoping-bag">
+          <h3>SHOPPING BAG</h3>
         </div>
-        <div id="show-bag-item">
-
+        <div id="dilvery-box">
+          <div>
+            Deliver To :
+            <div id="flag-img"></div>
+            <div>
+              <select>
+                <option>India</option>
+                <option>Pak</option>
+                <option>Shrilanka</option>
+                <option>Nepal</option>
+                <option>Bangladesh</option>
+              </select>
+            </div>
+          </div>
         </div>
-    </div>
-    <div id="bag-right-div">
+        <div id="show-bag-item"> </div>
+      </div>
+      <div id="bag-right-div">
         <div id="main-div-bag-right"></div>
         <div id="gust-checkout">
-            <div id="gust-checkout-text">
-                <h3>OR</h3>
-                <p>GUEST CHECKOUT</p>
-            </div> 
-            <div id="gust-inputbox">
-                <input type="text " placeholder="Email  address">
-            </div>
-            <div id="gust-input-button">
-                <button class="gust-button">CONTINUE AS GUEST</button>
-            </div>
-        </div> 
-     </div>
+          <div id="gust-checkout-text">
+            <h3>OR</h3>
+            <p>GUEST CHECKOUT</p>
+          </div>
+          <div id="gust-inputbox">
+            <input type="text " placeholder="Email  address" />
+          </div>
+          <div id="gust-input-button">
+            <button class="gust-button">CONTINUE AS GUEST</button>
+          </div>
+        </div>
+      </div>
     </div>
-     <div id="totalPrice">
-         <p id="toatalItem"></p>
-         <p id="ExtraOffer" onclick="checkoutpage()">Go TO CHECKOUT PAGE</p>
-         <p></p>
-     </div>  
-<div id="bag-footer"></div>
-</body>
+    <div id="totalPrice">
+      <p id="toatalItem"></p>
+      <p id="ExtraOffer" onclick="checkoutpage()">Go TO CHECKOUT PAGE</p>
+      <p></p>
+    </div>
+    <div id="bag-footer"></div>
+  </body>
 </html>
 <script>
-    const checkoutpage = ()=>{
-        window.location.href="checkout.html"
-    }
+  const checkoutpage = () => {
+    window.location.href = "checkout.html";
+  };
 </script>
 <!-- <script src="/script/bag.js"></script>/ -->
 <script type="module">
-    // let bagSing = document.getElementById("bag-lg");
-    // bagSing.innerHTML=singupPankaj();
-    import{navbar , footer} from './components/header.js'
-    console.log(navbar);
+  // let bagSing = document.getElementById("bag-lg");
+  // bagSing.innerHTML=singupPankaj();
+  import { navbar, footer } from "./components/header.js";
+  console.log(navbar);
 
-    let  header = document.getElementById("bag-header");
-    header.innerHTML=navbar();
+  let header = document.getElementById("bag-header");
+  header.innerHTML = navbar();
 
-    let  bagfooter = document.getElementById("bag-footer");
-    // bagfooter.innerHTML=footer();
-    bagfooter.style.marginTop="20px"
+  let bagfooter = document.getElementById("bag-footer");
+  // bagfooter.innerHTML=footer();
+  bagfooter.style.marginTop = "20px";
 
-    import showDataOnbag from './script/bag.js'
-    console.log(showDataOnbag)
+  import showDataOnbag from "./script/bag.js";
+  console.log(showDataOnbag);
 
-    let showData = JSON.parse(localStorage.getItem("cart_item"))|| []
+  let showData = JSON.parse(localStorage.getItem("cart_item")) || [];
 
-    let showitemInBag = document.getElementById("show-bag-item")
+  let showitemInBag = document.getElementById("show-bag-item");
 
-    showitemInBag = showDataOnbag(showData,showitemInBag)
+  showitemInBag = showDataOnbag(showData, showitemInBag);
 
-    import singupPankaj from './newlogin.js'
-    console.log(singupPankaj);
+  import singupPankaj from "./newlogin.js";
+  console.log(singupPankaj);
 
-    let loginData = document.getElementById("main-div-bag-right")
-    loginData.innerHTML=singupPankaj();
+  let loginData = document.getElementById("main-div-bag-right");
+  loginData.innerHTML = singupPankaj();
 
-    document.getElementById("onclick").addEventListener("click", ()=>{
-        showTotal()
-    })
-// toatal rupees
-const showTotal = ()=>{
-var qu = document.getElementById("quant").value
-    var total = showData.reduce(function(acc,elem){
-        return acc+(elem.price*qu);
-    },0);
-    
- document.getElementById("toatalItem").innerText="Total Paymetn"+":"+total;
-    
-}
-showTotal()
+  document.getElementById("onclick").addEventListener("click", () => {
+    showTotal();
+  });
+  // toatal rupees
+  const showTotal = () => {
+    var qu = document.getElementById("quant").value;
+    var total = showData.reduce(function (acc, elem) {
+      return acc + elem.price * qu;
+    }, 0);
 
+    document.getElementById("toatalItem").innerText =
+      "Total Paymetn" + ":" + total;
+  };
+  showTotal();
 
+  document.querySelector("#userSign").addEventListener("click", () => {
+    signin();
+  });
+  document.querySelector("#newHere").addEventListener("click", () => {
+    newhere();
+  });
+  function signin() {
+    console.log("hy");
+    document.querySelector(".div1").style.display = "block";
+    document.querySelector(".div2").style.display = "none";
+  }
+  function newhere() {
+    document.querySelector(".div1").style.display = "none";
+    document.querySelector(".div2").style.display = "block";
+  }
+  // storing the user's email in local storage
+  document.getElementById("email").value = localStorage.getItem("userEmail");
 
+  let userStack = JSON.parse(localStorage.getItem("userDatabase")) || [];
 
-
-
-    document.querySelector("#userSign").addEventListener("click", ()=>{
-        signin();
-    })
-    document.querySelector("#newHere").addEventListener("click", ()=>{
-        newhere();
-    })
-    function signin(){
-        console.log("hy");
-        document.querySelector(".div1").style.display="block";
-        document.querySelector(".div2").style.display="none";
-
-    }
-    function newhere(){
-        document.querySelector(".div1").style.display="none";
-        document.querySelector(".div2").style.display="block";
-        
-    }
-     // storing the user's email in local storage
-     document.getElementById('email').value = localStorage.getItem('userEmail');
-
-let userStack = JSON.parse(localStorage.getItem('userDatabase')) || [];
-
-// storing user data 
-function addUser(event) {
+  // storing user data
+  function addUser(event) {
     event.preventDefault();
-    let name = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let password = document.getElementById('password').value;
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
 
     let userData = {
-        'name': name,
-        'email': email,
-        'password': password
-    }
+      name: name,
+      email: email,
+      password: password,
+    };
 
     userStack.push(userData);
 
-    localStorage.setItem('userDatabase', JSON.stringify(userStack));
+    localStorage.setItem("userDatabase", JSON.stringify(userStack));
 
-    alert("register sucessfull")
-    //window.location.href = "home.html";
-}
-function puneethspl(){
-    let email = document.getElementById('useremail').value;
-    let password = document.getElementById('userpass').value;
-    let SingData=JSON.parse(localStorage.getItem('userDatabase'))|| []
-    
-   var flag=false
-    for(let i=0; i<SingData.length; i++){
-    if (SingData[i].email == email && SingData[i].password == password) {
-    flag=true;
+    alert("register sucessfull");
   }
-}
-  if (flag ==true) {
-      //document.querySelector("input[type='submit']").addEventListener("click",function(){
-          alert("Login successful")
-          window.location.href="index.html";
-              for(let i=0; i<SingData.length; i++){
-              loginData.innerHTML=SingData[i].name
-              }
-     // })
-    }
- else {
-     alert("Invalid")
- }
-}
-document.getElementById('submit').addEventListener('click', addUser);
-document.getElementById('btt').addEventListener('click', puneethspl);
+  function puneethspl() {
+    let email = document.getElementById("useremail").value;
+    let password = document.getElementById("userpass").value;
+    let SingData = JSON.parse(localStorage.getItem("userDatabase")) || [];
 
+    var flag = false;
+    for (let i = 0; i < SingData.length; i++) {
+      if (SingData[i].email == email && SingData[i].password == password) {
+        flag = true;
+      }
+    }
+    if (flag == true) {
+      //document.querySelector("input[type='submit']").addEventListener("click",function(){
+      alert("Login successful");
+      //   window.location.href="index.html";
+      for (let i = 0; i < SingData.length; i++) {
+        loginData.innerHTML = SingData[i].name;
+      }
+      // })
+    } else {
+      alert("Invalid");
+    }
+  }
+  document.getElementById("submit").addEventListener("click", addUser);
+  document.getElementById("btt").addEventListener("click", puneethspl);
 </script>
