@@ -882,7 +882,31 @@ ToolsAccessoriesarr.push(v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11);
 // };
 
 import { navbar, footer } from "../components/header.js";
-// document.querySelector("#crt_fotter").innerHTML = 
+// document.querySelector("#crt_fotter").innerHTML =
 
 document.querySelector("#crt_navbar").innerHTML = navbar();
 document.querySelector("#crt_fotter").innerHTML = footer();
+document.querySelector("#skincare").addEventListener("click", () => {
+  pankaj();
+});
+const pankaj = () => {
+  window.location.href = "catg.html";
+};
+document.querySelector("#haircare").addEventListener("click", () => {
+  haircare();
+});
+const haircare = () => {
+  window.location.href = "catghaircare.html";
+};
+document.querySelector("#menskincare").addEventListener("click", () => {
+  menskincare();
+});
+const menskincare = () => {
+  window.location.href = "catgmensskincare.html";
+};
+document.querySelector("#prefume").addEventListener("click", () => {
+  prefume();
+});
+const prefume = () => {
+  window.location.href = "catg perfume.html";
+};
