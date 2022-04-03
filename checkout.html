@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./checkout.css">
+    
+
+</head>
+<body>
+    <div id="heading">CHECKOUT</div>
+    <div id="container">
+        <div id="cont1">
+
+        <form action="" id="form1">
+            <div id="notification">
+                <h3 id="notify">NOTIFICATION (4)</h3>
+                <ul>
+                    <li>Please note that delivery to your selected region will be delayed because order dispatches are on hold due to shipping restrictions. For more information, please contact info@strawberrynet.com.</li>
+                    <li>Please note that a 3.5% freight surcharge will be applied at checkout.</li>
+                    <li>This order may be subject to duties and taxes, which are payable by the customer and are not refundable.</li>
+                    <li>Spend a minimum of USD150 after discounts to qualify for free shipping, or spend a minimum of USD100 after discounts to qualify for a reduced shipping charge at USD5. A shipping cost of USD10 will be charged for orders below USD100.</li>
+                </ul>
+            </div>
+<!-- ****************************************************** -->
+             <div id="cart-details"> 
+                 <table id="table"></table>
+                 <!-- <div id="cart_data">  -->
+                    <!-- <div id="cart_image"></div>
+                    <div id="cart_info"></div>
+                    <div id="qty">kjbjb</div>
+                    <div id="price"></div> -->
+                <!-- </div> -->
+                <div id="total_price">
+                    <div>Item Total (<span class="count">0</span>)</div>
+                    <div id="amount"></div>
+                </div>
+            </div> 
+
+            <!-- <div></div> -->
+
+
+<!-- ****************************************************** -->
+
+            <div>
+                <h3>SHOPPING INFORMATION</h3>
+
+                <div id="form_detail">
+                <form action="" id="myForm">
+                    <h3 id="shipping">SHIPPING ADDRESS</h3>
+
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                    <input type="text" placeholder="Company">
+                    <select name="" id="" required>
+                        <option value="India">India</option>
+                        <option value="Finland">Finland</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Greece">Greece</option>
+                        <option value="Greenland">Greenland</option>
+                        <option value="Gabon">Gabon</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Kuwait">Kuwait</option>
+                        <option value="Laos">Laos</option>
+                        <option value="Libya">Libya</option>
+                        <option value="Liberia">Liberia</option>
+                        <option value="Israel">Israel</option>
+                        <option value="Kuwait">Kuwait</option>
+                        <option value="Jordan">Jordan</option>
+                        <option value="Myanmar">Myanmar</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="Norway">Norway</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Oman">Oman</option>
+                        <option value="Pakistan">Pakistan</option>
+                    </select>
+
+                    <input type="text" placeholder="Address" required>
+                    <input type="text" placeholder="City/town" required>
+                    <input type="text" placeholder="State/province" required>
+                    <input type="number" placeholder="Zip/postcode" required>
+                    <input type="number" placeholder="Mobile" required>
+                    <input type="submit" value="SAVE & CONTINUE" id="submit_btn">
+
+
+                </form>
+                </div>
+
+            </div>
+
+         <div id="cont4">
+             <h3>PAYMENT</h3>
+
+             <form action="" id="pay_form">
+                 <!-- <div id="pay_form"> -->
+                 <input type="radio" class="radio" name="card" onclick="visacard()" style="display: inline;" id="visa" value="visacard"> <img src="https://s.cdnsbn.com/images/common/Visa.png" alt=""> Visa - credit or debit card
+                 <div id="input1">
+                    <input type="number" required id="cardno" placeholder="Card Number (no spaces)">
+                    <!-- <input type="date" required placeholder="DD/MM/YY"> -->
+                    <input type="cvv" id="cvvno" required placeholder="Enter your CVV number">
+                </div>
+<!-- ----------------------------------------- -->
+                 <br>
+
+                 <input type="radio" name="card" value="mastercard" onclick="mastercard()" style="display: inline;" id="master" class="radio" > <img src="https://s.cdnsbn.com/images/common/Master.png" alt=""> MasterCard - credit or debit card
+                 <!-- <br> -->
+                 <div id="input2">
+                    <input type="number"  placeholder="Card Number (no spaces)">
+                    <!-- <input type="date" required placeholder="DD/MM/YY"> -->
+                    <input type="cvv"  placeholder="Enter your CVV number">
+                 </div>
+<!-- ----------------------------------------- -->
+
+              <br>
+
+                 <input type="radio" name="card" value="americancard" onclick="americancard()" style="display: inline;" id="american" class="radio"> <img src="https://s.cdnsbn.com/images/common/AmericanExpress.png" alt=""> American express
+                 <div id="input4">
+                    <input type="number" placeholder="Card Number (no spaces)">
+                    <!-- <input type="date" required placeholder="DD/MM/YY"> -->
+                    <input type="cvv" placeholder="Enter your CVV number">
+                 </div>
+
+
+                 <input type="submit" id="submitform" value="PAY NOW">
+                <!-- </div> -->
+               
+                 
+             </form>
+         </div>
+
+         </form>
+         <!-- <div style="border: 2px solid red; height: 200px;" id=""></div> -->
+
+        </div>
+
+
+
+<!-- ******************Promo*********************** -->
+        <div id="cont2">
+            <!-- <div></div>
+            <div></div> -->
+            <form action="" id="form2">
+
+                <div id="enter_promo">
+                    <h2>ENTER PROMO CODE</h2>
+                    <input type="text" id="input_promo">
+                    
+                    <!-- <button id="btn">APPLY</button> -->
+                    <input type="submit" id="btn" value="APPLY">
+
+                </div>
+                
+                <div id="payment_detail">
+
+                  <h2>Payment Detail</h2>
+
+                  <div id="total2">
+                      <div>Item Total</div>
+                    <div id="amount2"></div>
+                  </div>
+
+                  <div id="total3">
+                    <div>Extra 10% Off (New Customer)</div>
+                  <div> -₹907</div>
+                </div>
+
+                <div id="total3">
+                    <div>Extra 8% Off (Spring Savings Sale)</div>
+                  <div> -₹725</div>
+                </div>
+
+                <div id="total4">
+                    <div>Standard Shipping (Signature)</div>
+                  <div> ₹782</div>
+                </div>
+
+                <div id="total4">
+                    <div>Freight Surcharge</div>
+                  <div>₹317</div>
+                </div>
+
+                <div id="total5">
+                    <div>Order Total</div>
+                   <div id="final_price"> 0</div>
+                </div>
+                  
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+<script>
+  
+    let arr = JSON.parse(localStorage.getItem("cart_item"));
+    console.log('arr:', arr)
+
+
+//     arr.map(function(elem)
+//     {
+//         let mainDiv = document.createElement("div");
+//         mainDiv.setAttribute("id","mainDiv")
+
+//         let image_div = document.createElement("div");
+        
+//         let image = document.createElement("img");
+//         image.src = elem.image1;
+//         image.width = "90px";
+//         image.height = "90px";
+        
+//         image_div.append(image)
+// // *************************************************
+//         let info_div = document.createElement("div");
+//         info_div.style.border = "2px solid black";
+//         info_div.style.height = "140px";
+//         info_div.style.width = "140px";
+
+//         // ------
+//         let title_div = document.createElement("div");
+//         title_div.innerText = elem.title;
+//         title_div.style.marginBottom = "10px"
+
+//         let desc_div = document.createElement("div");
+//         desc_div.innerText = elem.desc;
+
+//         let price_div = document.createElement("div");
+//         // price_div.innerText = elem.price;
+
+//         info_div.append(title_div,desc_div)
+
+       
+// // *************************************************
+
+//         let qty_div = document.createElement("div");
+//         qty_div.innerText = elem.quant;
+
+//         let productPrice_div = document.createElement("div");  
+//         productPrice_div.innerText = elem.price;
+
+//         mainDiv.append(image,info_div,qty_div,productPrice_div)
+//         document.getElementById("cart-details").append(mainDiv)
+//     })
+
+
+arr.map(function(elem)
+{
+    let row = document.createElement("tr");
+    row.setAttribute("id","row")
+
+    
+    // let hr = document.createElement("hr");
+
+    let col1 = document.createElement("td");
+    let image = document.createElement("img");
+    image.setAttribute("id","pImage")
+    image.src = elem.image1;
+    col1.append(image)
+    
+    let col2 = document.createElement("td");
+    // col2.se
+    col2.innerText = elem.title;
+    col2.innerText = elem.desc;
+    col2.style.width = "170px";
+
+    let col3 = document.createElement("td");
+    col3.innerText = elem.quant;
+
+let unit = document.createElement("sup");
+unit.innerText = "INR"
+    let col4 = document.createElement("td");
+    col4.innerText =`₹ ${elem.price}`;
+    col4.setAttribute("id","col4")
+    // col4.append(unit)
+
+    
+
+
+    row.append(col1,col2,col3,col4);
+    document.getElementById("table").append(row)
+
+})
+
+function showTotal()
+    {
+        var total = arr.reduce(function(acc,elem){
+            return acc + elem.price*elem.quant;
+        }, 0);
+    
+       document.querySelector("#amount").innerText = total.toFixed(2);
+       document.querySelector("#amount2").innerText = total.toFixed(2);
+
+    }
+
+showTotal();
+
+function countproduct()
+{
+    document.querySelector(".count").innerText = arr.length;
+}
+countproduct();
+
+let product_price = document.querySelector("#amount2").innerText;
+let final = ((product_price - 907)-725) + 1099;
+
+document.querySelector("#final_price").innerText = final.toFixed(2);
+
+
+function visacard()
+{
+    console.log("visa")
+    document.querySelector("#input1").style.display = "block";
+}
+
+function mastercard()
+{
+    document.querySelector("#input2").style.display = "block";
+
+}
+
+function americancard()
+{
+    document.querySelector("#input4").style.display = "block";
+
+}
+
+// document.getElementById("visa").addEventListener("input",function()
+// {
+//     document.querySelector("#input1").style.display = "block";
+
+// })
+
+// let promo  = document.querySelector("#input_promo").value;
+// var final_price = document.querySelector("#final_price").innerText;
+
+document.getElementById("form2").addEventListener("submit",(e,final_price)=>{
+
+    applyPromo(e,final_price)
+})
+
+let applyPromo =(e,final_price)=>{
+    e.preventDefault();
+// console.log("fdggrtghghghghghghghghghghghghghghgh")
+let promo  = document.querySelector("#input_promo").value;
+var final_price = document.querySelector("#final_price").innerText;
+// console.log(final_price)
+    if(promo=="masai30")
+    {
+        // let discount = subtotal-(subtotal*0.3);
+      document.querySelector("#final_price").innerText = Math.floor(final_price-(final_price*0.3)).toFixed(2);
+      console.log(final_price)
+    }
+
+}
+// console.log(final_price)
+
+
+// ********************
+
+
+
+
+document.querySelector("#pay_form").addEventListener("submit",formfunction)
+
+
+function formfunction(event)
+{
+    event.preventDefault();
+
+    let cardno = document.getElementById("cardno").value;
+    let cvvno = document.getElementById("cvvno").value;
+
+    if(cardno.length==16 && cvvno.length==3)
+    {
+        console.log("payment received")
+        alert("Enter Otp = 7575");
+        window.location.href = "otp.html";
+    }
+
+    else{
+        alert("Incorrect credentials")
+    }
+
+}
+
+
+
+ 
+
+</script>

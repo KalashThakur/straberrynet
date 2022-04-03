@@ -211,7 +211,7 @@
 
         }
 
-        #submit_btn{
+        #submit_btn,#submitform{
             width: 70%;
             margin: auto;
             background-color: #623381;
@@ -302,8 +302,9 @@
          /* border: 2px solid brown; */
         }
 
-        #input1{
+        #input1,#input2,#input4{
             display: none;
+            width: 50%;
         }
 /*        
         hr{
@@ -397,6 +398,20 @@
             width: 70%;
 
         }
+
+        input[type="radio"]
+        {
+            /* margin-right: 5px; */
+            border: 0px;
+            width: 2%;
+            height: 1.2em;
+        }
+
+        #submitform{
+           
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
     </style>
 
 </head>
@@ -438,46 +453,7 @@
             <div>
                 <h3>SHOPPING INFORMATION</h3>
 
-                <div id="form_detail">
-                <form action="" id="myForm">
-                    <h3 id="shipping">SHIPPING ADDRESS</h3>
-
-                    <input type="text" placeholder="First Name" required>
-                    <input type="text" placeholder="Last Name" required>
-                    <input type="text" placeholder="Company">
-                    <select name="" id="" required>
-                        <option value="India">India</option>
-                        <option value="Finland">Finland</option>
-                        <option value="Germany">Germany</option>
-                        <option value="Greece">Greece</option>
-                        <option value="Greenland">Greenland</option>
-                        <option value="Gabon">Gabon</option>
-                        <option value="Japan">Japan</option>
-                        <option value="Italy">Italy</option>
-                        <option value="Kenya">Kenya</option>
-                        <option value="Kuwait">Kuwait</option>
-                        <option value="Laos">Laos</option>
-                        <option value="Libya">Libya</option>
-                        <option value="Liberia">Liberia</option>
-                        <option value="Israel">Israel</option>
-                        <option value="Kuwait">Kuwait</option>
-                        <option value="Jordan">Jordan</option>
-                        <option value="Myanmar">Myanmar</option>
-                        <option value="Nepal">Nepal</option>
-                        <option value="Norway">Norway</option>
-                        <option value="Niger">Niger</option>
-                        <option value="Oman">Oman</option>
-                        <option value="Pakistan">Pakistan</option>
-                    </select>
-
-                    <input type="text" placeholder="Address" required>
-                    <input type="text" placeholder="City/town" required>
-                    <input type="text" placeholder="State/province" required>
-                    <input type="number" placeholder="Zip/postcode" required>
-                    <input type="number" placeholder="Mobile" required>
-                    <input type="submit" value="SAVE & CONTINUE" id="submit_btn">
-
-
+                
                 </form>
                 </div>
 
@@ -486,26 +462,32 @@
          <div id="cont4">
              <h3>PAYMENT</h3>
 
-             <form action="" id="pay_form">
-                 <!-- <div id="pay_form"> -->
-                 <input type="radio" class="radio" style="display: inline;" id="visa" value="visacard"> <img src="https://s.cdnsbn.com/images/common/Visa.png" alt=""> Visa - credit or debit card
-                    <div id="input1">
-                        <input type="number" required placeholder="Card Number (no spaces)">
-                        <input type="date" required placeholder="DD/MM/YY">
-                        <input type="cvv" required placeholder="Enter your CVV number">
-                    </div>
+                </div>
+<!-- ----------------------------------------- -->
                  <br>
-                 <input type="radio" value="mastercard" style="display: inline;" id="master" class="radio" > <img src="https://s.cdnsbn.com/images/common/Master.png" alt=""> MasterCard - credit or debit card
-                 <!-- <br> -->
-                 <div id="input2"></div>
 
-                 <input type="radio" value="paypalcard" style="display: inline;" id="paypal" class="radio"> <img src="	https://s.cdnsbn.com/images/common/Paypal.png" alt=""> Paypal
+                 <input type="radio" name="card" value="mastercard" onclick="mastercard()" style="display: inline;" id="master" class="radio" > <img src="https://s.cdnsbn.com/images/common/Master.png" alt=""> MasterCard - credit or debit card
                  <!-- <br> -->
-                 <div id="input3"></div>
+                 <div id="input2">
+                    <input type="number"  placeholder="Card Number (no spaces)">
+                    <!-- <input type="date" required placeholder="DD/MM/YY"> -->
+                    <input type="cvv"  placeholder="Enter your CVV number">
+                 </div>
+<!-- ----------------------------------------- -->
 
-                 <input type="radio" value="americancard" style="display: inline;" id="american" class="radio"> <img src="https://s.cdnsbn.com/images/common/AmericanExpress.png" alt=""> American express
-                 <div id="input4"></div>
+              <br>
+
+                 <input type="radio" name="card" value="americancard" onclick="americancard()" style="display: inline;" id="american" class="radio"> <img src="https://s.cdnsbn.com/images/common/AmericanExpress.png" alt=""> American express
+                 <div id="input4">
+                    <input type="number" placeholder="Card Number (no spaces)">
+                    <!-- <input type="date" required placeholder="DD/MM/YY"> -->
+                    <input type="cvv" placeholder="Enter your CVV number">
+                 </div>
+
+
+                 <input type="submit" id="submitform" value="PAY NOW">
                 <!-- </div> -->
+               
                  
              </form>
          </div>
@@ -525,9 +507,9 @@
 
                 <div id="enter_promo">
                     <h2>ENTER PROMO CODE</h2>
-                    <input type="text" id="input_promo">
+                    <!-- <input type="text" id="input_promo">
                     
-                    <button id="btn">APPLY</button>
+                    <button id="btn">APPLY</button> -->
 
                 </div>
                 
@@ -535,35 +517,6 @@
 
                   <h2>Payment Detail</h2>
 
-                  <div id="total2">
-                      <div>Item Total</div>
-                    <div id="amount2"></div>
-                  </div>
-
-                  <div id="total3">
-                    <div>Extra 10% Off (New Customer)</div>
-                  <div> -907</div>
-                </div>
-
-                <div id="total3">
-                    <div>Extra 8% Off (Spring Savings Sale)</div>
-                  <div> -725</div>
-                </div>
-
-                <div id="total4">
-                    <div>Standard Shipping (Signature)</div>
-                  <div> 782</div>
-                </div>
-
-                <div id="total4">
-                    <div>Freight Surcharge</div>
-                  <div> 317</div>
-                </div>
-
-                <div id="total5">
-                    <div>Order Total</div>
-                   <div id="final_price"> 0</div>
-                </div>
                   
                 </div>
             </form>
@@ -684,43 +637,23 @@ let final = ((product_price - 907)-725) + 1099;
 
 document.querySelector("#final_price").innerText = final;
 
-// document.getElementById("myForm").addEventListener("submit",function(event)
-// {
-//     event.preventDefault();
 
-//     let payment_div = document.createElement("div");
-
-//     let form = document.createElement("form");
-
-//     let input1 = document.createElement("input");
-// })
-
-// *******************PAYMENT************************
-
-let visa = document.getElementById("visa");
-
-let card = document.createElement("input");
-let date = document.createElement("input");
-let cvv = document.createElement("input");
-
-let pay_form = document.getElementById("pay_form").value;
-
-
-
-
-if(pay_form=="visacard")
+function visacard()
 {
- document.querySelector("#input1").style.display = "block";
+    console.log("visa")
+    document.querySelector("#input1").style.display = "block";
 }
 
-if(pay_form=="mastercard")
+function mastercard()
 {
- document.querySelector("#input2").style.display = "flex";
+    document.querySelector("#input2").style.display = "block";
+
 }
 
-if(pay_form=="americancard")
+function americancard()
 {
- document.querySelector("#input3").style.display = "flex";
+    document.querySelector("#input4").style.display = "block";
+
 }
 
 // document.getElementById("visa").addEventListener("input",function()
@@ -729,5 +662,44 @@ if(pay_form=="americancard")
 
 // })
 
+let promo  = document.getElementById("input_promo").value;
+let discount = document.querySelector("#final_price").innerText = subtotal;
+
+document.getElementById("btn").addEventListener("click",function()
+{
+    if(promo=="masai30")
+    {
+        // let discount = subtotal-(subtotal*0.3);
+        document.querySelector("#final_price").innerText = subtotal-(discount*0.3);
+
+    }
+})
+
+
+
+
+document.querySelector("#pay_form").addEventListener("submit",formfunction)
+
+
+function formfunction(event)
+{
+    event.preventDefault();
+
+    let cardno = document.getElementById("cardno").value;
+    let cvvno = document.getElementById("cvvno").value;
+
+    if(cardno.length==16 && cvvno.length==3)
+    {
+        console.log("payment received")
+        alert("Enter Otp = 7575");
+        window.location.href = "otp.html";
+    }
+
+    else{
+        alert("Incorrect credentials")
+    }
+
+}
+ 
 
 </script>

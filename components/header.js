@@ -1,5 +1,5 @@
 const navbar = () => {
-    return `  <div id="mainmenu" class="header">
+  return `  <div id="mainmenu" class="header" role="navigation">
     <div id="navbar">
         <a href="index.html"><div id="logo"></div></a>
         <div id="searchBar">
@@ -31,9 +31,9 @@ const navbar = () => {
                     <div id="account-Whitelist" class="account-Singin">Wishlist</div>
                 </div>
                 <div class="account" id="account3" >
-                    <div class="bag-icon"> </div>
+                    <div class="bag-icon"></div>
                     <div id="account-Bag" class="account-Singin"><a href="bag.html">Bag</a></div>
-                     <div id="total" class="totalBag-item">0</div> 
+                    <!-- <div id="total" class="totalBag-item">0</div> -->
                 </div>
             </div>
         </div>
@@ -57,8 +57,8 @@ const navbar = () => {
 </div>`;
 };
 
-const footer = () =>{
-    return `    <div id="first-main-footer-bg">
+const footer = () => {
+  return `    <div id="first-main-footer-bg">
 
     <div id="first-main-footer">
 
@@ -177,6 +177,7 @@ const footer = () =>{
         <p class="terms"> Privacy & Security | Terms & Conditions | Point Rewards Program Terms & Conditions
             1998 - 2022 © StrawberryNET.com All Rights Reserved. </p>
     </div>
-</div>`;};
+</div>`;
+};
 
 export { navbar, footer };
