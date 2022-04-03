@@ -9,8 +9,10 @@ const singupPankaj = () =>{
          </div>
          
          <div class="div1">
-             <input type="text" class="input" placeholder="Email Adress" id="useremail">
-             <input type="password" class="input" placeholder="Password" id="userpass">
+         <div class="usermailid"> <input type="text" class="input" placeholder="Email Adress" id="useremail"></div>
+        <div class="userpassid"><input type="password" class="input" placeholder="Password" id="userpass"></div> 
+
+             
              <p class="punnetp">Forget Password</p>
              <button id="btt">Sign In</button>
          </div>

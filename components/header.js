@@ -32,7 +32,7 @@ const navbar = () => {
                 </div>
                 <div class="account" id="account3" >
                     <div class="bag-icon"></div>
-                    <div id="account-Bag" class="account-Singin"><a href="bag.html">Bag</a></div>
+                    <div id="account-Bag" class="account-Singin"><a href="cartF.html">Bag</a></div>
                     <div id="total" class="totalBag-item">0</div> 
                 </div>
             </div>
