@@ -49,6 +49,7 @@ body{
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  height: auto;
 }
 #gust-checkout{
   text-align: center;
@@ -102,7 +103,6 @@ body{
 .login{
   width: 100%;
   /* height: 500px; */
-  /* z-index: 1; */
   background: white;
   display: flex;
   justify-content: center;
@@ -115,6 +115,7 @@ display: none;
   /* height: 100%; */
   width: 90%;
   background: white;
+/* display: block;  */
   margin-top: 80px;
 }
 #cont{
@@ -126,7 +127,7 @@ display: none;
  text-align: center;
  align-content: center;
  cursor: pointer;
- /* margin-top: 20px; */
+ margin-top: 20px;
 }
 #signup{
   display: flex;

@@ -43,7 +43,7 @@
       </div>
       <div id="bag-right-div">
         <div id="main-div-bag-right"></div>
-        <div id="gust-checkout">
+        <!-- <div id="gust-checkout">
           <div id="gust-checkout-text">
             <h3>OR</h3>
             <p>GUEST CHECKOUT</p>
@@ -54,7 +54,7 @@
           <div id="gust-input-button">
             <button class="gust-button">CONTINUE AS GUEST</button>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div id="totalPrice">
@@ -72,14 +72,15 @@
 </script>
 <!-- <script src="/script/bag.js"></script>/ -->
 <script type="module">
-  // let bagSing = document.getElementById("bag-lg");
-  // bagSing.innerHTML=singupPankaj();
   import { navbar, footer } from "./components/header.js";
   console.log(navbar);
-
-
   let header = document.getElementById("bag-header");
   header.innerHTML = navbar();
+  
+  let bagfooter = document.getElementById("bag-footer");
+  bagfooter.innerHTML=footer();
+  bagfooter.style.marginTop = "20px";
+
 
   // link navbar on click 
   document.querySelector("#skincare").addEventListener("click",()=>{
@@ -110,9 +111,7 @@
     window.location.href="catg perfume.html"
   }
     
-  let bagfooter = document.getElementById("bag-footer");
-  // bagfooter.innerHTML=footer();
-  bagfooter.style.marginTop = "20px";
+
 
   import showDataOnbag from "./script/bag.js";
   console.log(showDataOnbag);
@@ -123,11 +122,13 @@
 
   showitemInBag = showDataOnbag(showData, showitemInBag);
 
+
+// showing sing up data 
   import singupPankaj from "./newlogin.js";
   console.log(singupPankaj);
 
   let loginData = document.getElementById("main-div-bag-right");
-  loginData.innerHTML = singupPankaj();
+  loginData.innerHTML=singupPankaj();
 
   document.getElementById("onclick").addEventListener("click", () => {
     showTotal();
@@ -144,6 +145,8 @@
   };
   showTotal();
 
+
+  // login sing in
   document.querySelector("#userSign").addEventListener("click", () => {
     signin();
   });
