@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+*{
+    font-family: sans-serif;
+}
+
+        #heading{
+            font-size: 35px;
+        width: 80%;
+        margin: 50px auto;
+        letter-spacing: .14em;   
+        font-weight: bold;
+        }
+
+        #container{
+            /* border: 2px solid black; */
+            height: 1000px;
+            width: 80%;
+            display: flex;
+            margin: 50px auto;
+            justify-content: space-between;
+        }
+
+        #container div{
+            /* border: 2px solid blue; */
+            /* width: 50%; */
+        }
+
+        #cont1{
+            width: 58%;
+
+        }
+
+        #cont2{
+            width: 40%;
+
+        }
+
+        #notification{
+        height: 220px;
+        overflow: auto;
+        padding-right: 14px;
+         margin-bottom: 20px;
+    }
+
+
+#notify{
+    margin-left: 25px;
+}
+
+li{
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+
+table{
+    width: 100%;
+}
+
+table > tr > td:first-child{
+    width: 30%;
+    text-align: center;
+}
+
+table > tr > td:nth-child(2){
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+    /* text-align: center; */
+
+}
+
+
+table > tr > td:nth-child(4)
+{
+    text-align: center;
+    width: 22%;
+}
+
+table > tr > td:nth-child(3)
+{
+    text-align: center;
+}
+
+#pImage{
+    height: 140px;
+}
+
+#cart_details{
+   margin-bottom: 30px;
+}
+
+body{
+    background-color: #f5f5f5;           
+}
+
+#cont1 div{
+    background-color: #fff;
+
+}
+
+#cont2 div{
+    background-color: #fff;
+}
+
+#total_price{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#total_price > div{
+    /* border: 2px solid black; */
+    width: 50%;
+    padding-top: 20px;
+}
+
+#total_price > div:first-child{
+    text-align: left;
+    margin-left: 30px;
+}
+
+#total_price > div:last-child{
+    text-align: right;
+    margin-right: 30px;
+    font-size: 24px;
+}
+
+#sign{
+    /* height: 300px; */
+    display: flex;
+    justify-content: space-around;
+    padding-top: 18px;
+
+    /* margin-bottom: 20px; */
+}
+
+#sign div{
+    cursor: pointer;
+    /* color: #6b3296; */
+    font-size: 22px;
+}
+
+#sign div:hover{
+    /* font-weight: bold;
+    font-size: 15px; */
+    /* padding: 4px; */
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+#sign div:nth-child(1)
+{
+    text-decoration: underline;
+}
+
+#sign div:nth-child(2)
+{
+    text-decoration: underline;
+}
+
+
+#checkout{
+    height: 250px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#description_box{
+    /* border: 2px solid black; */
+    /* height: 100px; */
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#email,#pwd,#first,#last{
+    width: 74%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#emailAdd{
+    width: 74%;
+    margin: auto;
+    margin-bottom: 35px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#pwd{
+    margin-bottom: 18px;
+
+}
+
+#btn{
+    width: 40%;
+    padding: 10px;
+    background-color: #4a067d;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#guest{
+    text-align: center;
+    font-size: 24px;
+    
+    
+}
+
+#btn1{
+    width: 50%;
+    padding: 10px;
+    background-color: #4a067d;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    /* margin-bottom: 20px; */
+}
+
+.email1{
+    margin-bottom: 20px;
+}
+
+</style>
+
+</head>
+<body>
+    <div id="heading">SHOPPING BAG</div>
+
+    <div id="container">
+        <div id="cont1">
+            <div id="notification">
+                <h3 id="notify">NOTIFICATION (4)</h3>
+                <ul>
+                    <li>Please note that delivery to your selected region will be delayed because order dispatches are on hold due to shipping restrictions. For more information, please contact info@strawberrynet.com.</li>
+                    <li>Please note that a 3.5% freight surcharge will be applied at checkout.</li>
+                    <li>This order may be subject to duties and taxes, which are payable by the customer and are not refundable.</li>
+                    <li>Spend a minimum of USD150 after discounts to qualify for free shipping, or spend a minimum of USD100 after discounts to qualify for a reduced shipping charge at USD5. A shipping cost of USD10 will be charged for orders below USD100.</li>
+                </ul>
+            </div>
+
+            <div id="cart-details"> 
+                <table id="table"></table>
+                
+               <div id="total_price">
+                   <div>Item Total (<span class="count">0</span>)</div>
+                   <div id="amount"></div>
+               </div>
+           </div> 
+        </div>
+
+
+
+        <div id="cont2">
+            <div id="sign">
+                <div onclick="sign_in()">Sign In</div>
+                <div onclick="login()">New Here?</div>               
+            </div>
+
+        <div id="description_box"></div>
+
+
+            <div id="checkout">
+                <h3 id="guest">Guest Checkout</h3>
+                <input type="email" placeholder="Email address" id="emailAdd" class="email1">
+                <button id="btn1">CONTINUE AS GUEST</button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
+
+<script>
+     let arr = JSON.parse(localStorage.getItem("cart_item"));
+    console.log('arr:', arr)
+
+    arr.map(function(elem)
+{
+    let row = document.createElement("tr");
+    row.setAttribute("id","row")
+
+    
+    // let hr = document.createElement("hr");
+
+    let col1 = document.createElement("td");
+    let image = document.createElement("img");
+    image.setAttribute("id","pImage")
+    image.src = elem.image1;
+    col1.append(image)
+    
+    let col2 = document.createElement("td");
+    // col2.se
+    col2.innerText = elem.title;
+    col2.innerText = elem.desc;
+    col2.style.width = "170px";
+
+    let col3 = document.createElement("td");
+    col3.innerText = `Qty: ${elem.quant}`;
+
+// let unit = document.createElement("sup");
+// unit.innerText = "INR"
+    let col4 = document.createElement("td");
+    col4.innerText =`₹ ${elem.price}`;
+    col4.setAttribute("id","col4")
+    // col4.append(unit)
+
+    
+
+
+    row.append(col1,col2,col3,col4);
+    document.getElementById("table").append(row)
+
+})
+
+function showTotal()
+    {
+        var total = arr.reduce(function(acc,elem){
+            return acc + elem.price*elem.quant;
+        }, 0);
+    
+       document.querySelector("#amount").innerText = total.toFixed(2);
+    //    document.querySelector("#amount2").innerText = total.toFixed(2);
+
+    }
+
+showTotal();
+
+function countproduct()
+{
+    document.querySelector(".count").innerText = arr.length;
+}
+countproduct();
+
+sign_in();
+
+    function sign_in()
+    {
+        document.getElementById("description_box").innerHTML = null;
+
+        let form = document.createElement("form");
+
+        let input1 = document.createElement("input");
+        input1.type = "email";
+        input1.placeholder = "Email address";
+        input1.id = "email";
+
+
+        let input2 = document.createElement("input");
+        input2.type = "password";
+        input2.placeholder = "Password";
+        input2.id = "pwd";
+
+
+        let input3 = document.createElement("input");
+        input3.type = "submit";
+        input3.value = "SIGN IN";
+        input3.id = "btn";
+
+        let br = document.createElement("br");
+
+        form.append(input1,input2,input3);
+        document.getElementById("description_box").append(form)
+    }
+
+    function login()
+    {
+        document.getElementById("description_box").innerHTML = null;
+
+        let form = document.createElement("form");
+
+        let input1 = document.createElement("input");
+        input1.type = "email";
+        input1.placeholder = "Email address";
+        input1.id = "email";
+
+
+        let input2 = document.createElement("input");
+        input2.type = "password";
+        input2.placeholder = "Password";
+        input2.id = "pwd";
+
+
+        let input3 = document.createElement("input");
+        input3.type = "submit";
+        input3.value = "REGISTER";
+        input3.id = "btn";
+
+        let input4 = document.createElement("input");
+        input4.type = "text";
+        input4.placeholder = "First Name";
+        input4.id = "first";
+
+
+        let input5 = document.createElement("input");
+        input5.type = "text";
+        input5.placeholder = "Last Name";
+        input5.id = "last";
+
+
+
+        form.append(input4,input5,input1,input2,input3);
+        document.getElementById("description_box").append(form)
+    }
+
+document.getElementById("btn1").addEventListener("click",function()
+{
+    var email = document.getElementById("emailAdd").value;
+
+
+})
+</script>
