@@ -1241,3 +1241,21 @@ document.querySelector("#skincare").addEventListener("click",()=>{
 const pankaj = ()=>{
   window.location.href="catg.html"
 }
+document.querySelector("#haircare").addEventListener("click",()=>{
+  haircare();
+})
+const haircare = ()=>{
+  window.location.href="catghaircare.html"
+}
+document.querySelector("#menskincare").addEventListener("click",()=>{
+  menskincare();
+})
+const  menskincare = ()=>{
+  window.location.href="catgmensskincare.html"
+}
+document.querySelector("#prefume").addEventListener("click",()=>{
+  prefume();
+})
+const prefume = ()=>{
+  window.location.href="catg perfume.html"
+}
