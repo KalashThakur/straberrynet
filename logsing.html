@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cont {
+            /* border: 1px solid red; */
+            width: 400px;
+            height: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+
+        #forhead {
+            /* border: 1px solid blue; */
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 20px;
+            margin-left: 5%;
+            margin-right: 5%;
+            font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            border-bottom: 2px solid blueviolet;
+            margin-bottom: 30px;
+
+        }
+
+        #forinput {
+            width: 100%;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #forinput>input {
+            margin: auto;
+            width: 80%;
+            height: 30px;
+            border: 1px solid #623380;
+        }
+
+        #shortoflgsing {
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: -17px;
+            line-height: 20px;
+        }
+#fdgfffffffffffff{
+
+}
+        /* #forhead>div:nth-child(1){
+    
+} */
+        /* #regformac{
+    height: 10px;
+
+} */
+    </style>
+</head>
+
+<body>
+    <div id="cont">
+        <div id="forhead">
+            <div onclick="givenameghhhjhhh()">Sign in </div>
+            <div onclick="showsignup()">New Here ?</div>
+
+        </div>
+        <!-- <div id="forinput"> -->
+        <form id="forinput">
+            <input type="text" placeholder="Enter First Name" name="" id="entnfname">
+            <input type="text" placeholder="Enter last Name" name="" id="entername">
+            <input type="email" placeholder="Enter Email id " name="" id="entemail">
+            <input type="password" placeholder="Enter Password" name="" id="entpass">
+            <!-- <p id="shortoflgsing">Please enter a minimum of 8 characters, including at least 1 letter and 1 number.</p> -->
+            <input type="password" placeholder="Re-enter Password" id="recheckpassword">
+            <input id="regformac" type="submit" value="REGISTER"
+                style=" font-size: 20px; color: white; height: 40px;width: 200px; background-color: #623380;">
+        </form>
+        <div id="sholog"></div>
+        <!-- </div> -->
+    </div>
+</body>
+
+</html>
+<script>
+
+    document.querySelector("#forinput").addEventListener("submit", (event) => {
+        savesignupdalta(event)
+    })
+
+
+
+    let savesignupdalta = (event) => {
+        event.preventDefault();
+        let qwerty1 = document.querySelector("#recheckpassword").value;
+        let qwe = document.querySelector("#entpass").value;
+        if (qwerty1 == qwe) {
+            let obj = {
+                emailva: document.querySelector("#entemail").value,
+                passval: document.querySelector("#entpass").value
+            }
+            let arr = []
+            arr.push(obj);
+
+            localStorage.setItem("signupdetails", JSON.stringify(arr))
+        }
+        else {
+            alert("password not match")
+        }
+
+    }
+    let givenameghhhjhhh = () => {
+        document.querySelector("#forinput").style.display = "none";
+        
+    }
+ let showsignup=()=>{
+     
+     console.log("fdffffffffffffffffffffffffff")
+
+    document.querySelector("#forinput").style.display = "flex";
+    let username = document.createElement("input");
+    username.type = "email"
+    username.placeholder ="Email id";
+    username.id="fdgfffffffffffff"
+
+    let passsssss = document.createElement("input");
+    passsssss.type="password";
+    passsssss.placeholder = "Enter Password"
+    passsssss.id="crtpaswuhgf"
+
+document.querySelector("#sholog").append(username,passsssss)
+
+ }
+</script>
