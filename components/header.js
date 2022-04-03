@@ -31,31 +31,31 @@ const navbar = () => {
                     <div id="account-Whitelist" class="account-Singin">Wishlist</div>
                 </div>
                 <div class="account" id="account3" >
-                    <div class="bag-icon"></div>
+                    <div class="bag-icon"> </div>
                     <div id="account-Bag" class="account-Singin"><a href="bag.html">Bag</a></div>
-                    <!-- <div id="total" class="totalBag-item">0</div> -->
+                     <div id="total" class="totalBag-item">0</div> 
                 </div>
             </div>
         </div>
     </div>
 
 </div>
-<div id="name-menu">
-<ul>
-    <li>SHOP BY BRAND</li>
-    <li><a href="catg.html">SKINCARE</a></li>
-    <li>MAKEUP</li>
-    <li>HAIRCARE</li>
-    <li>PERFUME</li>
-    <li>MEN'S SKINCARE</li>
-    <li>MEN'S COLOGNE</li>
-    <li>HOME SCENTS</li>
-    <li>NATURAL BEAUTY</li>
-    <li>SPECIALS</li>
-    <li>NEW</li>
-</ul>
-</div>`
-}
+<div id="cont">
+<div id="secpar">
+    <div><span class="material-icons-outlined">reorder</span>SHOP BY BRAND</div>
+    <div>SKINCARE</div>
+    <div>MAKEUP</div>
+    <div>HAIRCARE</div>
+    <div>PERFUME</div>
+    <div>MEN'S SKINCARE</div>
+    <div>MEN'S COLOGNE</div>
+    <div>HOME SCENTS</div>
+    <div>NATURAL BEAUTY</div>
+    <div><span class="material-icons-outlined">redeem</span>SPECIALS</div>
+    <div><span id="star" class="material-icons-outlined">star</span>NEW</div>
+</div>
+</div>`;
+};
 
 const footer = () =>{
     return `    <div id="first-main-footer-bg">
@@ -177,7 +177,6 @@ const footer = () =>{
         <p class="terms"> Privacy & Security | Terms & Conditions | Point Rewards Program Terms & Conditions
             1998 - 2022 © StrawberryNET.com All Rights Reserved. </p>
     </div>
-</div>`
-}
+</div>`;};
 
-export {navbar , footer};
+export { navbar, footer };
