@@ -14,16 +14,25 @@ After figuring out how to go about cloning the website, we had to ensure that we
 We would meet in the mornings in order to prioritise the tasks that were the most important, discuss any obstacles, then go back to work on said tasks individually, and then gather again in the evenings with the objective of syncing up all of our individual tasks. We also made sure to work out the things that needed to be accomplished by the next meeting. This was repeated until the end of the project. Working this way also meant that each member of the team had the opportunity to contribute to all aspects of the project.
 
 Final Presentation:
+![image](https://user-images.githubusercontent.com/99667776/169653484-3ddb5c0e-5af0-4525-be8d-515fc0caa5af.png)
+
 
 
 conclusion:
 
 This project was a chance to learn and apply new skills with each one of us moving forward together. Working as a team while ensuring that there is agreement on the end goal, open communication, and mutual respect amongst teammates takes us farther than any one of us can go.
-#Creators
-Puneet Sai
-Kalash Thakur
-Shivaji Zirpe
-Prathmesh Nerle
-Pankaj Sing Sajwan
+#Creators.
+
+Puneet Sai.
+
+Kalash Thakur.
+
+Shivaji Zirpe.
+
+Prathmesh Nerle.
+
+Pankaj Sing Sajwan.
+
 Deployed link :- https://imaginative-praline-24d6d4.netlify.app/
+
 gitHub Repo :-https://github.com/KalashThakur/straberrynet/
